@@ -71,5 +71,15 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Source Serif 4', 'Noto Serif SC', 'Georgia', 'Times New Roman', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Headings use elegant serif for book-like feel */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Serif 4', 'Noto Serif SC', 'Georgia', serif;
+    text-rendering: optimizeLegibility;
   }
 }

@@ -6,6 +6,7 @@ import {
   statusColors,
   type AnswerStatus,
 } from './data/questions';
+import ChemistryText from './components/ChemistryText';
 import {
   Star,
   ChevronDown,
@@ -23,7 +24,10 @@ import {
   Award,
   BarChart3,
   ArrowUp,
+  Leaf,
+  Image,
 } from 'lucide-react';
+import './App.css';
 
 function StarRating({ rating }: { rating: number }) {
   return (
@@ -31,7 +35,7 @@ function StarRating({ rating }: { rating: number }) {
       {Array.from({ length: 5 }, (_, i) => (
         <Star
           key={i}
-          className={`w-4 h-4 ${
+          className={`w-3.5 h-3.5 ${
             i < rating
               ? 'fill-amber-400 text-amber-400'
               : 'fill-gray-200 text-gray-200'
@@ -44,13 +48,13 @@ function StarRating({ rating }: { rating: number }) {
 
 function StatusBadge({ status }: { status: AnswerStatus }) {
   const icons = {
-    well_answered: <CheckCircle2 className="w-3.5 h-3.5" />,
-    partially_answered: <AlertTriangle className="w-3.5 h-3.5" />,
-    not_in_pdf: <XCircle className="w-3.5 h-3.5" />,
+    well_answered: <CheckCircle2 className="w-3 h-3" />,
+    partially_answered: <AlertTriangle className="w-3 h-3" />,
+    not_in_pdf: <XCircle className="w-3 h-3" />,
   };
   return (
     <span
-      className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border ${statusColors[status]}`}
+      className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold border ${statusColors[status]}`}
     >
       {icons[status]}
       {statusLabels[status]}
@@ -76,18 +80,21 @@ function ImageModal({
 
   return (
     <div
-      className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4"
+      className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-lg max-w-3xl w-full max-h-[90vh] overflow-auto"
+        className="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-auto shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between p-3 border-b">
-          <h3 className="text-sm font-semibold text-gray-700">{caption}</h3>
+        <div className="flex items-center justify-between p-4 border-b border-gray-100">
+          <h3 className="text-sm font-semibold text-gray-700 flex items-center gap-2">
+            <Image className="w-4 h-4 text-indigo-500" />
+            {caption}
+          </h3>
           <button
             onClick={onClose}
-            className="p-1 hover:bg-gray-100 rounded-full transition-colors"
+            className="p-1.5 hover:bg-gray-100 rounded-full transition-colors"
           >
             <X className="w-5 h-5 text-gray-500" />
           </button>
@@ -96,10 +103,10 @@ function ImageModal({
           <img
             src={`/pdf_pages/page_${String(page).padStart(2, '0')}.png`}
             alt={caption}
-            className="w-full rounded-lg border"
+            className="w-full rounded-lg border border-gray-200"
             loading="lazy"
           />
-          <p className="text-xs text-gray-500 mt-2 text-center">
+          <p className="text-xs text-gray-500 mt-3 text-center">
             PDF Page {page}
           </p>
         </div>
@@ -139,87 +146,98 @@ function QuestionCard({
       <div
         ref={cardRef}
         id={`q-${question.id}`}
-        className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+        className={`group rounded-2xl border transition-all duration-200 overflow-hidden ${
+          isExpanded 
+            ? 'border-indigo-200 shadow-lg shadow-indigo-50 bg-white' 
+            : 'border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 bg-white'
+        }`}
       >
         {/* Card Header */}
         <button
           onClick={onToggle}
-          className="w-full text-left p-4 sm:p-5 flex items-start gap-3 hover:bg-gray-50 transition-colors"
+          className="w-full text-left p-4 sm:p-5 flex items-start gap-3 hover:bg-gray-50/50 transition-colors"
         >
-          <div className="flex-shrink-0 mt-0.5">
-            {isExpanded ? (
-              <ChevronUp className="w-5 h-5 text-gray-400" />
-            ) : (
-              <ChevronDown className="w-5 h-5 text-gray-400" />
-            )}
+          <div className="flex-shrink-0 mt-1">
+            <div className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold transition-colors ${
+              isExpanded 
+                ? 'bg-indigo-600 text-white' 
+                : 'bg-indigo-50 text-indigo-600 group-hover:bg-indigo-100'
+            }`}>
+              {question.id}
+            </div>
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center gap-2 mb-2">
-              <span className="bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-md text-xs font-bold">
-                Q{question.id}
-              </span>
               <StatusBadge status={question.status} />
               <StarRating rating={question.importance} />
-            </div>
-            <h3 className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">
-              {question.question}
-            </h3>
-            <div className="flex flex-wrap items-center gap-3 mt-2 text-xs text-gray-500">
-              <span className="flex items-center gap-1">
-                <Award className="w-3.5 h-3.5" />
-                {question.marks}
-              </span>
-              <span className="flex items-center gap-1">
-                <FileText className="w-3.5 h-3.5" />
-                Year: {question.year}
-              </span>
-              {question.pdfPages.length > 0 && (
-                <span className="flex items-center gap-1">
-                  <BookOpen className="w-3.5 h-3.5" />
-                  PDF Pages: {question.pdfPages.join(', ')}
-                </span>
-              )}
               {question.repeated && (
-                <span className="bg-red-100 text-red-700 px-1.5 py-0.5 rounded text-xs font-medium">
+                <span className="bg-rose-50 text-rose-600 px-1.5 py-0.5 rounded text-[11px] font-semibold border border-rose-200">
                   Repeated {question.repeated}
                 </span>
               )}
             </div>
+            <h3 className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed question-title-serif">
+              <ChemistryText text={question.question} />
+            </h3>
+            <div className="flex flex-wrap items-center gap-3 mt-2.5 text-xs text-gray-500">
+              <span className="flex items-center gap-1 bg-gray-100 px-2 py-0.5 rounded-md">
+                <Award className="w-3 h-3" />
+                {question.marks}
+              </span>
+              <span className="flex items-center gap-1 bg-gray-100 px-2 py-0.5 rounded-md">
+                <FileText className="w-3 h-3" />
+                {question.year}
+              </span>
+              {question.pdfPages.length > 0 && (
+                <span className="flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded-md text-emerald-700">
+                  <BookOpen className="w-3 h-3" />
+                  p.{question.pdfPages.join(', ')}
+                </span>
+              )}
+            </div>
+          </div>
+          <div className="flex-shrink-0 mt-1">
+            {isExpanded ? (
+              <ChevronUp className="w-5 h-5 text-indigo-400" />
+            ) : (
+              <ChevronDown className="w-5 h-5 text-gray-300 group-hover:text-gray-500" />
+            )}
           </div>
         </button>
 
         {/* Expanded Answer */}
         {isExpanded && (
-          <div className="border-t border-gray-100 bg-gray-50/50">
+          <div className="border-t border-indigo-100">
             {/* Images if available */}
             {hasImages && (
-              <div className="p-4 border-b border-gray-100">
-                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
-                  Images from PDF
+              <div className="p-4 sm:px-6 border-b border-gray-100 bg-gray-50/50">
+                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                  <Image className="w-3.5 h-3.5" />
+                  Reference Images
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {question.images?.map((img, idx) => (
                     <button
                       key={idx}
                       onClick={() => setShowImage(img)}
-                      className="group relative bg-white rounded-lg border border-gray-200 overflow-hidden hover:border-indigo-300 transition-colors text-left"
+                      className="group/img relative bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-indigo-300 hover:shadow-md transition-all text-left"
                     >
                       <img
                         src={`/pdf_pages/page_${String(img.page).padStart(2, '0')}.png`}
                         alt={img.caption}
-                        className="w-full h-40 object-top object-cover group-hover:opacity-90 transition-opacity"
+                        className="w-full h-40 object-top object-cover group-hover/img:opacity-90 transition-opacity"
                         loading="lazy"
                       />
                       <div className="p-2.5">
                         <p className="text-xs font-medium text-gray-700 line-clamp-2">
                           {img.caption}
                         </p>
-                        <p className="text-xs text-gray-400 mt-1">
+                        <p className="text-[11px] text-indigo-500 mt-1 font-medium">
                           Page {img.page}
                         </p>
                       </div>
-                      <div className="absolute top-2 right-2 bg-black/50 rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <ExternalLink className="w-3.5 h-3.5 text-white" />
+                      <div className="absolute top-2 right-2 bg-black/50 rounded-full p-1 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                        <ExternalLink className="w-3 h-3 text-white" />
                       </div>
                     </button>
                   ))}
@@ -228,13 +246,14 @@ function QuestionCard({
             )}
 
             {/* Answer */}
-            <div className="p-4 sm:p-5">
-              <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
-                Answer
-              </h4>
-              <div className="prose prose-sm max-w-none text-gray-700 whitespace-pre-wrap leading-relaxed text-sm sm:text-base">
-                {question.answer}
+            <div className="p-4 sm:p-6 bg-white">
+              <div className="flex items-center gap-2 mb-4 pb-2 border-b border-indigo-100">
+                <BookOpen className="w-4 h-4 text-indigo-600" />
+                <h4 className="text-sm font-bold text-indigo-700 tracking-wide question-title-serif">
+                  Answer
+                </h4>
               </div>
+              <ChemistryText text={question.answer} />
             </div>
           </div>
         )}
@@ -262,40 +281,48 @@ function StatsDashboard() {
 
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-      <div className="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+      <div className="bg-white rounded-2xl border border-gray-200 p-4 shadow-sm hover:shadow-md transition-shadow">
         <div className="flex items-center gap-2 mb-2">
-          <BarChart3 className="w-4 h-4 text-indigo-500" />
+          <div className="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center">
+            <BarChart3 className="w-4 h-4 text-indigo-600" />
+          </div>
           <span className="text-xs font-medium text-gray-500">Total Questions</span>
         </div>
         <p className="text-2xl font-bold text-gray-800">{stats.total}</p>
       </div>
-      <div className="bg-emerald-50 rounded-xl border border-emerald-200 p-4 shadow-sm">
+      <div className="bg-emerald-50 rounded-2xl border border-emerald-200 p-4 shadow-sm hover:shadow-md transition-shadow">
         <div className="flex items-center gap-2 mb-2">
-          <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+          <div className="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center">
+            <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+          </div>
           <span className="text-xs font-medium text-emerald-700">Well Answered</span>
         </div>
         <p className="text-2xl font-bold text-emerald-800">{stats.well}</p>
-        <p className="text-xs text-emerald-600 mt-1">
+        <p className="text-[11px] text-emerald-600 mt-1 font-medium">
           {((stats.well / stats.total) * 100).toFixed(0)}% of total
         </p>
       </div>
-      <div className="bg-amber-50 rounded-xl border border-amber-200 p-4 shadow-sm">
+      <div className="bg-amber-50 rounded-2xl border border-amber-200 p-4 shadow-sm hover:shadow-md transition-shadow">
         <div className="flex items-center gap-2 mb-2">
-          <AlertTriangle className="w-4 h-4 text-amber-600" />
+          <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center">
+            <AlertTriangle className="w-4 h-4 text-amber-600" />
+          </div>
           <span className="text-xs font-medium text-amber-700">Partially in PDF</span>
         </div>
         <p className="text-2xl font-bold text-amber-800">{stats.partial}</p>
-        <p className="text-xs text-amber-600 mt-1">
+        <p className="text-[11px] text-amber-600 mt-1 font-medium">
           {((stats.partial / stats.total) * 100).toFixed(0)}% of total
         </p>
       </div>
-      <div className="bg-rose-50 rounded-xl border border-rose-200 p-4 shadow-sm">
+      <div className="bg-rose-50 rounded-2xl border border-rose-200 p-4 shadow-sm hover:shadow-md transition-shadow">
         <div className="flex items-center gap-2 mb-2">
-          <XCircle className="w-4 h-4 text-rose-600" />
+          <div className="w-8 h-8 rounded-lg bg-rose-100 flex items-center justify-center">
+            <XCircle className="w-4 h-4 text-rose-600" />
+          </div>
           <span className="text-xs font-medium text-rose-700">Not in PDF</span>
         </div>
         <p className="text-2xl font-bold text-rose-800">{stats.notInPdf}</p>
-        <p className="text-xs text-rose-600 mt-1">
+        <p className="text-[11px] text-rose-600 mt-1 font-medium">
           {((stats.notInPdf / stats.total) * 100).toFixed(0)}% of total
         </p>
       </div>
@@ -305,45 +332,45 @@ function StatsDashboard() {
 
 function SectionLegend() {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-5 shadow-sm">
-      <h3 className="text-sm font-semibold text-gray-700 mb-3">Legend</h3>
-      <div className="space-y-2">
+    <div className="bg-white rounded-2xl border border-gray-200 p-4 shadow-sm">
+      <h3 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-3">Legend</h3>
+      <div className="space-y-2.5">
         <div className="flex items-center gap-2">
-          <span className={`inline-flex items-center gap-1.5 px-2 py-1 rounded-full text-xs font-medium border ${statusColors.well_answered}`}>
-            <CheckCircle2 className="w-3 h-3" />
+          <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold border ${statusColors.well_answered}`}>
+            <CheckCircle2 className="w-2.5 h-2.5" />
             Well Answered
           </span>
-          <span className="text-xs text-gray-500">Answer found in PDF</span>
+          <span className="text-[11px] text-gray-500">Found in PDF</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className={`inline-flex items-center gap-1.5 px-2 py-1 rounded-full text-xs font-medium border ${statusColors.partially_answered}`}>
-            <AlertTriangle className="w-3 h-3" />
+          <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold border ${statusColors.partially_answered}`}>
+            <AlertTriangle className="w-2.5 h-2.5" />
             Partially in PDF
           </span>
-          <span className="text-xs text-gray-500">Partial answer in PDF</span>
+          <span className="text-[11px] text-gray-500">Partial answer</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className={`inline-flex items-center gap-1.5 px-2 py-1 rounded-full text-xs font-medium border ${statusColors.not_in_pdf}`}>
-            <XCircle className="w-3 h-3" />
+          <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold border ${statusColors.not_in_pdf}`}>
+            <XCircle className="w-2.5 h-2.5" />
             Not in PDF
           </span>
-          <span className="text-xs text-gray-500">Answer from research</span>
+          <span className="text-[11px] text-gray-500">From research</span>
         </div>
       </div>
       <div className="mt-4 pt-3 border-t border-gray-100">
-        <h4 className="text-xs font-semibold text-gray-500 mb-2">Importance Stars</h4>
-        <div className="space-y-1">
+        <h4 className="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">Importance</h4>
+        <div className="space-y-1.5">
           <div className="flex items-center gap-2">
             <StarRating rating={5} />
-            <span className="text-xs text-gray-500">Very Important</span>
+            <span className="text-[11px] text-gray-500">Very Important</span>
           </div>
           <div className="flex items-center gap-2">
             <StarRating rating={3} />
-            <span className="text-xs text-gray-500">Moderate</span>
+            <span className="text-[11px] text-gray-500">Moderate</span>
           </div>
           <div className="flex items-center gap-2">
             <StarRating rating={1} />
-            <span className="text-xs text-gray-500">Less Important</span>
+            <span className="text-[11px] text-gray-500">Less Important</span>
           </div>
         </div>
       </div>
@@ -399,9 +426,9 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-gray-100">
       {/* Fixed Header */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+      <header className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14 sm:h-16">
             <div className="flex items-center gap-2 sm:gap-3">
@@ -415,12 +442,14 @@ export default function App() {
                   <Menu className="w-5 h-5 text-gray-600" />
                 )}
               </button>
-              <BookOpen className="w-6 h-6 text-indigo-600 flex-shrink-0" />
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-sm">
+                <Leaf className="w-5 h-5 text-white" />
+              </div>
               <div className="min-w-0">
                 <h1 className="text-sm sm:text-lg font-bold text-gray-800 truncate">
-                  Green Chemistry Exam Guide
+                  Green Chemistry
                 </h1>
-                <p className="text-xs text-gray-500 hidden sm:block">
+                <p className="text-[11px] text-gray-500 hidden sm:block">
                   Previous Year Questions with Answers
                 </p>
               </div>
@@ -428,7 +457,7 @@ export default function App() {
 
             <div className="flex items-center gap-2">
               {/* Search - hidden on small mobile */}
-              <div className="hidden sm:flex items-center bg-gray-100 rounded-lg px-3 py-1.5">
+              <div className="hidden sm:flex items-center bg-gray-100 rounded-xl px-3 py-1.5 border border-gray-200 focus-within:border-indigo-300 focus-within:ring-2 focus-within:ring-indigo-50 transition-all">
                 <Search className="w-4 h-4 text-gray-400 mr-2" />
                 <input
                   type="text"
@@ -453,7 +482,7 @@ export default function App() {
 
         {/* Mobile Search */}
         <div className="sm:hidden px-3 pb-2">
-          <div className="flex items-center bg-gray-100 rounded-lg px-3 py-2">
+          <div className="flex items-center bg-gray-100 rounded-xl px-3 py-2 border border-gray-200">
             <Search className="w-4 h-4 text-gray-400 mr-2" />
             <input
               type="text"
@@ -470,20 +499,20 @@ export default function App() {
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-30 lg:hidden">
           <div
-            className="absolute inset-0 bg-black/50"
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
           />
-          <div className="absolute top-14 left-0 w-72 h-[calc(100vh-3.5rem)] bg-white border-r border-gray-200 overflow-y-auto p-4">
-            <h3 className="text-sm font-semibold text-gray-700 mb-3">Sections</h3>
+          <div className="absolute top-14 left-0 w-72 h-[calc(100vh-3.5rem)] bg-white border-r border-gray-200 overflow-y-auto p-4 shadow-xl">
+            <h3 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-3">Sections</h3>
             <nav className="space-y-1">
               <button
                 onClick={() => {
                   setActiveSection('all');
                   setMobileMenuOpen(false);
                 }}
-                className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                className={`w-full text-left px-3 py-2.5 rounded-xl text-sm transition-colors ${
                   activeSection === 'all'
-                    ? 'bg-indigo-50 text-indigo-700 font-medium'
+                    ? 'bg-indigo-50 text-indigo-700 font-semibold'
                     : 'text-gray-600 hover:bg-gray-50'
                 }`}
               >
@@ -498,14 +527,14 @@ export default function App() {
                       setActiveSection(section.id);
                       setMobileMenuOpen(false);
                     }}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                    className={`w-full text-left px-3 py-2.5 rounded-xl text-sm transition-colors ${
                       activeSection === section.id
-                        ? 'bg-indigo-50 text-indigo-700 font-medium'
+                        ? 'bg-indigo-50 text-indigo-700 font-semibold'
                         : 'text-gray-600 hover:bg-gray-50'
                     }`}
                   >
-                    <span className="block truncate">{section.title}</span>
-                    <span className="text-xs text-gray-400">{count} questions</span>
+                    <span className="block truncate leading-tight">{section.title}</span>
+                    <span className="text-[11px] text-gray-400">{count} questions</span>
                   </button>
                 );
               })}
@@ -518,11 +547,11 @@ export default function App() {
       {mobileTocOpen && (
         <div className="fixed inset-0 z-30 lg:hidden">
           <div
-            className="absolute inset-0 bg-black/50"
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
             onClick={() => setMobileTocOpen(false)}
           />
-          <div className="absolute top-14 right-0 w-72 h-[calc(100vh-3.5rem)] bg-white border-l border-gray-200 overflow-y-auto p-4">
-            <h3 className="text-sm font-semibold text-gray-700 mb-3">Jump to Question</h3>
+          <div className="absolute top-14 right-0 w-72 h-[calc(100vh-3.5rem)] bg-white border-l border-gray-200 overflow-y-auto p-4 shadow-xl">
+            <h3 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-3">Jump to Question</h3>
             <div className="grid grid-cols-5 gap-1.5">
               {filteredQuestions.map((q) => (
                 <a
@@ -533,7 +562,7 @@ export default function App() {
                     setMobileTocOpen(false);
                     document.getElementById(`q-${q.id}`)?.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className={`text-center py-1.5 px-1 rounded text-xs font-medium transition-colors ${
+                  className={`text-center py-1.5 px-1 rounded-lg text-xs font-semibold transition-colors ${
                     q.status === 'well_answered'
                       ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
                       : q.status === 'partially_answered'
@@ -546,13 +575,15 @@ export default function App() {
                 </a>
               ))}
             </div>
-            <SectionLegend />
+            <div className="mt-4">
+              <SectionLegend />
+            </div>
           </div>
         </div>
       )}
 
       {/* Main Content */}
-      <div className="pt-20 sm:pt-16 pb-12">
+      <div className="pt-24 sm:pt-20 pb-12">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           {/* Hero Stats */}
           <div className="mb-6">
@@ -564,19 +595,19 @@ export default function App() {
             <aside className="hidden lg:block w-72 flex-shrink-0">
               <div className="sticky top-20 space-y-4">
                 {/* Section Filter */}
-                <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
                   <div className="p-4 border-b border-gray-100">
-                    <h2 className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                      <Filter className="w-4 h-4" />
+                    <h2 className="text-xs font-bold text-gray-700 uppercase tracking-wider flex items-center gap-2">
+                      <Filter className="w-3.5 h-3.5" />
                       Sections
                     </h2>
                   </div>
                   <nav className="p-2">
                     <button
                       onClick={() => setActiveSection('all')}
-                      className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                      className={`w-full text-left px-3 py-2.5 rounded-xl text-sm transition-colors ${
                         activeSection === 'all'
-                          ? 'bg-indigo-50 text-indigo-700 font-medium'
+                          ? 'bg-indigo-50 text-indigo-700 font-semibold'
                           : 'text-gray-600 hover:bg-gray-50'
                       }`}
                     >
@@ -589,16 +620,16 @@ export default function App() {
                         <button
                           key={section.id}
                           onClick={() => setActiveSection(section.id)}
-                          className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                          className={`w-full text-left px-3 py-2.5 rounded-xl text-sm transition-colors ${
                             isActive
-                              ? 'bg-indigo-50 text-indigo-700 font-medium'
+                              ? 'bg-indigo-50 text-indigo-700 font-semibold'
                               : 'text-gray-600 hover:bg-gray-50'
                           }`}
                         >
                           <span className="block truncate leading-tight">
                             {section.title}
                           </span>
-                          <span className="text-xs text-gray-400">{count} questions</span>
+                          <span className="text-[11px] text-gray-400">{count} questions</span>
                         </button>
                       );
                     })}
@@ -606,18 +637,18 @@ export default function App() {
                 </div>
 
                 {/* Status Filter */}
-                <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
                   <div className="p-4 border-b border-gray-100">
-                    <h2 className="text-sm font-semibold text-gray-700">Filter by Status</h2>
+                    <h2 className="text-xs font-bold text-gray-700 uppercase tracking-wider">Filter by Status</h2>
                   </div>
                   <div className="p-2">
                     {statusOptions.map((option) => (
                       <button
                         key={option.value}
                         onClick={() => setStatusFilter(option.value)}
-                        className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                        className={`w-full text-left px-3 py-2 rounded-xl text-sm transition-colors ${
                           statusFilter === option.value
-                            ? 'bg-gray-100 text-gray-800 font-medium'
+                            ? 'bg-gray-100 text-gray-800 font-semibold'
                             : 'text-gray-600 hover:bg-gray-50'
                         }`}
                       >
@@ -630,9 +661,9 @@ export default function App() {
                 <SectionLegend />
 
                 {/* TOC - Quick Jump */}
-                <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
                   <div className="p-4 border-b border-gray-100">
-                    <h2 className="text-sm font-semibold text-gray-700">Quick Jump</h2>
+                    <h2 className="text-xs font-bold text-gray-700 uppercase tracking-wider">Quick Jump</h2>
                   </div>
                   <div className="p-3 max-h-64 overflow-y-auto">
                     <div className="grid grid-cols-5 gap-1">
@@ -644,7 +675,7 @@ export default function App() {
                             e.preventDefault();
                             document.getElementById(`q-${q.id}`)?.scrollIntoView({ behavior: 'smooth' });
                           }}
-                          className={`text-center py-1 rounded text-xs font-medium transition-colors ${
+                          className={`text-center py-1 rounded-lg text-xs font-semibold transition-colors ${
                             q.status === 'well_answered'
                               ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
                               : q.status === 'partially_answered'
@@ -671,10 +702,10 @@ export default function App() {
                     <button
                       key={option.value}
                       onClick={() => setStatusFilter(option.value)}
-                      className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
+                      className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-colors ${
                         statusFilter === option.value
-                          ? 'bg-indigo-600 text-white'
-                          : 'bg-white text-gray-600 border border-gray-200'
+                          ? 'bg-indigo-600 text-white shadow-sm'
+                          : 'bg-white text-gray-600 border border-gray-200 hover:bg-gray-50'
                       }`}
                     >
                       {option.label}
@@ -712,7 +743,7 @@ export default function App() {
               </div>
 
               {filteredQuestions.length === 0 && (
-                <div className="text-center py-16 bg-white rounded-xl border border-gray-200">
+                <div className="text-center py-16 bg-white rounded-2xl border border-gray-200">
                   <Search className="w-12 h-12 text-gray-300 mx-auto mb-4" />
                   <p className="text-gray-500">No questions match your filters.</p>
                   <button
@@ -736,7 +767,7 @@ export default function App() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 z-40 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-colors"
+          className="fixed bottom-6 right-6 z-40 bg-indigo-600 text-white p-3 rounded-2xl shadow-lg hover:bg-indigo-700 hover:shadow-xl transition-all"
           title="Scroll to top"
         >
           <ArrowUp className="w-5 h-5" />
