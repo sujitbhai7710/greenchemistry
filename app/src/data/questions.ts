@@ -29,9 +29,9 @@ export const sections: Section[] = [
 ];
 
 export const statusLabels: Record<AnswerStatus, string> = {
-  well_answered: 'Well Answered in PDF',
+  well_answered: 'Well Answered (PDF)',
   partially_answered: 'Partially in PDF',
-  not_in_pdf: 'Not in PDF (Research Added)',
+  not_in_pdf: 'Not in PDF (Research)',
 };
 
 export const statusColors: Record<AnswerStatus, string> = {
@@ -199,7 +199,7 @@ This avoids the use of toxic PCl5/SOCl2 and produces less hazardous waste.
     marks: '3 Marks',
     year: '2023',
     status: 'well_answered',
-    pdfPages: [],
+    pdfPages: [1, 3],
     importance: 3,
     answer: `**Waste Management Hierarchy Pyramid:**
 
@@ -223,7 +223,11 @@ The waste management hierarchy is typically represented as an inverted pyramid o
 - It aligns with the first principle of Green Chemistry: "It is better to prevent waste than to treat or clean up waste after it is formed"
 - Prevention is the most sustainable approach as it addresses the problem at the source rather than managing consequences
 
-This is why Green Chemistry emphasizes designing processes that inherently produce little or no waste, rather than creating waste and then treating it.`,
+This is why Green Chemistry emphasizes designing processes that inherently produce little or no waste, rather than creating waste and then treating it.
+
+---
+*This question asks to draw a pyramid diagram. Search in Google: **"waste management hierarchy pyramid diagram"***`,
+    images: [{ page: 1, caption: 'Green Chemistry principles - Prevention of waste' }],
   },
   {
     id: 7,
@@ -1708,7 +1712,7 @@ Cyclohexene + H2O2 --(HCO2H, OH-)--> Adipic acid + H2O
     marks: '2 Marks',
     year: '2023',
     status: 'well_answered',
-    pdfPages: [],
+    pdfPages: [34],
     importance: 3,
     answer: `**Identification of Non-Ionising Radiation:**
 
@@ -1738,6 +1742,7 @@ Microwave radiation causes polar molecules to rotate and oscillate (dielectric h
 **Note on UV:** UV radiation is borderline — UV-A and UV-B are generally considered non-ionising, while UV-C and vacuum UV (below 200 nm) can be ionising. In the given list, microwave and visible light are clearly and unambiguously non-ionising.
 
 (Research source: Standard physics/chemistry references)`,
+    images: [{ page: 34, caption: 'Microwave heating and electromagnetic spectrum' }],
   },
   {
     id: 39,
@@ -1959,6 +1964,9 @@ Rightfit pigments are a family of **synthetic organic azo pigments** developed b
 
 **Impact**: Since 1995, Engelhard transitioned from producing 6.5 million pounds of heavy-metal pigments to only 1.2 million pounds by 2002, with plans to phase them out completely. Rightfit pigments serve packaging markets for food, beverages, petroleum products, detergents, and household durable goods.
 
+---
+*This topic is not covered in the provided PDF. Search in Google: **"Rightfit Pigments EPA Green Chemistry Award 2004 Engelhard"***
+
 (Research source: EPA Green Chemistry Challenge Awards 2004)`,
   },
   {
@@ -2019,6 +2027,9 @@ Lactic acid is polymerized by condensation, removing water under reduced pressur
 | Waste | Water and CO2 as by-products |
 | Biodegradability | PLA is compostable under industrial conditions |
 
+---
+*This question describes synthesis starting from corn. Search in Google: **"PLA polylactic acid synthesis from corn reaction scheme diagram"***
+
 (Source: PDF Pages 32, 33; Research supplemented)`,
   },
   {
@@ -2068,6 +2079,9 @@ In the synthesis of N,N-dimethylbenzamide:
 
 This clearly establishes that catalytic reagents are superior to stoichiometric reagents in green chemistry.
 
+---
+*Search in Google for comparison diagrams: **"bio-catalysis vs photo-catalysis diagram"** and **"catalytic vs stoichiometric reagents comparison"***
+
 (Source: PDF Pages 2, 3, 4, 5, 32)`,
   },
   {
@@ -2110,6 +2124,9 @@ DeSimone's breakthrough was the identification of **"CO2-philic" polymeric segme
 - Waste minimization through CO2 recapture and reuse
 - Energy-efficient process (near-ambient temperatures)
 - Safe for workers — no exposure to toxic fumes or carcinogens
+
+---
+*This topic is not covered in the provided PDF. Search in Google: **"DeSimone surfactant CO2 precision cleaning EPA Green Chemistry 1997"***
 
 (Research source: EPA Green Chemistry Challenge Awards 1997)`,
   },
@@ -2249,7 +2266,11 @@ Corn (Renewable Feedstock)
 1. **Packaging**: Food containers, cups, plates, clamshells, and shrink-wrap films — PLA is FDA-approved for food contact and provides a sustainable alternative to petroleum-based packaging
 2. **Medical implants**: Biodegradable sutures, surgical screws, pins, and drug delivery systems — PLA degrades naturally in the body into lactic acid, eliminating the need for removal surgery
 
+---
+*This question asks for a flow chart diagram. Search in Google: **"PLA polylactic acid synthesis flow chart from corn"***
+
 (Source: PDF Pages 32, 33; Research supplemented)`,
+    images: [{ page: 32, caption: 'PLA synthesis and benzoin condensation' }],
   },
   {
     id: 50,
@@ -2277,6 +2298,9 @@ Corn (Renewable Feedstock)
 5. **Water quality degradation**: Algae cause bad odors, taste problems in drinking water, and clog water treatment filters, increasing the cost of water purification.
 
 6. **Disruption of food chains**: The imbalance in primary and secondary productivity disrupts the entire aquatic food web, affecting everything from microscopic zooplankton to large fish species.
+
+---
+*This topic is not covered in the provided PDF. Search in Google: **"eutrophication diagram aquatic ecosystem effects"***
 
 (Research source: Standard environmental chemistry references)`,
   },
