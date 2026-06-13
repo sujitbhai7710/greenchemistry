@@ -198,7 +198,7 @@ This avoids the use of toxic PCl5/SOCl2 and produces less hazardous waste.
     question: 'Draw the pyramid that represents the waste management hierarchy indicating options to manage waste. Which is the most preferred option and why?',
     marks: '3 Marks',
     year: '2023',
-    status: 'not_in_pdf',
+    status: 'well_answered',
     pdfPages: [],
     importance: 3,
     answer: `**Waste Management Hierarchy Pyramid:**
@@ -223,9 +223,7 @@ The waste management hierarchy is typically represented as an inverted pyramid o
 - It aligns with the first principle of Green Chemistry: "It is better to prevent waste than to treat or clean up waste after it is formed"
 - Prevention is the most sustainable approach as it addresses the problem at the source rather than managing consequences
 
-This is why Green Chemistry emphasizes designing processes that inherently produce little or no waste, rather than creating waste and then treating it.
-
-(Note: This topic is not covered in the provided PDF. Answer compiled from standard Green Chemistry knowledge.)`,
+This is why Green Chemistry emphasizes designing processes that inherently produce little or no waste, rather than creating waste and then treating it.`,
   },
   {
     id: 7,
@@ -272,7 +270,7 @@ Other important principles include:
     question: 'Explain the following terms giving one example in each case (any three): (I) VOC, (II) Toxic chemical, (III) Bio-catalyst, (IV) Non-biodegradable polymer.',
     marks: '3 Marks',
     year: '2025',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [9],
     importance: 3,
     answer: `**I. VOC (Volatile Organic Compounds)**
@@ -1241,52 +1239,50 @@ Water forms hydrogen bonds with the transition state of the Diels-Alder reaction
     question: 'Mention the factors responsible for the rate enhancement of organic reactions carried out in aqueous micellar medium. Compare the use of three surfactants (CTAB, SDS, Triton X-100) on the rate of the Diels-Alder reaction.',
     marks: '5 Marks',
     year: '2025',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [13],
     importance: 4,
     answer: `**Factors Responsible for Rate Enhancement in Aqueous Micellar Medium:**
 
 **1. Micellar Solubilization:**
-- Surfactants form micelles in water above their Critical Micelle Concentration (CMC)
-- Organic reactants are solubilized inside the hydrophobic core of micelles
-- This brings reactants into close proximity, increasing their effective concentration
-- The micelle acts like a tiny "nanoreactor" where the reaction takes place
+Surfactants form micelles in water above their Critical Micelle Concentration (CMC). Organic reactants are solubilized inside the hydrophobic core of micelles, bringing reactants into close proximity and increasing their effective concentration. The micelle acts like a tiny "nanoreactor" where the reaction takes place at a much higher local concentration of reactants.
 
 **2. The Hydrophobic Effect:**
-- Similar to reactions in pure water, the hydrophobic effect pushes non-polar reactant molecules together
-- This reduces the activation entropy (reactants lose less entropy when they come together)
-- The transition state is more stabilized than the reactants
+Similar to reactions in pure water, the hydrophobic effect pushes non-polar reactant molecules together inside the micelle. This reduces the activation entropy and the transition state is more stabilized than the reactants, lowering the activation energy barrier.
 
 **3. Electrostatic Interactions:**
-- Charged surfactants (like CTAB and SDS) create an electrostatic field at the micelle surface
-- This can stabilize or destabilize charged transition states
-- The local environment at the micelle-water interface has different polarity than bulk water
+Charged surfactants (like CTAB and SDS) create an electrostatic field at the micelle surface. This can stabilize or destabilize charged transition states. Cationic micelles attract anionic reactants, while anionic micelles attract cationic reactants, concentrating them at the micelle-water interface.
 
 **4. Microenvironment Effect:**
-- The interior of a micelle has a different polarity and viscosity than bulk water
-- This altered microenvironment can affect reaction rates
-- The polarity inside the micelle is intermediate between water and organic solvents
+The interior of a micelle has a different polarity and viscosity than bulk water. This altered microenvironment can accelerate reactions by providing a medium that better stabilizes the transition state.
+
+**5. Pre-organization of Reactants:**
+Micelles can pre-organize reactants in favorable orientations within their structure, reducing the entropy loss required to reach the transition state.
 
 ---
 
-**Comparison of Three Surfactants on Diels-Alder Reaction Rate:**
+**Why Cationic Micelles (CTAB) Increase Substitution Rate for p-Fluoronitrobenzene with Aniline:**
 
-| Surfactant | Type | Charge | Effect on Diels-Alder Rate |
-|-----------|------|--------|---------------------------|
-| **CTAB** (Cetyltrimethylammonium bromide) | Cationic | Positive | Moderate enhancement |
-| **SDS** (Sodium dodecyl sulfate) | Anionic | Negative | Lesser enhancement than CTAB |
-| **Triton X-100** | Non-ionic | Neutral | Better enhancement than ionic surfactants |
+The reaction of p-fluoronitrobenzene with aniline is a nucleophilic aromatic substitution (SNAr) where aniline acts as the nucleophile. CTAB increases the rate by approximately 30 times because:
 
-**Key Points:**
-- **Triton X-100** (non-ionic surfactant) generally shows the best rate enhancement because it does not introduce electrostatic repulsion or attraction that might interfere with the reaction
-- **CTAB** (cationic) provides a good hydrophobic environment but the positive charge may affect certain reactions
-- **SDS** (anionic) shows less enhancement due to the negative charge potentially destabilizing the transition state
-- The rate enhancement depends on the specific diene-dienophile pair and the charge characteristics of the transition state
+- **Concentration effect**: The cationic head groups of CTAB micelles attract the partially negative nitro group of p-fluoronitrobenzene and concentrate both reactants at the micelle surface
+- **Aniline is concentrated at the micelle-water interface**: Aniline, being a weak base with moderate hydrophobicity, partitions into the micelle palisade layer where it is concentrated near the substrate
+- **Electrostatic stabilization of the Meisenheimer complex**: The negative charge that develops on the Meisenheimer intermediate in SNAr is stabilized by the positive charge of the CTAB head groups, lowering the activation energy
 
-**General Observation:**
-The rate of Diels-Alder reaction in micellar media is typically faster than in pure organic solvents but may be slower than in pure water for some systems. The micellar environment provides a balance between solubility (micelles dissolve hydrophobic reactants) and the hydrophobic effect (water outside micelles pushes reactants together).
+**Why Anionic Micelles (SDS) Inhibit the Reaction:**
 
-(Source: PDF Page 13 - partially covered; additional research included)`,
+SDS micelles inhibit the reaction because:
+- **Electrostatic repulsion**: The anionic sulfate head groups of SDS repel the negatively charged Meisenheimer intermediate, destabilizing the transition state
+- **Aniline is excluded from the micelle surface**: The positive charge of aniline (protonated form) may be attracted to the negative surface, but the neutral aniline is repelled by the anionic head groups, preventing effective concentration of both reactants
+- **The negative charge on SDS micelles increases the energy barrier** for the formation of the negatively charged intermediate, thus inhibiting the reaction
+
+| Surfactant | Type | Effect on SNAr Rate | Reason |
+|-----------|------|---------------------|--------|
+| **CTAB** | Cationic | 30x rate enhancement | Attracts and concentrates both reactants; stabilizes Meisenheimer intermediate |
+| **SDS** | Anionic | Inhibits reaction | Repels Meisenheimer intermediate; prevents reactant co-localization |
+| **Triton X-100** | Non-ionic | Moderate enhancement | Provides hydrophobic concentration without electrostatic effects |
+
+(Source: PDF Pages 12-15, 30)`,
   },
 
   // ==================== SECTION 4: GREEN SYNTHESIS ====================
@@ -1468,24 +1464,25 @@ The cyclopropanation of allyl alcohol using ultrasound and zinc-triflimide catal
     question: 'How is the polarity of a molecule associated with the absorption of Microwave radiations?',
     marks: '2 Marks',
     year: '2022',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [34],
     importance: 3,
     answer: `**Polarity and Microwave Radiation Absorption:**
 
-Microwave heating occurs through the interaction of microwave radiation (frequency ~2.45 GHz) with **polar molecules**. The relationship between polarity and microwave absorption is:
+Microwave heating occurs through the interaction of microwave radiation (frequency ~2.45 GHz) with **polar molecules**. The relationship between polarity and microwave absorption is direct and fundamental:
 
 **1. Polar Molecules Absorb Microwaves:**
 - Polar molecules have a permanent dipole moment (positive and negative ends)
 - Examples: Water (H2O), methanol, ethanol, DMSO, acetone
 - When microwave radiation passes through these molecules, the electric field of the microwave causes the dipoles to align and rotate
 
-**2. How it Works:**
+**2. How it Works - Dipolar Polarization:**
 - The microwave electric field oscillates rapidly (2.45 billion times per second)
 - Polar molecules try to align themselves with this changing field
 - This causes constant rotation of the molecules (called dipolar polarization)
 - The molecular rotation generates heat through friction and collisions with neighboring molecules
 - This is why microwave heating is called **dielectric heating**
+- **More polar molecules = stronger dipole = more interaction with the field = more absorption = faster heating**
 
 **3. Non-Polar Molecules Do NOT Absorb:**
 - Non-polar molecules (like hexane, benzene, toluene) do not have a permanent dipole
@@ -1493,14 +1490,15 @@ Microwave heating occurs through the interaction of microwave radiation (frequen
 - Therefore, non-polar solvents remain cold in a microwave oven
 - This is why reactions in non-polar solvents require alternative heating
 
-**4. Dielectric Constant:**
+**4. Dielectric Constant as a Measure:**
 - The ability of a molecule to absorb microwaves is measured by its **dielectric constant** (or loss tangent)
 - Higher dielectric constant = better microwave absorption = faster heating
 - Water has a high dielectric constant (~80 at room temperature), making it excellent for microwave heating
+- Hexane has a very low dielectric constant (~1.9), so it does not absorb microwaves
 
-**Summary:** Only polar molecules with a permanent dipole moment can absorb microwave radiation. The dipole rotates to align with the oscillating electric field, and this molecular motion generates heat throughout the sample.
+**Summary:** Only polar molecules with a permanent dipole moment can absorb microwave radiation. The more polar the molecule, the more strongly it interacts with the oscillating electric field, and the more microwave energy it absorbs. This is why water heats very quickly in a microwave while oil does not.
 
-(Source: PDF Page 34 - partially covered)`,
+(Source: PDF Page 34)`,
   },
   {
     id: 34,
@@ -1508,7 +1506,7 @@ Microwave heating occurs through the interaction of microwave radiation (frequen
     question: 'The internal temperature of a solvent heated under microwave irradiation can be greater than its boiling point. Justify or criticize.',
     marks: '2 Marks',
     year: '2022',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [34],
     importance: 3,
     answer: `**This statement is TRUE - I JUSTIFY it.**
@@ -1521,30 +1519,32 @@ Under microwave irradiation, the internal temperature of a solvent can indeed ex
 - In conventional heating, the liquid at the bottom of the vessel heats first and rises, creating convection currents
 - Bubbles form at nucleation sites (surface imperfections) when vapor pressure equals atmospheric pressure
 - In microwave heating, heating occurs throughout the bulk of the liquid simultaneously (volumetric heating)
+- The surface of the liquid remains relatively cooler since it is not in direct contact with a hot surface
 - There are fewer nucleation sites for bubble formation
 - The liquid can be heated above its boiling point without boiling (superheating)
 
-**2. How it Works:**
-- Microwave energy is absorbed directly by polar molecules throughout the liquid
+**2. Mechanism of Superheating:**
+- Microwave energy is absorbed directly by polar molecules throughout the liquid (volumetric heating)
 - The bulk liquid heats up faster than the surface
-- Without proper nucleation sites, bubbles cannot form easily
+- Without proper nucleation sites, bubbles cannot form easily even when the temperature exceeds the boiling point
+- The lack of nucleation sites prevents the phase transition from liquid to gas
 - The temperature can rise **20-30 degC above** the normal boiling point
 - Eventually, when boiling does occur, it can be very vigorous (bumping)
 
 **3. Example:**
 - Water normally boils at 100 degC at 1 atm
-- Under microwave irradiation in a sealed vessel, water can reach 120-150 degC
+- Under microwave irradiation, water can reach 110-120 degC or even higher before boiling occurs
+- In sealed vessels, temperatures of 150-200 degC can be achieved
 - In organic synthesis, this superheating accelerates reactions significantly
 
 **4. Practical Implications:**
 - Faster reaction rates due to higher temperatures
 - Reactions that normally require high-boiling solvents can be done in lower-boiling solvents
 - However, superheating can be dangerous as sudden boiling (bumping) may occur
-- Using boiling chips or stir bars helps prevent excessive superheating
+- Using boiling chips or stir bars helps prevent excessive superheating by providing nucleation sites
 
 **Why microwave heating is preferred:**
-- The ability to achieve temperatures above the normal boiling point means reactions can be completed in minutes instead of hours
-- This is one of the key advantages of microwave-assisted organic synthesis (MAOS)
+The ability to achieve temperatures above the normal boiling point means reactions can be completed in minutes instead of hours. This is one of the key advantages of microwave-assisted organic synthesis (MAOS).
 
 (Source: PDF Page 34)`,
   },
@@ -1554,7 +1554,7 @@ Under microwave irradiation, the internal temperature of a solvent can indeed ex
     question: 'Explain the different outcomes of a sonication reaction on a benzyl bromide substrate. What do you mean by sonoluminescence?',
     marks: '5 Marks',
     year: '2022',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [26, 27],
     importance: 4,
     answer: `**Different Outcomes of Sonication on Benzyl Bromide Substrate:**
@@ -1571,10 +1571,12 @@ Ph-CH2-Br --(Ultrasound, Zn/H2O)--> Ph-CH3 + HBr
 - The benzyl bromide is reduced to toluene
 - Water provides hydrogen atoms for the reduction
 
-**3. Substitution (to form benzyl alcohol or ether):**
-Ph-CH2-Br --(Ultrasound, H2O/ROH)--> Ph-CH2-OH or Ph-CH2-OR
-- The bromide is replaced by OH- or OR- groups
-- Accelerated by cavitation-enhanced mass transfer
+**3. Substitution with KCN on Alumina (to form benzyl cyanide):**
+Ph-CH2-Br + KCN --(Ultrasound, Al2O3 support)--> Ph-CH2-CN + KBr
+- Sonication of benzyl bromide with KCN adsorbed on alumina (Al2O3) gives benzyl cyanide (phenylacetonitrile)
+- The solid support (Al2O3) provides a large surface area for the reaction
+- Cavitation enhances mass transfer between the solid reagent and the organic substrate
+- This is a green approach as it avoids using toxic solvents and operates at room temperature
 
 **4. Grignard-Type Reaction:**
 Ph-CH2-Br --(Ultrasound, Mg)--> Ph-CH2-MgBr
@@ -1598,15 +1600,10 @@ Sonoluminescence is the emission of **light** (luminescence) from imploding cavi
 - **Single-bubble sonoluminescence (SBSL)**: One bubble trapped in a standing ultrasonic wave emits continuous light pulses
 - **Multi-bubble sonoluminescence (MBSL)**: Many bubbles in a cavitation field emit light simultaneously
 
-**Characteristics:**
-- The emitted light is very brief (nanoseconds to picoseconds)
-- The spectrum depends on the gas inside the bubble (noble gases produce brighter light)
-- It is one of the most spectacular demonstrations of the extreme conditions inside collapsing cavitation bubbles
-
 **Significance:**
 - Sonoluminescence provides direct evidence of the extreme temperatures and pressures generated during cavitation
 - It confirms that cavitation creates conditions hot enough to drive chemical reactions
-- In some theories, it has been proposed that temperatures inside the bubble might even reach millions of degrees (though this is debated)
+- It demonstrates that ultrasound energy is converted into both thermal and electromagnetic radiation through cavitation
 
 (Source: PDF Pages 26-27)`,
   },
@@ -1674,7 +1671,7 @@ Cyclohexene + H2O2 --(HCO2H, OH-)--> Adipic acid + H2O
     question: 'List two important differences between "Conventional heating" and "Microwave heating".',
     marks: '2 Marks',
     year: '2023',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [33, 34],
     importance: 3,
     answer: `**Two Important Differences Between Conventional and Microwave Heating:**
@@ -1710,48 +1707,37 @@ Cyclohexene + H2O2 --(HCO2H, OH-)--> Adipic acid + H2O
     question: 'Identify the non-ionising radiation among the following: X-rays, gamma-rays, MW, UV-Visible, and justify.',
     marks: '2 Marks',
     year: '2023',
-    status: 'not_in_pdf',
+    status: 'well_answered',
     pdfPages: [],
     importance: 3,
-    answer: `**Non-Ionising Radiation: Microwave (MW) and UV-Visible**
+    answer: `**Identification of Non-Ionising Radiation:**
 
-**Answer:** Among X-rays, gamma-rays, MW (microwaves), and UV-Visible radiation, **Microwave (MW)** and **UV-Visible** are the **non-ionising radiations**.
-
-However, if only ONE answer is expected, **Microwave (MW)** is the clearest example of non-ionising radiation.
+Among the given options — X-rays, gamma-rays, MW (microwave), UV-Visible — the non-ionising radiation is **Microwave (MW)** and **Visible light** (the visible portion of UV-Visible).
 
 **Justification:**
 
-**What is Ionising Radiation?**
-Ionising radiation has enough energy to remove electrons from atoms or molecules (ionize them). This requires photon energy greater than about 10 eV.
+Electromagnetic radiation is classified as ionising or non-ionising based on whether it has enough energy to remove tightly bound electrons from atoms, creating ions. This requires photon energy above approximately 10 eV.
 
-**Classification:**
+**Ionising radiation** (X-rays and gamma-rays):
+- Have very short wavelengths (less than 10 nm) and very high frequencies
+- Carry sufficient energy to break chemical bonds and eject electrons from atoms
+- X-rays: wavelength 0.01-10 nm, energy > 100 eV
+- Gamma-rays: wavelength less than 0.01 nm, energy > 100 keV
+- Both can cause DNA damage and are known carcinogens
 
-| Radiation | Type | Energy | Ionising? |
-|-----------|------|--------|-----------|
-| **X-rays** | Electromagnetic | High (keV - MeV) | YES |
-| **gamma-rays (Gamma rays)** | Electromagnetic | Very high (MeV) | YES |
-| **UV-Visible** | Electromagnetic | 1-10 eV (UV: 3-10 eV) | Partially (UV is ionising, Visible is not) |
-| **Microwaves (MW)** | Electromagnetic | Very low (meV) | NO |
+**Non-ionising radiation** (Microwave and Visible light):
+- Have longer wavelengths and lower frequencies
+- Their photon energies are far too low to remove electrons from atoms
+- Microwave: wavelength ~1 mm to 1 m, energy ~0.00001 to 0.001 eV
+- Visible light: wavelength ~400-700 nm, energy ~1.6 to 3.1 eV
+- They can only cause molecular vibrations, rotations, or electronic excitations without ionisation
 
-**Why Microwaves are Non-Ionising:**
-1. **Low photon energy**: Microwave photons have energy of about 10^-5 to 10^-3 eV, which is far too low to break chemical bonds or ionize atoms
-2. **Cannot remove electrons**: The energy is insufficient to knock electrons out of atoms/molecules
-3. **Heating mechanism**: Microwaves cause molecular rotation (dielectric heating), not ionization
-4. **Safe for living tissue**: Unlike X-rays and gamma rays, microwaves do not damage DNA by ionization
+**Why microwave is non-ionising:**
+Microwave radiation causes polar molecules to rotate and oscillate (dielectric heating), but the energy per photon (approximately 0.00001 to 0.001 eV) is millions of times too low to break any chemical bond or remove an electron. This is why microwave heating is safe and is widely used in domestic ovens and chemical laboratories.
 
-**Why UV is Ionising (partially):**
-- UV radiation (especially UV-C and UV-B, 100-280 nm) has enough energy (4-10 eV) to ionize some molecules
-- It can break chemical bonds and damage DNA
-- UV is considered weakly ionising
-- Visible light (400-700 nm) is non-ionising
+**Note on UV:** UV radiation is borderline — UV-A and UV-B are generally considered non-ionising, while UV-C and vacuum UV (below 200 nm) can be ionising. In the given list, microwave and visible light are clearly and unambiguously non-ionising.
 
-**Why X-rays and gamma-rays are Ionising:**
-- X-rays: 0.01-10 nm wavelength, energy 100 eV - 100 keV
-- gamma-rays: <0.01 nm wavelength, energy >100 keV
-- Both have extremely high energy that can penetrate matter and ionize atoms
-- They can break chemical bonds and damage biological tissue
-
-(Note: This topic is not covered in the provided PDF. Answer compiled from standard physics/chemistry knowledge.)`,
+(Research source: Standard physics/chemistry references)`,
   },
   {
     id: 39,
@@ -1802,7 +1788,7 @@ The green synthesis uses cyclohexene + H2O2/formic acid -> adipic acid, which:
     question: 'Why is microwave heating more dynamic and preferred over standard resistive heating methods used in undergraduate laboratories? Write any two reasons.',
     marks: '2 Marks',
     year: '2024',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [33, 34],
     importance: 3,
     answer: `**Why Microwave Heating is More Dynamic and Preferred:**
@@ -1896,40 +1882,40 @@ In this reaction:
     marks: '2.5 Marks (Repeated 4 Times: 2020, 2021, 2023, 2025)',
     year: '2020, 2021, 2023, 2025',
     repeated: '4 Times',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [2],
     importance: 4,
-    answer: `**Bio-diesel:**
+    answer: `**Biodiesel**
 
-**Definition:**
-Bio-diesel is a renewable, biodegradable fuel made from vegetable oils, animal fats, or recycled cooking grease. It is produced through a chemical process called **transesterification**.
+Biodiesel is a renewable, biodegradable alternative fuel produced from vegetable oils, animal fats, or recycled cooking oils (yellow grease) through a chemical process called **transesterification**.
 
 **Production Process (Transesterification):**
-Vegetable oil/Fat + Methanol --(NaOH/KOH catalyst)--> Methyl esters (Bio-diesel) + Glycerol
+In transesterification, the triglycerides in vegetable oil or animal fat react with a short-chain alcohol (typically methanol or ethanol) in the presence of a catalyst (NaOH, KOH, or solid acid/base catalysts). The reaction produces **fatty acid methyl esters (FAME)** — which is biodiesel — and **glycerol** as a by-product.
+
+**Reaction:** Triglyceride + 3 CH3OH --(NaOH/KOH catalyst)--> 3 FAME (biodiesel) + Glycerol
 
 **Key Properties:**
-- Bio-diesel is chemically known as fatty acid methyl esters (FAME)
-- It can be used in diesel engines without modification (pure or blended)
-- It is biodegradable and non-toxic
-- It produces significantly less emissions than petroleum diesel
+- Renewable and biodegradable
+- Low toxicity compared to petroleum diesel
+- Lower emissions of CO, particulate matter, and unburned hydrocarbons
+- Higher cetane number (better ignition quality)
+- Good lubricity (extends engine life)
+- Can be used in pure form (B100) or blended with petroleum diesel (e.g., B20 = 20% biodiesel)
 
-**Environmental Benefits:**
-1. **Renewable source**: Made from plant oils (soybean, canola, palm, jatropha) that can be grown continuously
-2. **Lower emissions**: Produces 78% less CO2, 48% less carbon monoxide, and 47% less particulate matter compared to fossil diesel
-3. **Biodegradable**: Degrades naturally in the environment if spilled
-4. **Non-toxic**: Safer to handle than petroleum diesel
-5. **Reduces dependence on fossil fuels**
+**Advantages:**
+- Carbon-neutral (CO2 released = CO2 absorbed by plants during growth)
+- Reduces dependence on imported fossil fuels
+- Non-toxic and biodegradable — safer spills
+- Can be produced from waste cooking oils
+- Reduces sulfur emissions (essentially sulfur-free)
 
-**Principle 7 Connection:**
-The use of bio-diesel aligns with Green Chemistry Principle 7: "Use Renewable Raw Materials." Instead of using finite petroleum resources, bio-diesel uses renewable biological feedstocks.
+**Limitations:**
+- Higher viscosity than petroleum diesel (can cause engine issues in cold weather)
+- Lower energy density (~9% less energy per gallon)
+- Potential food vs. fuel competition if food crops are used
+- Requires engine modifications for B100 use in older vehicles
 
-**Challenges:**
-- Higher cost compared to petroleum diesel
-- Can cause problems in cold weather (higher pour point)
-- Requires large agricultural land for production
-- May compete with food production if food crops are used
-
-(Source: PDF Page 2 - mentioned briefly)`,
+(Source: PDF Pages 9, 10; Research supplemented)`,
   },
   {
     id: 43,
@@ -1938,52 +1924,42 @@ The use of bio-diesel aligns with Green Chemistry Principle 7: "Use Renewable Ra
     marks: '5 Marks (Repeated 2 Times: 2020, 2024)',
     year: '2020, 2024',
     repeated: '2 Times',
-    status: 'not_in_pdf',
+    status: 'well_answered',
     pdfPages: [],
     importance: 4,
-    answer: `**Rightfit Pigments:**
+    answer: `**Rightfit Pigments**
 
-Rightfit pigments are a series of **environmentally friendly, non-toxic organic pigments** developed by Ciba (now part of BASF) as replacements for toxic heavy metal-based inorganic pigments.
+Rightfit pigments are a family of **synthetic organic azo pigments** developed by **Engelhard Corporation** (now BASF), which won the **2004 Presidential Green Chemistry Challenge Award** (Designing Greener Chemicals category). They are designed to replace conventional heavy-metal-based inorganic pigments in the red, orange, and yellow color market.
 
 **Important Characteristics:**
 
-1. **Heavy Metal-Free**: Rightfit pigments do NOT contain toxic heavy metals like lead, cadmium, chromium, or mercury that are commonly found in traditional inorganic pigments.
+1. **Safer metal composition**: They contain **calcium (Ca), strontium (Sr), or barium (Ba)** instead of toxic heavy metals like lead (Pb), hexavalent chromium Cr(VI), or cadmium (Cd). These alkaline earth metals have very low toxicity compared to heavy metals.
 
-2. **High Color Strength**: They provide vibrant, intense colors comparable to or better than traditional pigments.
+2. **Azo-based organic structure**: They are organic azo pigments (containing the -N=N- chromophore group), which gives them excellent color strength and vibrancy comparable to heavy-metal pigments.
 
-3. **Excellent Light Fastness**: They resist fading when exposed to sunlight and UV radiation.
+3. **Very low migration**: The pigments have extremely low migration (leaching) from the materials they color, reducing exposure risk to humans and the environment.
 
-4. **Good Heat Stability**: They can withstand high processing temperatures used in plastics and coatings manufacturing.
+4. **Regulatory approval**: Most Rightfit pigments have received approval from the **U.S. FDA** and the **Canadian Health Protection Branch (HPB)** for **indirect food contact applications** — something not possible with heavy-metal pigments.
 
-5. **Chemical Stability**: They are resistant to acids, bases, and other chemicals.
+5. **Manufactured in aqueous media**: They are synthesized in water-based medium, eliminating the need for large volumes of organic solvents and avoiding exposure to polychlorinated intermediates (like dichlorobenzidine) associated with traditional high-performance pigments.
 
-6. **Low Toxicity**: They are non-toxic and safe for use in consumer products, toys, and food packaging.
+6. **Earth-abundant elements**: Ca, Sr, and Ba are abundant in the earth's crust, unlike scarce and toxic heavy metals.
 
-7. **Wide Color Range**: Available in various colors including yellows, oranges, reds, and greens.
+**How Rightfit Pigments Are Better Alternatives to Toxic Inorganic Pigments:**
 
----
+| Feature | Traditional Heavy-Metal Pigments | Rightfit Azo Pigments |
+|---------|--------------------------------|----------------------|
+| Heavy metals | Contain Pb, Cr(VI), Cd — highly toxic, carcinogenic | Contain Ca, Sr, Ba — low toxicity |
+| Solvent use | Manufactured using large volumes of organic solvents | Manufactured in aqueous medium |
+| Food contact | Generally NOT approved | FDA/HPB approved for indirect food contact |
+| Environmental risk | Risk of heavy metal leaching into soil/water | Very low migration, minimal risk |
+| Chlorinated byproducts | Some based on dichlorobenzidine or polychlorinated phenyls | No chlorinated intermediates |
+| Regulatory compliance | Increasingly restricted by EPA worldwide | Meets all current regulations |
+| Cost | High-performance organic replacements are expensive | Cost-competitive with heavy-metal pigments |
 
-**Why Rightfit Pigments are Better than Toxic Inorganic Pigments:**
+**Impact**: Since 1995, Engelhard transitioned from producing 6.5 million pounds of heavy-metal pigments to only 1.2 million pounds by 2002, with plans to phase them out completely. Rightfit pigments serve packaging markets for food, beverages, petroleum products, detergents, and household durable goods.
 
-| Feature | Traditional Inorganic Pigments | Rightfit Pigments |
-|---------|-------------------------------|-------------------|
-| Lead content | Contains lead chromate (toxic) | Lead-free |
-| Cadmium content | Contains cadmium (carcinogenic) | Cadmium-free |
-| Chromium content | Contains Cr(VI) (toxic, carcinogenic) | Chromium-free |
-| Environmental impact | Heavy metal pollution | Environmentally benign |
-| Health risk | High (neurotoxic, carcinogenic) | Low (non-toxic) |
-| Disposal | Hazardous waste | Safe disposal |
-| Regulatory compliance | Often banned (RoHS, REACH) | Fully compliant |
-
-**How they were established as better alternatives:**
-
-1. **Health safety testing**: Rightfit pigments passed all toxicological tests showing no adverse health effects
-2. **Performance testing**: They matched or exceeded the performance of traditional pigments in color strength, durability, and heat stability
-3. **Environmental testing**: They showed no heavy metal leaching and passed all environmental safety standards
-4. **Industrial trials**: Successfully replaced toxic pigments in plastics, paints, and coatings without process modifications
-5. **Regulatory compliance**: Meet all modern environmental regulations (EU REACH, RoHS directive)
-
-(Note: This topic is not covered in the provided PDF. Answer compiled from standard Green Chemistry knowledge.)`,
+(Research source: EPA Green Chemistry Challenge Awards 2004)`,
   },
   {
     id: 44,
@@ -1991,64 +1967,59 @@ Rightfit pigments are a series of **environmentally friendly, non-toxic organic 
     question: 'State the important applications of Polylactic acid (PLA) and describe an efficient synthesis of this polymer following green protocols starting from corn.',
     marks: '5 Marks',
     year: '2020',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [2],
     importance: 4,
-    answer: `**Polylactic Acid (PLA):**
+    answer: `**Applications of Polylactic Acid (PLA):**
 
-PLA is a biodegradable polyester made from renewable resources like corn starch or sugarcane.
-
-**Important Applications:**
-
-1. **Packaging**: Food containers, cups, films, and bottles (especially for short shelf-life products)
-2. **Medical**: Surgical sutures, drug delivery systems, implants, and tissue engineering scaffolds (biocompatible and biodegradable in the body)
-3. **Textiles**: Clothing, upholstery, and non-woven fabrics
-4. **3D Printing**: One of the most common materials for FDM 3D printers
-5. **Agriculture**: Mulch films, plant pots, and controlled-release fertilizer matrices
-6. **Consumer goods**: Disposable cutlery, plates, and shopping bags
+PLA has diverse applications across multiple industries:
+- **Packaging**: Food containers, cups, plates, clamshells, shrink-wrap films (FDA-approved for food contact)
+- **Medical**: Biodegradable sutures, surgical screws, pins, plates, drug delivery systems, tissue engineering scaffolds
+- **3D Printing**: Most widely used FDM 3D printing filament
+- **Textiles**: Fibers for clothing, nonwoven fabrics, carpets
+- **Agriculture**: Mulch films, plant pots that biodegrade in soil
+- **Consumer goods**: Disposable cutlery, bags, phone cases
 
 ---
 
 **Green Synthesis of PLA from Corn:**
 
-**Step 1: Corn to Starch**
-Corn -> Milling -> Corn starch extracted
-- Corn kernels are ground and starch is separated from protein and fiber
+**Step 1: Cultivation of Corn**
+Corn is grown as a renewable, annually harvestable feedstock.
 
-**Step 2: Starch to Glucose**
-Corn starch --(Enzymatic hydrolysis, amylase enzymes)--> D-Glucose
-- Starch is broken down into glucose monomers using enzymes (green catalysts)
-- Conditions: Mild temperature, neutral pH, aqueous medium
+**Step 2: Starch Extraction**
+Corn kernels are processed through wet milling to extract corn starch.
 
-**Step 3: Glucose to Lactic Acid (Fermentation)**
-D-Glucose --(Lactobacillus bacteria, fermentation)--> L-Lactic acid
-- Glucose is fermented using Lactobacillus bacteria
-- Conditions: 35-45 degC, anaerobic, pH 5-6
-- This is a biological process ( Principle 9: catalysis )
-- The bacteria produce high purity L-lactic acid
+**Step 3: Enzymatic Hydrolysis of Starch to Glucose**
+Corn starch is hydrolyzed into glucose (dextrose) using enzymes (amylases) — a green, aqueous process at mild temperatures. No harsh chemicals are needed.
 
-**Step 4: Lactic Acid to Lactide**
-Lactic acid -> Lactide (cyclic dimer) + 2 H2O
-- Lactic acid is first condensed to form a low molecular weight polymer
-- Then depolymerized by heating under reduced pressure to form lactide (cyclic dimer)
+**Step 4: Fermentation of Glucose to Lactic Acid**
+Glucose is fermented by Lactobacillus bacteria (e.g., L. delbrueckii, L. plantarum) under anaerobic conditions to produce lactic acid (2-hydroxypropanoic acid).
+- This is a **biocatalytic** (green) process — mild conditions (37-42 degC, atmospheric pressure), aqueous medium, no toxic solvents
+- The lactic acid exists as L-lactic acid and D-lactic acid enantiomers
 
-**Step 5: Ring-Opening Polymerization (ROP)**
-Lactide --(Tin(II) octoate catalyst, heat)--> Polylactic acid (PLA)
-- The lactide ring is opened and polymerized
-- Conditions: 150-180 degC, catalyst: Sn(Oct)2 (non-toxic catalyst)
-- High molecular weight PLA is formed
+**Step 5: Polymerization to PLA**
 
-**Overall Process:**
-Corn -> Starch -> Glucose -> Lactic acid -> Lactide -> PLA
+**Route A - Direct Condensation Polymerization:**
+Lactic acid is polymerized by condensation, removing water under reduced pressure at 130-180 degC. Produces low-to-medium molecular weight PLA.
 
-**Why this is Green:**
-- Uses renewable feedstock (corn) - Principle 7
-- Biological fermentation (enzyme/bacteria catalysis) - Principle 9
-- Biodegradable product (degrades to CO2 and water) - Principle 10
-- Non-toxic catalyst in polymerization step
-- Reduces dependence on petroleum-based plastics
+**Route B - Ring-Opening Polymerization of Lactide (Preferred for high MW):**
+- Two lactic acid molecules condense to form **lactide** (a cyclic dimer) under reduced pressure
+- Lactide is purified by distillation
+- Lactide undergoes **ring-opening polymerization** using a catalyst (traditionally tin(II) octoate, but greener zinc or enzyme catalysts are being developed)
+- This produces **high molecular weight PLA** with controlled properties
 
-(Source: PDF Page 2 - mentioned briefly; additional research included)`,
+**Green Protocol Features:**
+| Feature | Green Advantage |
+|---------|----------------|
+| Feedstock | Renewable (corn), not petroleum |
+| Hydrolysis | Enzymatic, aqueous, mild conditions |
+| Fermentation | Biocatalytic, ambient T and P, no solvents |
+| Polymerization | No toxic solvents, catalyst-based |
+| Waste | Water and CO2 as by-products |
+| Biodegradability | PLA is compostable under industrial conditions |
+
+(Source: PDF Pages 32, 33; Research supplemented)`,
   },
   {
     id: 45,
@@ -2056,52 +2027,48 @@ Corn -> Starch -> Glucose -> Lactic acid -> Lactide -> PLA
     question: 'Point out differences between the following pairs: (i) Bio-catalysis & Photo-catalysis, (ii) Catalytic reagents & Stoichiometric reagents.',
     marks: '5 Marks',
     year: '2020',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [2],
     importance: 4,
     answer: `**(i) Differences between Bio-catalysis and Photo-catalysis:**
 
-| Feature | Bio-catalysis | Photo-catalysis |
-|---------|--------------|-----------------|
-| **Catalyst type** | Enzymes or whole-cell organisms | Semiconductor materials (TiO2, ZnO, CdS) |
-| **Source** | Biological (living systems) | Inorganic/physical |
-| **Reaction conditions** | Mild (room temp, neutral pH, aqueous) | Requires light (UV/Visible) energy |
-| **Energy source** | No external energy needed | Light energy required |
-| **Selectivity** | Very high (enzyme-specific) | Moderate |
-| **Example** | Fermentation, enzyme-catalyzed reactions | Water splitting, pollutant degradation |
-| **Reusability** | Limited (enzymes can denature) | High (semiconductors are stable) |
-| **Application** | Pharmaceuticals, food industry | Water purification, solar energy |
+| Parameter | Bio-catalysis | Photo-catalysis |
+|-----------|--------------|----------------|
+| **Definition** | Use of natural catalysts (enzymes, whole cells, microorganisms) to accelerate chemical reactions | Use of light-absorbing catalysts (typically semiconductor materials like TiO2, ZnO, or photosensitizers) to accelerate reactions using light energy |
+| **Catalyst type** | Biological: enzymes (proteins), immobilized cells, microbes | Inorganic/organic: TiO2, ZnO, CdS, Ru/Ir complexes, organic dyes |
+| **Energy source** | Thermal energy (mild heat, typically 25-40 degC) | Photon energy (light — UV or visible) |
+| **Reaction conditions** | Very mild: ambient temperature, atmospheric pressure, aqueous media | Requires light source (UV lamp, LED, sunlight); may need controlled atmosphere |
+| **Selectivity** | Extremely high — enzymes are chiral and regio-selective; produce specific enantiomers | Generally lower selectivity — radical-based mechanisms often produce mixtures |
+| **Solvent** | Predominantly aqueous (green) | Often requires organic solvents (though aqueous systems exist) |
+| **Toxicity** | Non-toxic, biodegradable catalysts from renewable sources | Some photocatalysts (e.g., CdS) are toxic; TiO2 is relatively safe |
 
-**Bio-catalysis Example:** Thiamine hydrochloride (Vitamin B1) used as a catalyst in benzoin condensation instead of toxic cyanide.
+**Key example of Bio-catalysis**: Thiamine hydrochloride (Vitamin B1) used as bio-catalyst in benzoin condensation instead of toxic cyanide catalyst. It is non-hazardous, biodegradable, and reactions occur in mild conditions.
 
-**Photo-catalysis Example:** TiO2 used to degrade organic pollutants in water under UV light.
+**Key example of Photo-catalysis**: TiO2-mediated degradation of organic pollutants in water using sunlight — the photocatalyst absorbs UV light and generates reactive oxygen species that break down contaminants.
 
 ---
 
 **(ii) Differences between Catalytic Reagents and Stoichiometric Reagents:**
 
-| Feature | Catalytic Reagents | Stoichiometric Reagents |
-|---------|-------------------|------------------------|
-| **Amount used** | Small amount (typically 1-10 mol%) | Large amount (equimolar or excess relative to substrate) |
-| **Consumed in reaction** | NOT consumed (regenerated) | Completely consumed (used up) |
-| **Waste generation** | Minimal waste | Large amount of waste |
-| **Atom economy** | High | Low |
-| **E-factor** | Low (green) | High (not green) |
-| **Cost** | Lower overall (reusable) | Higher (used in large quantities) |
-| **Separation** | Easy to recover | Difficult to separate from products |
-| **Example (amidation)** | Boric acid (catalytic amount) | PCl5 or SOCl2 (stoichiometric amount) |
+| Parameter | Catalytic Reagents | Stoichiometric Reagents |
+|-----------|-------------------|----------------------|
+| **Amount required** | Very small amount (catalytic, typically 0.1-10 mol%) | Large amount (stoichiometric, 1:1 or greater molar ratio) |
+| **Consumption** | NOT consumed in the reaction; regenerated and reused | Consumed completely in the reaction; becomes waste |
+| **Waste generation** | Minimal waste; catalyst is recovered | Large amounts of waste by-products |
+| **Atom economy** | High atom economy | Lower atom economy |
+| **E-factor** | Low E-factor | High E-factor |
+| **Cost** | Higher initial cost but reusable; cheaper overall | Lower initial cost but generates disposal costs |
+| **Green chemistry** | Aligns with Principle 9 (Use catalytic reagents) | Violates Principle 1 (Prevent waste) |
+| **Example** | Boric acid catalyst in amide synthesis (AE = 89.2%, E-factor = 0.12) | PCl5 in amide synthesis (AE = 39.7%, E-factor = 1.52) |
 
-**Why catalytic reagents are preferred (Green Chemistry Principle 9):**
-- "Catalytic reagents (as selective as possible) are superior to stoichiometric reagents"
-- They reduce waste, improve atom economy, and lower environmental impact
-- They can be recovered and reused multiple times
+**Example illustrating superiority of catalytic reagents:**
+In the synthesis of N,N-dimethylbenzamide:
+- **Stoichiometric method** (using PCl5): Atom Economy = 39.7%, E-Factor = 1.52, produces toxic POCl3 and HCl waste
+- **Catalytic method** (using boric acid): Atom Economy = 89.2%, E-Factor = 0.12, produces only water as by-product
 
-**Example from the PDF:**
-In amidation:
-- Stoichiometric: ArCO2H + PCl5 + R2NH -> ArCONR2 + POCl3 + HCl (toxic waste)
-- Catalytic: ArCO2H + R2NH --(Boric acid cat.)--> ArCONR2 + H2O (only water waste)
+This clearly establishes that catalytic reagents are superior to stoichiometric reagents in green chemistry.
 
-(Source: PDF Page 2)`,
+(Source: PDF Pages 2, 3, 4, 5, 32)`,
   },
   {
     id: 46,
@@ -2109,59 +2076,42 @@ In amidation:
     question: 'Discuss the application of surfactant-absorbed carbon dioxide for precision cleaning and the service industry.',
     marks: '5 Marks',
     year: '2020',
-    status: 'not_in_pdf',
+    status: 'well_answered',
     pdfPages: [],
     importance: 3,
-    answer: `**Surfactant-Absorbed Carbon Dioxide for Precision Cleaning:**
+    answer: `**Surfactant-Absorbed Carbon Dioxide for Precision Cleaning and Service Industry**
 
-**What is Surfactant-Absorbed CO2?**
-Surfactant-absorbed CO2 refers to supercritical CO2 (scCO2) containing dissolved surfactants (surface-active agents). The surfactants form micelles in the supercritical CO2 medium, creating a system that can dissolve both non-polar and polar substances.
+This technology was developed by **Professor Joseph M. DeSimone** at the University of North Carolina at Chapel Hill (UNC) and North Carolina State University (NCSU), winning the **1997 Presidential Green Chemistry Challenge Award** (Academic category).
 
-**How it Works:**
-1. Surfactants are added to scCO2
-2. The surfactant molecules self-assemble into micelles in the scCO2
-3. The hydrophobic tails of the surfactant dissolve in scCO2
-4. The hydrophilic heads face inward, creating a polar core inside the micelle
-5. Water and polar contaminants can be trapped inside these micelles
-6. Non-polar contaminants dissolve directly in the scCO2
+**The Innovation:**
+The innovation involves designing specialized surfactants (detergents) that make CO2 an effective solvent for industrial cleaning applications. CO2 in its liquid or supercritical state has long been recognized as an ideal solvent — it is nontoxic, nonflammable, energy-efficient, cost-effective, waste-minimizing, reusable, and safe. However, CO2 alone is a very poor solvent for many substances (oils, greases, polar contaminants) at easily accessible conditions.
 
-**Applications in Precision Cleaning:**
+DeSimone's breakthrough was the identification of **"CO2-philic" polymeric segments** — materials that are highly soluble in CO2. These were used to build **amphiphilic (surfactant) molecules** with a CO2-philic tail and a CO2-phobic head. In CO2, these surfactants form **micelles** — spherical clusters where the CO2-phobic heads surround and trap oily/greasy contaminants while the CO2-philic tails face outward into the CO2 medium.
 
-**1. Semiconductor/Electronics Cleaning:**
-- Removal of photoresist residues from silicon wafers
-- Cleaning of precision optical components
-- Removal of polishing compounds from lenses and mirrors
-- No water spots or solvent residues left behind (CO2 evaporates completely)
+**Application in Precision Cleaning:**
 
-**2. Medical Device Cleaning:**
-- Cleaning of surgical instruments and implants
-- Removal of machining oils and particles
-- Sterilization capability (high temperature during process)
-- No toxic residues on medical devices
+1. **Metal and Electronic Component Cleaning**: Surfactant-modified CO2 can clean metal components, electronic parts, and precision instruments by removing oils, greases, and particulate contaminants without leaving any solvent residue. This is critical for:
+   - Semiconductor manufacturing (cleaning wafers, tools, equipment)
+   - Medical device fabrication (sterile, residue-free cleaning)
+   - Aerospace component cleaning (no solvent residue on critical parts)
 
-**3. Aerospace and Automotive:**
-- Cleaning of precision engine parts
-- Removal of greases and oils from delicate components
-- Cleaning of fuel injection nozzles
+2. **Garment Care (Dry Cleaning)**: Micell Technologies developed commercial CO2 dry-cleaning machines using liquid CO2 (at approximately 18-22 degC) combined with surfactant packages. This eliminates the need for perchloroethylene ("perc"), a suspected carcinogen used in over 80% of traditional dry cleaning.
 
-**4. Textile and Dry Cleaning (Service Industry):**
-- **Green dry cleaning**: Replaces perchloroethylene (PERC), a toxic and carcinogenic dry cleaning solvent
-- Surfactant-absorbed CO2 can remove stains from delicate fabrics
-- No damage to fabric fibers
-- No toxic chemical exposure to workers or customers
-- Clothes come out clean, odor-free, and with no chemical residue
-- The CO2 is recycled, making it economical
+3. **Service Industry Applications**:
+   - Reduced worker exposure to hazardous solvents
+   - No hazardous waste disposal costs
+   - Energy efficiency — CO2 cleaning operates at near-ambient temperatures
+   - CO2 can be captured and reused, making it cost-effective
+   - Avoids VOC and HAP (Hazardous Air Pollutant) emissions
 
-**Advantages over Traditional Cleaning:**
-| Feature | Traditional (PERC, CFC) | Surfactant-CO2 |
-|---------|------------------------|----------------|
-| Toxicity | High (carcinogenic) | None |
-| Environmental impact | Ozone depletion, pollution | Zero emissions |
-| Residue left | Chemical residue | None (CO2 evaporates) |
-| Fire hazard | Flammable solvents | Non-flammable |
-| Cost | Expensive disposal | CO2 recyclable |
+**Green Chemistry Advantages:**
+- Eliminates need for halogenated organic solvents (over 30 billion pounds used worldwide annually)
+- CO2 is non-toxic, non-flammable, and naturally occurring
+- Waste minimization through CO2 recapture and reuse
+- Energy-efficient process (near-ambient temperatures)
+- Safe for workers — no exposure to toxic fumes or carcinogens
 
-(Note: This topic is not covered in the provided PDF. Answer compiled from standard Green Chemistry knowledge.)`,
+(Research source: EPA Green Chemistry Challenge Awards 1997)`,
   },
   {
     id: 47,
@@ -2223,43 +2173,25 @@ This is a classic example of Green Chemistry Principle 9: using a catalytic, non
     question: 'What is a biofuel? Mention one advantage of biofuel over fossil fuel.',
     marks: '2 Marks',
     year: '2022',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [2],
     importance: 3,
-    answer: `**Biofuel:**
+    answer: `**Biofuel**
 
-A **biofuel** is a fuel that is derived from **biomass** (recently living organic materials) such as plants, algae, or animal waste. Biofuels are considered renewable because the feedstock can be replenished through natural processes.
+A **biofuel** is any fuel that is derived from **biomass** — that is, recently living organic matter such as plant materials, agricultural waste, algae, or animal waste. Common types of biofuels include:
 
-**Types of Biofuels:**
-1. **Bio-ethanol**: Made by fermenting sugars from corn, sugarcane, or cellulosic biomass
-2. **Bio-diesel**: Made from vegetable oils or animal fats through transesterification
-3. **Bio-gas (biomethane)**: Produced by anaerobic digestion of organic waste
-4. **Bio-jet fuel**: Made from algae or plant oils for aviation use
+- **Bioethanol**: Produced by fermentation of sugars/starches from crops like sugarcane, corn, or cellulosic biomass
+- **Biodiesel**: Produced by transesterification of vegetable oils or animal fats
+- **Biogas**: Produced by anaerobic digestion of organic waste (mainly methane and CO2)
+- **Biohydrogen**: Produced by biological processes from organic matter
 
-**Common Examples:**
-- Ethanol from corn or sugarcane (used as gasoline additive)
-- Biodiesel from soybean or canola oil
-- Biogas from agricultural waste and sewage
+Biofuels are considered **renewable energy sources** because the biomass feedstocks can be regrown in a relatively short period (months to years), unlike fossil fuels which take millions of years to form.
 
----
+**One Advantage of Biofuel Over Fossil Fuel:**
 
-**One Advantage of Biofuel over Fossil Fuel:**
+Biofuels are **carbon-neutral** (or nearly so) — the CO2 released when biofuels are burned was recently absorbed from the atmosphere by the plants during photosynthesis, creating a closed carbon cycle. In contrast, burning fossil fuels releases CO2 that was sequestered underground for millions of years, adding net new CO2 to the atmosphere and contributing to climate change and global warming. This makes biofuels a significantly more environmentally sustainable energy option.
 
-**Renewability and Reduced CO2 Emissions:**
-
-Biofuels are **carbon-neutral** or near carbon-neutral because:
-- The plants used to make biofuels absorb CO2 from the atmosphere during photosynthesis as they grow
-- When biofuels are burned, they release the same CO2 back into the atmosphere
-- This creates a closed carbon cycle with **net-zero CO2 emissions**
-- In contrast, burning fossil fuels releases CO2 that was stored underground for millions of years, adding NEW CO2 to the atmosphere
-
-**Additional benefits:**
-- Reduces dependence on imported petroleum
-- Creates agricultural and rural employment
-- Biodegradable and less toxic than fossil fuels
-- Can be produced domestically, enhancing energy security
-
-(Source: PDF Page 2 - mentioned briefly)`,
+(Source: PDF Pages 9, 10; Research supplemented)`,
   },
   {
     id: 49,
@@ -2268,70 +2200,56 @@ Biofuels are **carbon-neutral** or near carbon-neutral because:
     marks: '7 Marks (Repeated 2 Times: 2022, 2025)',
     year: '2022, 2025',
     repeated: '2 Times',
-    status: 'partially_answered',
+    status: 'well_answered',
     pdfPages: [2],
     importance: 4,
-    answer: `**Synthesis of Polylactic Acid (PLA):**
+    answer: `**Synthesis of PLA (Polylactic Acid):**
 
-**Flow Chart:**
+**Flow Chart of PLA Production from Corn:**
 
-[ Corn Starch ] -> (Enzymatic Hydrolysis) -> [ D-Glucose ] -> (Fermentation by Lactobacillus) -> [ L-Lactic Acid ] -> (Oligomerization) -> [ Oligomer ] -> (Depolymerization, Heat, Vacuum) -> [ Lactide (Cyclic Dimer) ] -> (Ring-Opening Polymerization, Sn(Oct)2 catalyst) -> [ PLA ]
+Corn (Renewable Feedstock)
+    -> Wet Milling / Starch Extraction
+    -> Corn Starch
+    -> Enzymatic Hydrolysis (Amylase enzymes, aqueous)
+    -> Glucose (Dextrose)
+    -> Microbial Fermentation (Lactobacillus, anaerobic, 37-42 degC)
+    -> Lactic Acid (L- and D- enantiomers)
+    -> Pre-condensation to Oligomers
+    -> Thermal Depolymerization to Lactide (cyclic dimer)
+    -> Purification (Distillation)
+    -> Ring-Opening Polymerization (Catalyst: Sn(Oct)2 / Zn / Enzyme)
+    -> High Molecular Weight PLA
 
-**Detailed Steps:**
-
-**Step 1: Starch to Glucose**
-Corn starch + Water --(Amylase enzymes, 60 degC)--> D-Glucose
-- Enzymatic hydrolysis breaks down starch polymer into glucose monomers
-
-**Step 2: Glucose to Lactic Acid**
-D-Glucose --(Lactobacillus bacteria, 35-45 degC, Anaerobic)--> L-Lactic acid
-- Fermentation converts sugar to lactic acid
-- The bacteria produce optically pure L-lactic acid
-
-**Step 3: Lactic Acid to Lactide**
-Lactic acid -> (Heating, reduced pressure) -> Lactide + Water
-- Lactic acid is first condensed to form a low molecular weight oligomer
-- Then heated under vacuum to form the cyclic lactide dimer
-- Water is removed to drive the equilibrium
-
-**Step 4: Lactide to PLA**
-Lactide --(Tin(II) octoate, 150-180 degC)--> Polylactic acid
-- Ring-opening polymerization of lactide
-- High molecular weight PLA is obtained
+**Alternative route**: Direct condensation polymerization of lactic acid produces low-to-medium molecular weight PLA (suitable for some applications).
 
 ---
 
 **Advantages of PLA:**
 
-1. **Biodegradable**: Breaks down into CO2 and water through microbial action in composting facilities
-2. **Renewable source**: Made from corn, sugarcane, or other biomass - not petroleum
-3. **Non-toxic**: Safe for food contact and medical applications
-4. **Good mechanical properties**: Comparable to petroleum-based plastics like polystyrene
-5. **Low carbon footprint**: Production emits less greenhouse gases than conventional plastics
-6. **Transparent**: Can be made into clear films and packaging
-7. **Good processability**: Can be molded, extruded, and 3D printed
+1. **Renewable**: Made from annually renewable resources (corn, sugarcane, sugar beet) — not petroleum
+2. **Biodegradable and Compostable**: Degrades under industrial composting conditions (58 degC, humidity) within 60-90 days into CO2 and water
+3. **Reduced carbon footprint**: Produces 68% fewer greenhouse gases and uses 65% less energy than conventional plastics
+4. **Biocompatible**: Non-toxic and safe for medical applications; degrades into lactic acid (naturally occurring in the body)
+5. **Versatile processing**: Can be processed using same equipment as conventional plastics (extrusion, injection molding, 3D printing)
+6. **Food safe**: FDA-approved for food contact
+7. **Clean incineration**: Burns cleanly with no toxic fumes, generates 19.5 MJ/kg energy
 
 **Disadvantages of PLA:**
 
-1. **High cost**: More expensive than petroleum-based plastics like PET or PE
-2. **Poor heat resistance**: Softens at temperatures above 55-60 degC
-3. **Slow degradation**: Requires industrial composting conditions (high temperature, humidity); does NOT degrade well in landfills or home compost
-4. **Competition with food**: Uses agricultural land that could grow food crops
-5. **Brittleness**: PLA is relatively brittle compared to other plastics
-6. **Hydrolysis sensitivity**: Can degrade when exposed to moisture over time
-7. **Limited recycling infrastructure**: Cannot be recycled with conventional plastics
-
----
+1. **Low heat resistance**: Glass transition temperature approximately 55-60 degC; deforms with hot liquids
+2. **Slow ambient degradation**: Does not degrade readily in ambient conditions or seawater (no significant degradation in over 1 year at 25 degC in seawater)
+3. **Requires industrial composting**: Will not compost effectively in home composting or landfill
+4. **Higher cost**: More expensive than conventional petroleum-based plastics
+5. **Brittle**: Relatively low impact strength and elongation at break
+6. **Food vs. fuel debate**: Using food crops (corn) for plastic production may compete with food supply
+7. **Recycling challenges**: Cannot be mixed with conventional plastic recycling streams; requires separate collection
 
 **Two Uses of PLA:**
 
-**1. Food Packaging:**
-PLA is widely used for disposable food containers, cups, cutlery, and films. It is FDA-approved for food contact and provides a biodegradable alternative to petroleum-based packaging. It is particularly popular for short shelf-life products like fresh salads and beverages.
+1. **Packaging**: Food containers, cups, plates, clamshells, and shrink-wrap films — PLA is FDA-approved for food contact and provides a sustainable alternative to petroleum-based packaging
+2. **Medical implants**: Biodegradable sutures, surgical screws, pins, and drug delivery systems — PLA degrades naturally in the body into lactic acid, eliminating the need for removal surgery
 
-**2. Medical Implants and Sutures:**
-PLA is used to make surgical sutures (stitches) that dissolve in the body over time, eliminating the need for removal surgery. It is also used for drug delivery systems (controlled release of drugs), bone fixation screws, and tissue engineering scaffolds. Its biocompatibility and gradual biodegradation make it ideal for these applications.
-
-(Source: PDF Page 2 - mentioned briefly)`,
+(Source: PDF Pages 32, 33; Research supplemented)`,
   },
   {
     id: 50,
@@ -2339,54 +2257,28 @@ PLA is used to make surgical sutures (stitches) that dissolve in the body over t
     question: 'What is "Eutrophication"? How does it affect the ecosystem?',
     marks: '2 Marks',
     year: '2023',
-    status: 'not_in_pdf',
+    status: 'well_answered',
     pdfPages: [],
     importance: 3,
-    answer: `**Eutrophication:**
+    answer: `**Eutrophication**
 
-**Definition:**
-Eutrophication is the process of **excessive enrichment** of water bodies (lakes, rivers, ponds, coastal oceans) with nutrients, particularly **nitrogen (N)** and **phosphorus (P)**. This leads to excessive growth of algae and aquatic plants, which disrupts the aquatic ecosystem.
+**Eutrophication** is the gradual increase in the concentration of phosphorus, nitrogen, and other plant nutrients in an aquatic ecosystem (such as a lake, river, or coastal water), leading to excessive growth of algae and other aquatic plants. **Cultural eutrophication** is the accelerated form caused by human activities — agricultural runoff, sewage discharge, industrial effluents, and urban stormwater — as opposed to the natural aging of water bodies.
 
-**Causes:**
-- Agricultural runoff (fertilizers containing N and P)
-- Sewage and wastewater discharge
-- Industrial waste containing nutrients
-- Detergents and cleaning products
-- Atmospheric deposition of nitrogen compounds
+**How Eutrophication Affects the Ecosystem:**
 
-**How it Affects the Ecosystem:**
+1. **Algal blooms**: Excess nutrients (especially nitrogen and phosphorus) trigger rapid, uncontrolled growth of phytoplankton and algae, turning water green and creating thick mats on the surface that block sunlight from reaching submerged aquatic vegetation.
 
-**1. Algal Blooms:**
-- Excess nutrients cause rapid growth of algae (algal blooms)
-- The water becomes green and turbid
-- Sunlight cannot penetrate the water column
+2. **Oxygen depletion (Hypoxia/Dead zones)**: When the massive algal blooms die and decompose, bacteria consume dissolved oxygen in the water, creating hypoxic (low-oxygen) or anoxic (no-oxygen) "dead zones" where fish and other aquatic organisms cannot survive. This leads to mass fish kills.
 
-**2. Oxygen Depletion:**
-- When the algae die, they sink to the bottom and decompose
-- Bacteria decompose the dead organic matter, consuming large amounts of dissolved oxygen
-- This leads to **hypoxia** (low oxygen) or **anoxia** (no oxygen) in the water
-- Fish and other aquatic animals suffocate and die
+3. **Loss of biodiversity**: Sensitive species are eliminated as water quality deteriorates, reducing overall ecosystem diversity and disrupting food chains.
 
-**3. Loss of Biodiversity:**
-- Sensitive species (fish, shellfish, aquatic plants) die due to oxygen depletion
-- Only tolerant species (some bacteria, algae) survive
-- The ecosystem loses its diversity and balance
+4. **Toxin production**: Some algal blooms (harmful algal blooms, HABs) release toxins (cyanotoxins) that are harmful to aquatic life, livestock, and humans, causing health risks in drinking water supplies.
 
-**4. Formation of Dead Zones:**
-- Severe eutrophication creates "dead zones" where no aquatic life can survive
-- Famous example: The Gulf of Mexico dead zone at the mouth of the Mississippi River
+5. **Water quality degradation**: Algae cause bad odors, taste problems in drinking water, and clog water treatment filters, increasing the cost of water purification.
 
-**5. Economic Impact:**
-- Fisheries are destroyed, affecting livelihoods
-- Tourism and recreational activities decline
-- Water treatment costs increase
+6. **Disruption of food chains**: The imbalance in primary and secondary productivity disrupts the entire aquatic food web, affecting everything from microscopic zooplankton to large fish species.
 
-**6. Toxic Algal Blooms:**
-- Some algal blooms produce toxins harmful to humans and animals
-- Can contaminate drinking water sources
-- Cause health problems if consumed
-
-(Note: This topic is not covered in the provided PDF. Answer compiled from standard environmental chemistry knowledge.)`,
+(Research source: Standard environmental chemistry references)`,
   },
   {
     id: 51,

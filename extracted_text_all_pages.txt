@@ -1,0 +1,1043 @@
+================================================================================
+PAGE 3
+================================================================================
+Use of catalyst decreases the energy requirement, increases the efficiency with respect to rate and decreases waste materials.
+
+10. Design products for degradation : Chemical products should be designed in such a way that at the end of their function they do not persist in the environment and break down into innocuous degradation products. That is usual life-time, a product will degrade to materials which are not harmful to environment. For example, non-biodegradable polymers like plastic, polyethene, terelyne, nylon etc cause problem to the environment, but biodegradable polymers like polypropylene carbonate is not harmful as they degrade after their usual life-time.
+
+11. Real-time analysis for pollution prevention: Include in-process, real-time monitoring and control during syntheses to minimize or eliminate the formation of byproducts. i.e., real time analysis is the process of checking the progress of chemical reactions as it happens. This analysis informs the completion of desired work and saves time, energy and also reduces the formation of waste.
+
+12. Inherently safer chemistry for accident prevention: Substances and the form of a substance used in a chemical process should be chosen so as to minimize potential for chemical accidents including explosions, fires, and release of toxic materials to the environment.
+
+In the Bhopal gas tragedy in 1984, 40 tons of methyl isocyanate (MIC) gas was accidentally released in UCIL. Around 15000 people died. Chemists should try to avoid substances those are explosive, inflamable or are air sensitive.
+
+In 2005, Paliakoff (Editor of Green Chemistry Journal) proposed a new mnemonic ‘PRODUCTIVELY’ which describes all the 12 principles of 'Green Chemistry' as follows:
+
+'P' for Prevent waste; 'R' for Renewable materials; 'O' for Omit derivatization step; 'D' for Degradable chemical products; 'U' for Use of safe synthetic method; 'C' for Catalytic reagents; 'T' for Temperature, pressure ambient; 'I' In-process monitoring; 'V' for Very few auxiliary substrates; 'E' for E-factor, maximize feed of reactants in product; 'L' for Low toxicity of chemical products; 'Y' Yes, it is safe.
+
+Prevention of Waste/By-Products
+
+A chemical process/reaction must be carried out in such a manner so as to reduce/minimize or completely eliminate the production of wastes. Waste prevention is necessary because of the following reasons:-
+
+  If a process produces waste, it invokes the need for its treatment/disposal, which in turn amounts to additional expenditure.
+
+  Secondly if the waste is toxic or hazardous, the release of waste in to the environment leads to its pollution, which further invokes the need of treatment, causing additional expenses.
+
+So we must try to devise processes/reactions that minimize the production of wastes to the best possible extent. Since majority of the reactions produce the byproducts in addition to the normal desired product, we may say the byproducts of reactions are wastes.
+
+A measure of waste known as E-factor (Environment factor) has been described by R. A. Sheldon who defined it as the ratio of the mass of waste (kg) to the mass of desired products (kg).
+
+3
+
+================================================================================
+PAGE 4
+================================================================================
+E-factor, also known as Environmental (Mass) efficiency factor is calculated as:
+
+E-Factor = Mass of the actual waste product
+          Mass of the desired product
+
+Synthesis of hydroquinone is considered in two ways. Classical route (route-a) produces 10 kg of inorganic salts (like MnSO₄, FeCl₂, NaCl, Na₂SO₄) per kg of hydroquinone, whereas, the catalytic process 'route-b' produces <1 kg of inorganic salt per kg of hydroquinone.
+
+[Reaction scheme showing route-a and route-b for hydroquinone synthesis with reagents: H₂SO₄, HNO₃, Fe/HCl, MnO₂, O₂, H⁺, -2Me₂CO, and intermediates with NO₂, NH₂, HOO groups]
+
+Therefore,
+• It is better to prevent waste/By-Products than to treat or clean up waste after it is formed
+• Carry out a synthesis in such a way so that formation of waste (by-roducts) is minimum or absent
+• Cost involved in the treatment and disposal of waste adds to the overall production cost.
+• The unreacted starting materials also form part of the waste.
+• If discharged causes pollution and requires expenditure for cleaning-up
+
+Maximum Incorporation of the Reactants into the Final Product/ Atom economy
+
+Synthetic methods should be designed to maximize the incorporation of all materials (Starting materials and reagents) used in the process into the final product.
+
+The concept of atom economy in chemical synthesis : To synthesise a particular chemical product, all the atoms of the reactants used may not be always incorporated in the desired product. The atoms which are not incorporated in the product are involved to generate the by-product and waste product which may be environmentally hazardous. To have a quantitative idea regarding the amount of waste product and by-product generated in a particular reaction, we can consider the idea of % atom utilization defined as follows :
+
+% Atom utilization = Formula weight of the desired product
+                   Formula weight of (desired product + waste and by-product) × 100
+
+But, very often it is difficult to identify the waste and by-products. To avoid this, the concept of % atom economy has been introduced. Atom economy also gives the measure of the unwanted product produced in a particular reaction. It is defined as –
+
+% Atom economy = Formula weight of the desired product
+                Sum of formula weight of all the reactants used in the reaction × 100
+
+A fully and correctly balanced equation is used for the calculation of atom economy. The higher the number, the reaction is more economical.
+
+4
+
+================================================================================
+PAGE 5
+================================================================================
+Basic differences between Atom economy (AE) and E-factor: From a balanced stoichiometric equation the atom efficiency calculations can be done without performing any experiment.  
+➤ While calculating AE, amount of solvent, acid or base used during work-up are not taken into account as they do not appear in the stoichiometric equation. Whereas during consideration of E-Factor, the actual amount of waste produced in the process is considered. It includes all reagents, solvent-loss and all process aids.  
+➤ An ideal atom economy (AE) is 100, whereas ideal E-factor is zero. (Amount of water used in the process is generally avoided in the calculation.)  
+Simple way to calculate E-Factor = $\frac{\text{Kg of raw materials} - \text{Kg of desired product}}{\text{Kg of the desired product}}$  
+
+As we move from bulk chemicals (e.g., ammonia, sulfuric acid) to fine chemicals (e.g., pharmaceuticals, agro-chemicals), the E-factor increases significantly. This is because, bulk chemicals are made through highly efficient, continuous processes with minimal waste, whereas, fine chemicals often require multi-step synthesis with lower yields, leading to more waste.  
+Also, Fine chemical synthesis involves extensive use of organic solvents, catalysts, and reagents that generate significant waste, but bulk chemical production typically operates in aqueous or gas-phase systems with higher atom economy.  
+Typical E-Factor Ranges:  
+* Bulk chemicals: <1 (near-zero waste)  
+* Fine chemicals: 5-50  
+* Pharmaceuticals: 25->100 (due to extensive synthetic steps and purification)  
+
+Thus, transitioning from bulk to fine chemicals results in a significant increase in the E-factor due to lower efficiency, multi-step synthesis, and extensive solvent/reagent use.  
+
+Another term 'Effective Mass Yield' was introduced by Hudlicky  
+% Effective Mass Yield (EMY) = $\frac{\text{Mass of desired product}}{\text{Total mass of non-benign reactants used in its preparation}} \times 100$  
+
+EMY suffers from the following drawbacks:  
+(a) EMY does not include NaCl, AcOH, etc. which are considered as environmentally benign compounds, but they are not completely benign.  
+(b) Defining non-benign is difficult and arbitrary.  
+
+Considering all these, it may be considered that Atom Economy and E-Factor are most acceptable terms in Green Chemistry. AE gives a quick idea of conducting an experiment and E-factor gives the final result after doing the experiment.  
+
+Calculation of atom economy :  
+1. Substitution reaction : Let us consider the following reaction which aims to produce the desired product 1-bromo butane.  
+
+$\text{CH}_3\text{CH}_2\text{CH}_2\text{CH}_2\text{—OH} + \text{NaBr} + \text{H}_2\text{SO}_4 \rightarrow \text{CH}_3\text{CH}_2\text{CH}_2\text{CH}_2\text{—Br} + \text{NaHSO}_4 +\text{H}_2\text{O}$  
+
+% Atom economy = $100 \times \frac{\text{Mass of (4C + 9H + 1Br) atoms}}{\text{Mass of (4C + 12H + 5O + 1Br + 1Na + 1S) atoms}}$
+
+================================================================================
+PAGE 9
+================================================================================
+BU – 2024 :
+1. What is the ideal value of Atom Economy (AE) and E-factor?
+2. What are benign solvents? Give two examples.
+3. Differentiate between Atom Economy and E-Factor.
+4. Mention two reasons why green chemistry is also called sustainable chemistry. Calculate the atom economy for olefination of cyclohexanone by Wittig method. [Given, At. Wt: P=31]
+5. Acetophenone can be synthesized by the two different methods as given below. Calculate Atom Economy and E-Factor for both the methods to establish the fact that "catalytic reagents are superior than stoichiometric ones".
+Method 1:
+3
+Ph
+OH
+Me
++ 2 CrO₃ + H₂SO₄ → 3
+Ph
+O
+Me
++ Cr₂(SO₄)₃ + 6H₂O
+Method 2:
+Ph
+OH
+Me
++ 0.5 O₂ catalyst →
+Ph
+O
+Me
++ H₂O
+6. Discuss any four principles of green chemistry.
+BU – 2025 :
+1. Mention two important differences between 'Atom Economy' and 'E-factor'.
+2. What are the two principles of green chemistry relating to industrial viability of synthesis?
+3. Why is green chemistry called sustainable chemistry?
+4. Esterification of butanol with acetic acid can be illustrated by the following equation which proceeds with 69% yield.
+CH₃(CH₂)₃OH + CH₃CO₂H → CH₃CO₂(CH₂)₃CH₃ + H₂O
+Further information about the transformation is given as:
+Chemical
+Wt.(g)
+Butanol
+37
+Glacial Acetic Acid
+60
+Conc. H₂SO₄
+Catalytic
+n-Butyl Acetate
+40
+i) Calculate Atom Economy, E-Factor, EMY (Effective Mass Yield) for the above reaction.
+ii) Point out the green context of the reaction in terms of each of the environmental factors calculated by you.
+
+================================================================================
+PAGE 10
+================================================================================
+Green solvents :
+
+Solvent is the major constituent of a reaction mixture and becomes the prime source of waste mass in a synthetic process. Volatile organic solvents are released into the environment by evaporation, since they are used in much higher proportions than the reagents themselves. Most of the organic solvents suffer from their toxicities, hazards, flammability and explosive nature. They cause pollution in troposphere and depletion of ozone layer in the stratosphere.
+
+The ideal “green” solvent should have a high boiling point, low vapour pressure, no toxicity, dissolve numerous organic compounds, cheap and, naturally recyclable. The main alternative to organic solvents are – i) solvent free process ii) water based chemistry iii) supercritical fluids (particularly water and carbon dioxide) iv) ionic liquids v) fluorous biphasic system etc.
+Therefore, the different green solvents used are water, scCO₂, ionic liquids, renewable solvent from bio-mass etc.
+
+Supercritical fluids :
+
+The state of a substance at a temperature and pressure above its critical point is called supercritical fluids, where distinct liquid and gas phases do not exist.
+Critical temperature of a substance is the temperature at or above which the gas cannot be liquefied by increasing pressure. At the triple point, all three phases (solid, liquid and gas) coexist. However, the liquid-vapour boundary terminates at a point having critical temperature Tc and critical pressure Pc, this point is called critical point. Above this region it is called supercritical fluid. A supercritical fluid exhibits properties in between a gas and a liquid.
+
+CRITICAL POINT
+304° K = 31° C = 88° F
+13.8 bar = 7.38 Mpa
+= 1,070 psi
+
+
+Supercritical carbon dioxide as solvent :
+
+Among CO₂, N₂O, NH₃, n-butane supercritical fluids, carbon dioxide is commonly used because of the following properties: (i) non-toxic (ii) non-flammable (iii) cheap (iv) readily compressible at room temperature (v) readily obtained as by-product in many processes including fermentation of bio-mass (vi) readily available under compressed condition and (vii) critical temperature and pressure can be attained comparatively easily.
+
+Utility of using scCO₂: The critical temperature and pressure of CO₂ are 31.1°C and 73 atm respectively. It possesses properties in between a gas and a liquid. It exhibits diffusivity like a gas and acts as a solvent like light petroleum (a mixture of hydrocarbons like pentanes and hexanes). Such dual properties are very much useful for reactions involving gaseous reagents like H₂ for hydrogenation, O₂ for oxidation and syn gas (mixture of CO, H₂, CO₂) for hydroformylation.
+
+================================================================================
+PAGE 11
+================================================================================
+To avoid the organic solvent in extraction process, scCO₂ can be employed as a green replacement of organic solvent. The extracted material can be recovered by releasing the pressure of CO₂. It is safe to use for extraction process in food industries due to its non-toxic nature and leaves no harmful residues. Another advantage of scCO₂ is enhanced safety due to fire-suppression capability of CO₂.  
+Solubility of different compounds can be controlled by adjusting pressure and temperature, allowing for precise extraction of desired flavours and active ingredients.  
+
+Decaffeination of coffee beans using scCO₂ is a popular decaffeination process because the caffeine can be recovered from the scCO₂ by extraction with water rather than releasing the pressure. Unlike chemical solvents, scCO₂ does not alter the taste of the coffee. Also, scCO₂ is non-toxic, environment friendly and can be recycled, making the process cost-effective. Additionally, it leaves no harmful residues, ensuring the coffee remain safe for consumption. Therefore, Decaffeination of coffee beans using scCO₂ is a popular and economically viable.  
+
+Drawbacks of scCO₂ :  
+1. Although use of scCO₂ as reaction medium increases yield, regioselectivity and stereoselectivity of many reactions compared to the use of common organic solvents, but all are accomplished in very small scales and using dilute solutions. Commercial scale reactions in scCO₂ are very difficult to accomplish. Reactions are performed in batch process using sealed autoclaves. It is difficult to scale up as it requires a large pressure vessel.  
+(Batch process is a process where reactions are carried out in batches and product is collected batch-wise; whereas in continuous process products could be obtained continuously and react- ants can be added continuously.)  
+
+2. In this system, it needs to work under high pressure. Properly devised laboratory is required. Ionic Liquid is better in this respect.  
+3. Inadequate solubility of reagents and catalysts in scCO₂ is another limitation.  
+4. The reactions pass through polar transition states are very slow in scCO₂.  
+
+A few examples of organic reactions in scCO₂ :  
+1. Hydrogenation : Both homogeneous/ heterogeneous phase hydrogenation are carried out using scCO₂.  
+
+2. Hydroformylation : Addition of equivalent amount of CO and H₂ to an alkene produce oxygenated organic compounds, mainly aldehydes. This reaction is known as hydroformylation.  
+
+3. Oxidation: Oxygen and CO₂ are completely miscible under supercritical conditions at all conc. Further CO₂ cannot be oxidized during catalytic oxidation. Hence oxidation reactions in scCO₂ eliminate side product formation due to oxidation of organic solvent.
+
+================================================================================
+PAGE 12
+================================================================================
+Q. Mention two advantages of using sc-CO₂ (supercritical CO₂) as solvent for organic synthesis.  
+A. Two advantages of using sc-CO₂ (supercritical CO₂) as solvent for organic synthesis are –  
+- Eco-friendly: sc-CO₂ is safe for environment because it is non-toxic and can be recycled. It reduces the need for harmful organic solvents, making the process greener and safer.  
+- Adjustable properties: By changing the pressure and temperature, the dissolving power of sc-CO₂ can be controlled, helping to improve reaction rates and selectivity for different organic compounds.  
+
+Water as solvent in organic reactions:  
+Among all the above-mentioned environmentally benign solvents, water is the most innocuous solvent because it offers many additional advantages like cheap, ready-availability, non-toxic and non-flammable and is beneficial with respect to both economy and environment.  
+
+Poor solubility of organic compounds in water was the only cause of ignoring water as solvent in organic reactions. But the nature has proved water to be the common means of communication of life on our planet by performing all critical biological reactions in water despite of poor solubility of organic compounds in water.  
+
+Taking lessons from nature, chemists are now increasing their skill to carry out organic reactions in water. The first organic reaction in aqueous medium was the preparation of urea from ammonium cyanate. The most widely studied reaction in aqueous medium is cycloaddition reaction.  
+
+Relative rate of Diels-Alder reaction between cyclopentadiene and butenone:  
+
+| Solvent       | Relative rate |  
+|---------------|---------------|  
+| Isooctane     | 1             |  
+| MeOH          | 12.7          |  
+| H₂O           | 740           |  
+| H₂O [4 (M)    | 1818          |  
+| LiCl]         |               |  
+
+Ronald Breslow used very dilute aqueous solution of cyclopentadiene and butenone and the rate of the reaction was 740 times faster than the reaction in non-polar solvent isooctane and also the endo : exo selectivity increased from 3.85 to 21.4 (discuss later).  
+
+It is noticeable that use of methanol (a polar protic solvent like water) the rate of the reaction is closer to non-polar solvent, again addition of LiCl in water enhances the rate markedly by increasing hydrophobic effect of water. LiCl acts as a ‘water structure maker’. But addition of guanidinium chloride has no significant effect on the rate of the reaction as it exhibits anti-hydrophobic activity by providing bridging between solute and water, ie ‘water structure breaker’.  
+
+Properties of water:  
+Besides the environmental and economic benefits, water possesses many interesting inherent properties which make water a unique reaction medium. These properties are as follows:  
+- It remains liquid for a large range of temperature.  
+- High heat capacity: Exothermic reactions will be safer and selective because of the high heat capacity of water. Due to higher heat capacity of water, the temperature-rise will be small for a particular amount of heat and saves the product from decomposition.  
+[Heat capacity is defined as the amount of heat required to increase the temperature of the system by 1°C].  
+
+** Further enhancement of rate on addition of LiCl:  
+1. Li⁺ acts as a Lewis acid and co-ordinates with the carbonyl oxygen of MVK. This co-ordination lowers the LUMO energy of the dienophile, making it more electrophilic and more reactive toward diene (cyclopentadiene).  
+2. Addition of LiCl also increases the ionic strength of the aq. medium, which strengthens hydrophobic interaction and brings the reactants closer together.  
+
+Therefore, the reaction rate increases further in addition of LiCl in water.
+
+================================================================================
+PAGE 13
+================================================================================
+• Capable of forming extensive H-bond.
+• It has relatively low viscosity which helps in ease of solute movement.
+• High dielectric constant (about 78 at 25°C) better solvation and minimises kinetic complexities due to ion-pair formation.
+• Optimum solubility of oxygen in water to maintain aquatic life.
+• Hydrophobic effect: This was introduced by Breslow to explain the Diels-Alder reaction in aqueous medium. The phenomenon of repulsion of non polar substance by water is referred to as 'Hydrophobic Effect'.
+
+The organic molecules having mostly covalent bonds are repelled by polar solvent water and form an aggregate. Such small aggregates of organic reactants remain surrounded by water and water molecules form H-bond laterally along the surface of the small hydrophobic aggregate (shown in Fig.). Under this condition the mobility of the water molecules on the surface of the aggregates decreases than the bulk molecules. The force by which the hydrophobic organic molecules are held together is called the hydrophobic interaction.
+
+These forced aggregates of organic molecules energized by the pressure developed by the surrounded H-bonded water molecules than the ground state organic molecules and the energy of the aggregate becomes close to the transition state and the reaction proceeds.
+
+Q: How the activation energy is gained by the substrates in a Diels-Alder (DA) reaction in water?
+A. The lateral H-bonding by water around the hydrophobic reactant aggregate imparts a force on the aggregate and it gets energized and reaches the transition state.
+
+Q. How can you explain the rate acceleration of Diels-Alder reaction in water compared to organic solvent?
+A. The rate acceleration of Diels-Alder reaction in water compared to organic solvents can be explain primarily due to the hydrophobic effect and transition state stabilization. The mostly nonpolar diene and dienophile are poorly soluble in water, causing them to aggregate to minimize contact with water. This increases their local concentration, raising the chances of a successful reaction.
+
+Additionally, in the activated complex the reactive sites lose their hydrophobic character and interact with the polar solvent water. This stabilizes the transition state through hydrogen bonding, lowering the activation energy and enhances rate of the reaction.
+
+Q. What is 'negative activation volume'? Give an example of a reaction with 'negative activation volume'.
+A. If the molar volume of the excited complex is smaller than the total molar volumes of the reactants in the ground state, it is considered as 'negative activation volume'.
+
+The volume of activation will be negative if two molecules in the ground state combine to form a single species in the transition state. So, all cycloaddition reactions are with 'negative activation volume'. Also, for endo product, the molecule is more compact and offers greater negative volume of activation than exo product.
+
+================================================================================
+PAGE 14
+================================================================================
+In the reaction between cyclopentadiene and methyl vinyl ketone, the endo-exo stereoselectivity of the Diels-Alder adduct in water is also very high.  
+Solvent	Endo:exo ratio  
+Neat*	3.85  
+EtOH	8.5  
+H₂O	21.4  
+
+The endo-exo selectivity can also be explained by considering the relative negative volume of activation. For endo product, the molecule is more compact and offers greater negative volume of activation. Greater the external pressure on the small hydrophobic aggregate resulted from the hydrophobic effect of solvent, easier will be to reach the transition state by decreasing the volume.  
+
+Q. Consider the following Diels Alder reaction.  
+
+Solvent	endo: exo  
+EtOH	8.5  
+H₂O	21.4  
+
+Comment with proper justification why greater endo selectivity is observed in water. Why most Diels-Alder reaction is reasonable faster in water than methanol.  
+
+The hydrophobic effect in water forces the diene and dienophile to align more efficiently, promoting the endo transition state. Water's high polarity and hydrogen bonding stabilize the polar transition state, favoring endo selectivity due to better secondary orbital interactions.  
+Also, endo product, the molecule is more compact and offers greater negative volume of activation than exo product. So greater 'negative activation volume' is observed for endo product and facilitated by solvent with higher hydrophobic effect.  
+
+The hydrophobic effect is significantly stronger in water due to its highly organized hydrogen-bonding network. In methanol, the effect is weaker because the methyl group disrupts the hydrogen bonding.  
+Diels-Alder reactions are faster in water than in methanol due to the stronger hydrophobic effect driving reactant aggregation, more effective transition state stabilization via H-bonding and the higher polarity of water, which lowers the activation energy, accelerating the reaction.  
+
+A few examples of organic reactions in aqueous Medium :  
+
+Water has proven itself as a very useful solvent for many types of reactions including Diels-Alder cycloaddition reaction, Claisen rearrangement, carbon-carbon bond forming reactions, epoxidation process and alcohol oxidation. Some examples of synthetic organic reactions are given as:  
+
+Passerini reaction : It has been observed that the Passerini reaction gives 100 % yield in water in only 3.5 h, 50 % yield in DCM in 18 h and 15 % yield in formamide in 24 h.  
+
+13
+
+================================================================================
+PAGE 15
+================================================================================
+Claisen rearrangement :
+Yield
+Water – 100%
+CH₃CN – 27%
+23°C
+120h
+Cl
+OH
+Cl
+Diels-Alder reaction : A typical example is the Diels-Alder reaction between cyclopentadiene and butenone. It has
+been found that this reaction occurs 700 times faster in water compared to the isooctane.
+Solvent
+Relative rate
+Isooctane
+1
+MeOH
+12.7
+H₂O
+740
+20 °C
+endo
+exo
+Wittig reaction : Wittig reaction has been carried out in water with stabilized ylide with various aldehydes. It has
+been observed that aldehydes having more hydrophobic region facilitates the reaction in water.
+CHO
+Water, 20 °C
++ Ph₃P=
+OMe
+OMe
+2 h
+OMe
+C OMe
+At higher temperature:
+Water behaves differently at higher temperatures (above its boiling point at atmospheric pressure). At temperatures
+of more than 200°C, water becomes as good as an organic solvent. It is believed that water behaves like acetone at a
+temperature of 300°C. Under high pressure and temperature water losses many intermolecular H-bonds and behave
+like an organic solvent. On the other hand it ionizes at higher temperature to H₃O⁺ and OH⁻ and becomes more
+ionic. For example, Geraniol isomerizes to α-Terpineol and linalool in water at 220 °C.
+HO
+OH H₂O
+220 °C
+Geraniol
+α-Terpineol linalool
+Q. At high temperature water becomes more like organic solvent-do you agree with the statement? Justify
+your answer with at least two reasons.
+Q. Mention two characteristics of water that makes it a benign solvent.
+1. High dielectric constant: water has high dielectric constant, which reduces the attraction between oppositely
+charged ions, making it easier for ionic compounds to dissolve.
+2. Ability to form hydrogen bonds: Water can form hydrogen bonds with polar molecules and ions, helping to
+dissolve a wide variety of substances effectively.
+At high temp, water becomes more like organic solvent, Due to 14
+1. Decrease in dielectric constant
+At higher temp, the dielectric constant of water decreases significantly,
+making water less polar, therefore, it behaves similar to organic
+solvent.
+2. Disruption of hydrogen bonding:
+
+================================================================================
+PAGE 16
+================================================================================
+Ionic Liquids (IL) :
+Commonly ionic compounds are high melting solids and are mostly inorganic compounds. They form ionic crystals having high lattice energy and high melting point. If cations and anions of ionic compounds are designed in such a way that the ions cannot fit themselves nicely in an ionic crystal, the lattice energy will be very low and hence will have a low melting point. This is the basis of formation of ionic liquid.
+
+Ionic liquid is a low melting ionic compound with melting point less than 100 °C. Those ionic compounds exist in the liquid state at room temperature are called RTionic liquid. In recent years with the awareness of green chemistry, ionic liquid has made its position as a green solvent.
+
+An ionic liquid comprises of a (nitrogen containing) organic cation and inorganic anion. Since one part is large and other is small, it creates asymmetry in the compound which makes it a low melting.
+
+A few special features of ionic liquids are: (i) it is a non-molecular solvent and consists of cations and anions only, (ii) Stable at high temperature which makes them better for carrying out reactions at high temperatures, (iii) low flammability, (iv) non-corrosive,
+(v) negligible vapour pressure, which is the most important property that helps it act as a sustainable solvent.
+
+Ionic liquid becomes an attractive alternative to volatile organic solvents which are environmentally not benign (friendly) because of their high vapour pressure; volatile organic solvents continuously make the environment unfriendly. Ionic liquids are mostly combinations of delocalized heterocyclic cations and large sized polyatomic anions. As the ionic liquid contains cations and anions, so varying the nature of the ions the properties of ionic liquid can be tuned according to the need. That's why it is also called a 'designer solvent'.
+
+The first room temperature ionic liquid is alkylammonium nitrate (EtNH₃.NO₃). Most of the ionic liquids are composed of organic cation and inorganic anions. The most common cation employed in ionic liquids is imidazolium cation. Other common cations are ammonium, phosphonium, thiazolium etc.
+The anion should be non-nucleophilc to avoid attack of anion on the electrophilic cation. The most common non-nucleophilic anions used in ionic liquids are BF₄⁻, PF₆⁻, AlCl₄⁻. Other anions are triflate, tosylate, sulphonate etc.
+Few examples are –
+
+[emim][X]          [bmim][X]            [bpy][Cl]
+X = BF₄, PF₆, NO₃, ClO₄    X = BF₄, PF₆, AlCl₄
+
+[6-mim][PF₆]        [pmpy][BF₄]
+
+emim → 1-ethyl-3-methylimidazolium
+bmim → 1-butyl-3-methylimidazolium    bpy → 1-butylpyridinium    pmpy → N-propyl-4-methylpyridinium
+
+Example: [emim][BF₄] → 1-ethyl-3-methylimidazolium tetrafluoroborate
+[bpy][Cl] → 1-butylpyridinium chloride
+[6-mim][PF₆] → 1-hexyl-3-methylimidazolium hexafluorophosphate
+
+================================================================================
+PAGE 17
+================================================================================
+Regarding the synthesis of ionic liquid two things are to be considered: (i) anion should be stable, non-nucleophilic and (ii) IL (ionic liquid) should be less expensive.
+
+Q. In the successful synthesis of an ionic liquid (IL) what are the two important factors that should be maintained ?
+
+Purity: Ionic liquid is free from impurities like water, unreacted starting materials and side products for maintaining its physical and chemical properties.
+
+Moisture and air control: Many ionic liquids are hygroscopic and sensitive to air. Proper handling under an inert atmosphere (like nitrogen or argon) and avoiding moisture absorption are essential to preserve their stability and performance.
+
+Ionic liquid can replace the conventional solvents because of the following reasons :
+
+- Due to comparable polarity with the common organic solvents, ionic liquid is a good substitute of common organic solvents.
+
+- IL is green solvent due to negligible vapour pressure, while the common volatile organic solvents act as pollutant to the environment.
+
+- Ionic liquids have Lewis/Bronsted acidity, which can be tuned by changing the structure of the IL.
+
+- The ILs can be reused which reduces the operating cost of a process.
+
+A few example of organic reactions in IL (Ionic liquid) :
+
+Knoevenagel condensation: 1-Hexyl-3-methylimidazolium hexafluoro-phosphate [6-mim] PF₆ has been employed in Knoevenagel reaction to give good yield under green reaction conditions.
+
+PhCHO + CH₂(CN)₂  HO  NH₂ (0.2 eq)  [6-mim]PF₆, RT  H  CN  Ph  CN
+
+Sonogashira Reaction: Aryl halide and terminal alkyne undergoes coupling reaction using Pd-catalyst in the presence of Cu salt in Sonogashira reaction. This reaction can be achieved in ionic liquid in the absence of Cu salt.
+
+ArI + H—≡—R.  PdCl₂(PPh₃)₂  Ar—≡—R  
+[bmim]PF₆  
+piperidine or iPr₂NH
+
+Diels-Alder reaction : Sc(OTf)₃ catalysed Diels-Alder reaction in ionic liquid.
+
+Sc(OTf)₃  
+(0.2 mol%)  
+[bmim]OTf,  
+2 h, 20 °C
+
+Preparation of chiral ionic liquid having chiral cation as follows:
+
+H₂N  NHMe  + R²CO₂H  N  N  Me  R¹-Br  R¹-N  N  Me  anion  R¹-N  N  Me  
+Br⁻  PF₆⁻
+
+================================================================================
+PAGE 18
+================================================================================
+Fluorous biphasic system :
+Fluorous means having high affinity towards fluorocarbon. High fluorinated compounds are also called Fluorous compound. Fluorous liquids have quite unusual properties and these include high density, high stability (mainly due to the stability of the C–F bond), low dissolving ability and extremely low solubility in water and organic solvents.
+Perfluoropentane
+(Perfluorous solvents)
+Fluorous solvents are non-polar and immiscible with organic solvents or water. Some organic solvents although immiscible with fluorous solvents at room temperature but forms a homogeneous mixture at elevated temperature.
+The reactions that take place in fluorous solvents show a somewhat different trend in comparison to the other alternative green solvents. Due to the fact that they are extremely non-polar, they are inappropriate to perform most chemical reactions and are used together with conventional organic solvents to give biphasic mixtures. Use of a fluorous solvent and an organic solvent in a reaction is called a fluorous biphasic solvent (FBS).
+In such a biphasic mixture, the soluble reagent or catalyst is in the fluorous phase while the starting materials are dissolved in the immiscible solvent phase, which could be an organic solvent, water or non-organic solvent. These two distinct layers are homogenized upon heating, the reactants come into contact with one another and the reaction takes place. After completion of the reaction, when reaction mixture is cooled, the two layers separate again, with the reaction products remaining in the organic phase while the catalyst remains in the fluorous phase. This situation allows an easy separation of the reaction products and catalyst and the catalyst recycling without the use of an organic solvent for extraction. Such system is non-toxic, can be used several times, and allows the easy separation of the catalyst from the reagents and products.
+Substrates
+(Organic phase)
+Catalyst
+(Fluorous phase)
+mixture of
+Substrate
+and
+Catalyst
+Product
+(Organic phase)
+Catalyst
+(Fluorous phase)
+Heating
+Cooling
+Catalyst recycling
+Low temperature
+(biphasic)
+High temperature
+(monophasic)
+Low temperature
+(biphasic)
+Example : Biphasic solvent is often used for hydroformylation reaction. Toluene and perfluoromethylcyclohexane solvents are used in the hydroformylation reaction (Scheme below). Fluorous rhodium catalyst remains soluble in perfluoro-methylcyclohexane and RCH=CH₂ remains in toluene in a biphasic system at room temperature. On heating it forms a homogeneous reaction mixture and then CO and H₂ gases are introduced into the reaction mixture. After completion of reaction, the reaction mixture is cooled to get the biphasic system back. Under this condition the catalyst remains in the fluorous solvent, which can be reused and the product reamin in the organic phase.
+R
++ CO + H₂
+Rh(H)(CO)[P(CH₂CH₂(CF₂)₅CF₃)₃]₂
+CHO
+R
+RT
+RCH=CH₂
+RCH₂CH₂CHO
+Organic solvent
+Organic solvent
++CO+H₂
+Heat
+Homogeneous
+reaction mixture
+Cool
+Flourous solvent
+Flourous solvent
++ product
++ catalyst
+17
+
+================================================================================
+PAGE 19
+================================================================================
+Fluorous biphasic solvents (FBS) are solvent systems consisting of a highly fluorinated phase (fluorous phase) and a conventional organic or aqueous phase. These systems have unique properties that make them useful in various chemical processes, especially in catalysis and organic synthesis. Here are the key advantages and disadvantages of fluorous biphasic solvents:
+
+Advantages:
+- Fluorous solvents are immiscible with most organic and aqueous solvents, allowing easy separation of the reaction product from the catalyst.
+- Catalysts dissolved in the fluorous phase can be easily recovered and recycled, reducing waste and costs.
+- Solvents provide a chemically inert environment that can improve the stability and longevity of catalysts.
+- Recycling of fluorous solvents and catalysts minimizes the need for toxic organic solvents, reducing environmental pollution.
+
+Disadvantages:
+- Fluorous solvents and fluorous-tagged reagents are expensive, increasing the overall cost of the process.
+- Some fluorinated compounds are persistent in the environment and may show ecological risks. Toxic gaseous fluorine or HF is required for their production.
+
+Q. What characteristics of fluorous solvent that make it a biphasic solvent and why?
+
+A. The characteristics of fluorous solvent that make them biphasic are -
+- Fluorous solvents consist mainly of fluorinated hydrocarbons (perfluorinated or partially fluorinated compounds). The strong C-F bonds result in low polarizability and low polarity, which makes them chemically inert and poorly miscible with both water and most organic solvents.
+- Fluorous solvents are denser than both water and organic solvents, causes them to settle as a separate layer.
+- Fluorous solvents dissolve fluorinated compounds well but have poor solubility for non-fluorinated substances, prevent mixing, resulting in stable phase separation and effective biphasic behaviour.
+
+Polyethyleneglycol (PEG) :
+
+Polyethylene glycol, a polyether, is a linear polymer formed from the polymerization of ethylene oxide and designated as PEG. PEGs are available with different molecular weights, which greatly affect the physical properties. PEG-400 has an average molecular weight 400 dalton. Polyethylene glycols are widely used in industrial and medical applications. The structure of Polyethylene glycol is commonly expressed as :
+
+H-(O-CH₂-CH₂)ₙ-OH
+
+With the advancement of green chemistry, scientists are trying to use innocuous solvent like water. But due to insolubility or immiscibility of many organic compounds, water has very limited use as solvent for organic reactions. scCO₂, ionic liquid, fluorous solvents are introduced as green solvent, but all suffer from some problems. ScCO₂ requires high pressure in special device; ionic liquids are expensive and their toxicity is still an open question; preparation of fluorous solvent is not very simple. Considering all these facts use of polyethylene glycols (PEG) as solvent has the following advantages:
+(i) Inexpensive and significantly less hazardous than other common organic solvents;
+(ii) PEGs are with negligible vapour pressure and are stable at ambient temperature;
+(iii) Soluble in polar and non-polar solvents; (iv) have good stability towards acidic and basic media;
+
+================================================================================
+PAGE 20
+================================================================================
+(v) Least affected by most common oxidizing and reducing agents, hence can be used as solvent in oxidation
+reduction reactions.
+PEGs can be used as reaction media under both thermal and MW-irradiation conditions. Flavone and coumarin
+compounds have been extracted from medicinal plants using PEG-aqueous solution as a green solvent in the
+microwave-assisted extraction process. Many heterocyclic compounds have been synthesised using PEG as reaction
+medium.
+Reaction of o-phenylenediamine with phenacyl bromide in PEG led to the formation of quinoxaline derivative.
+In recent years, polyethylene glycol has attracted special attention as a green solvent in various carbon-carbon bond
+forming coupling reactions.
+Asymmetric Michael Reaction
+Suzuki Hiyama
+Heck PEG
+Cyannation Sonogashira
+Q. What is PEG-400? Give an example of asymmetric aldol reaction using PEG-400 as a solvent and point out the
+green context of the reaction. What are the advantages of PEG-400 over ionic liquids?
+Example of asymmetric aldol reaction using PEG-400 as a solvent: A common example is the proline catalyzed
+asymmetric aldol reaction between acetone and 4-nitrobenzaldehyde in PEG-400.
+Mechanism: Proline forms an enamine with acetone. The enamine then attacks 4-nitrobenzaldehyde, forming a new
+C-C bond. After that, hydrolysis regenerates the catalyst and gives the β-hydroxy ketone (Aldol) product with high
+stereoselectivity.
+PEG-400 stands for polyethylene glycol 400, which is low M.W
+polymer of ethylene oxide with average M.W 400.
+It is used as a green solvent in organic synthesis including
+asymmetric aldol reactions.
+
+================================================================================
+PAGE 21
+================================================================================
+Why is it called an asymmetric aldol reaction?
+An Aldol reaction is called asymmetric when it form a new chiral centre and one enantiomer is produce preferentially over the other.
+Here, the chiral catalyst, L-proline controls the stereochemistry of the reaction, leading to the formation of a β-hydroxy ketone with high enantio selectivity.
+Green Context of the reaction:
+- PEG 400 as a Green Solvent -Non-toxic, biodegradable, and recyclable.
+- Mild Reaction Conditions – Room temperature reduces energy consumption.
+- Organocatalysis - Avoids the use of toxic metal catalysts.
+- High Efficiency - High yield and stereoselectivity reduce waste.
+Therefore, using PEG 400 makes the reaction eco-friendly by replacing harmful solvents, reducing waste, and improving safety.
+Advantages of PEG 400 over Ionic Liquids:
+1. Cost and Availability: PEG 400 is cheaper and more widely available than most ionic liquids.
+2. Safety: PEG 400 is non-toxic and safe for use in food and medicine, while some ionic liquids can be toxic.
+3. Eco-Friendly: PEG 400 is biodegradable and comes from renewable sources, while many ionic liquids are not environmentally friendly.
+4. Reusability: PEG 400 can be easily recovered and reused without losing its effectiveness.
+5. Mild Conditions: Reactions in PEG 400 often require lower temperatures and shorter times compared to ionic liquids.
+Therefore, PEG 400 is a safer, cheaper, and more environmentally friendly alternative to ionic liquids, making it easier and more practical to use in chemical reactions.
+Solventless processes :
+A dry media reaction or solid-state reaction or solventless reaction is a chemical reaction system in the absence of a solvent. Solid state reaction follows the fifth principle of green chemistry which avoids using toxic solvents in the chemical reaction.
+The advantages of the development of dry media reactions in chemistry are:
+- Economics (save money on solvent). Cheaper to operate and are especially important in industry.
+- Not required to remove a solvent after reaction completion ultimately purification step not required
+- Reaction rate is high due more availability of reactants.
+- Environmentally friendly because solvent is not required.
+- More efficient with more selectivity compared to reactions carried out in solvents.
+- Reactions are simple to handle, reduce pollution, comparatively.
+Some examples of solventless processes:
+Michael Addition: The Michael addition of chalcone to 2-phenylcyclohexanone under PTC conditions give 2,6-disubstituted cyclohexanone derivative in high selectivity (99% ee).
+Ph + Ph COPh K⁺·O¹Bu Ph Ph H Ph
+Chalcone n-Bu₄NBr 99% ee
+
+================================================================================
+PAGE 22
+================================================================================
+Aldol Condensation: The aldol condensation of the lithium enolate of methyl-3,3-dimethylbutanoate with aromatic aldehydes gives a 8 : 92 mixture of the syn-and anti-products.  
+Bu⁻ OLi OMe + RCHO Solid 3 days vacuum at room temp R OH OMe + R OH OMe tBu tBu Syn Anti  
+From Aldol to Chalcones: In the absence of any solvent, some aldol condensation proceed more efficiently and stereoselectively. In this method, appropriate aldehyde and ketone and NaOH is grounded in a pestle and mortar at room temperature for 5 min. The product obtained is the corresponding chalcone. In this method the initially formed aldol dehydrates more easily to the chalcone in the absence of solvent.  
+ArCHO + Ar'COMe NaOH Solid Ar-CH(OH)-CH₂-CO-Ar' an Aldol Ar COAr' Chalcone  
+Immobilized solvents :  
+An immobilized solvent refers to a solvent that is bound to a solid support or polymer backbone, preventing it from flowing freely while still allowing it to participate in chemical or catalytic processes. This concept is commonly used in fields like catalysis, chromatography, and biochemistry.  
+In green chemistry, an immobilized solvent is used to make chemical processes more environmentally friendly by reducing waste, improving efficiency, and avoiding the use of harmful solvents.  
+How immobilized solvent helps in Green Chemistry:  
+- Reduces solvent waste: Since the solvent is immobilized (held in place), it doesn't need to be replaced often, which reduces waste.  
+- Less pollution: Immobilized solvents prevent solvent evaporation and leakage, cutting down on air and water pollution.  
+- Reusable: The immobilized solvent can be used repeatedly, reducing the need for fresh solvents and lowering costs.  
+(Questions of Green Solvents)  
+1. Mention two advantages of using sc-CO₂ (supercritical CO₂) as solvent for organic synthesis.  
+2. Discuss the advantages of any two alternatives to the VOCs (Volatile Organic Solvents). Mention the names of organic solvents that are benign to the environment.  
+3. Why CO₂ is commonly used as supercritical fluid? Name a few other superchemical fluids. What are the drawbacks of using scCO₂?  
+4. Write two advantages of use of supercritical carbon dioxide 'scCO₂' as a solvent in extraction process in food industry.  
+5. Point out two drawbacks of ScCO₂.  
+21
+
+================================================================================
+PAGE 23
+================================================================================
+6. Give reasons why water is considered as a unique reaction medium in terms of economic and environmental benefits. Why water behaves differently under high temperature and pressure?
+7. Mention two characteristics of water that makes it a benign solvent.
+8. At high temperature water becomes more like organic solvent-do you agree with the statement? Justify your answer with at least two reasons.
+9. Consider the following Diels Alder reaction.
+  
+  +  Solvent  +  
+  Solvent  endo: exo  
+  EtOH  8.5  
+  H₂O  21.4  
+
+Comment with proper justification why greater endo selectivity is observed in water. Why most Diels-Alder reaction is reasonable faster in water than methanol.
+10. Mention three types of ionic liquids and cite any two examples of green synthesis using ionic liquids as solvent.
+11. Why do we call ionic liquids as 'designer solvent'? Give two examples of organic reactions in ionic liquids.
+12. In the successful synthesis of an ionic liquid (IL) what are the two important factors that should be maintained?
+13. What is ionic liquids ? Mention its two special features.
+14. Complete the synthesis of the following ionic liquid by providing the structures of the missing compounds.
+  
+  + R₂CO₂H  A  R₁Br  B  anion exchange  C  
+  Br with PF₆  
+  H₂N  NHMe  
+
+15. What are benign solvents? Give two examples.
+16. Briefly explain why Flourous Biphase Solvent (FBS) is ideal for hydroformylation of olefins (mention three points only).
+17. What characteristics of fluorous solvent that make it a biphasic solvent and why ?
+18. What is PEG-400? Give an example of asymmetric aldol reaction using PEG-400 as a solvent and point out the green context of the reaction. What are the advantages of PEG-400 over ionic liquids?
+19. Describe two important green syntheses that can be carried out in solvent free contions.
+20. Write short notes on immobilized solvent.
+
+================================================================================
+PAGE 24
+================================================================================
+BU – 2024 :
+1. What are benign solvents? Give two examples.
+2. What characteristics of fluorous solvent that make it a biphasic solvent and why?
+3. Point out two drawbacks of ScCO₂. Decaffeination of coffee beans by ScCO₂ is very popular and economically viable. Why?
+4. “At high temperature water becomes more like organic solvent” – Do you agree with the statement? Justify your answer with at least two reasons.
+5. What are ionic liquids? Mention its two special features.
+BU – 2025 :
+1. Point out two distinct advantages of polyethylene glycol (PEG) as a solvent over other green solvents.
+2. What type of reactions are suitable in flourous solvents and why?
+3. Ionic liquids are called designer solvents – Justify.
+4. Read the following passage and answer the questions that follow:
+To avoid organic solvents, use of ScCO₂ has drawn attention of present-day chemists as an environmental measure. To carry out the polymerization reaction between cyclohexane epoxide and CO₂, ScCO₂ was used for dual character (i) as solvent (ii) as reactant. The nature of the catalyst is also needed to be modified to make it soluble in ScCO₂ ; polyfluoroalkyl maleate-Zn complex is used instead of old zinc catalysts as the solubility of the former is such that it behaves as a homogeneous catalyst during such polymerization reaction.
+(I) Indicate the category of solvent in which ScCO₂ can be classified?
+(II) What are the advantages of using such solvents? Mention any three.
+(III) Give another example where ScCO₂ is used popularly.
+5. Changing the solvent from the traditional organic solvent to ionic liquid in the following scheme below changes the products entirely.
+PhC≡CH  KBr, H₂O₂
+(NH₄)₂MoO₄
+H₂O
+DCM
+H₂O
+[bmim] PF₆
+Br
+Ph
+H
+Br
++
+Br
+Ph
+Br
+H
+PhCOCHBr₂
+O
+Mo
+O
+O
+O
+(OH₂)n
+(NH₄)₂MoO₄
+Suggest possible cause of such change with plausible mechanism.
+6. What is meant by ionicity of an ionic liquid (IL)? Elucidate the criteria for a solvent to be green.
+(Ionicity is a measure of the degree of ionic dissociation in an ionic liquid. It expresses how effectively the ions remain free and mobile in the liquid phase. Higher ionicity means greater ionic character and higher electrical conductivity, whereas lower ionicity indicates stronger ion association.)
+
+================================================================================
+PAGE 25
+================================================================================
+Examples of Green Synthesis/ Reactions :
+
+Green synthesis of adipic acid: Adipic acid is very important starting material for nylon-6,6 and catechol which is used in pharmaceutical and pesticide industries.
+
+Conventional procedure: The common method for the production of adipic acid is by oxidation of a mixture of cyclohexanone and cyclohexanol, which is generally obtained from the oxidation of cyclohexane. The source of cyclohexane is the reduction of benzene, and benzene is obtained from non-renewable fossil fuels.
+
+Oxidation of cyclohexanone, cyclohexanol or cyclohexene (or a mixture of them) is carried out by using HNO₃, KMnO₄ or NaOCl as oxidizing agents. Most of these processes are not at all environmentally acceptable.
+
+Green procedure: To get alternative green synthesis of adipic acid, H₂O₂ was considered as environmentally benign oxidizing agent because it is safe, gentle, clean, cheap and readily available. But the different catalysts used with H₂O₂ are expensive and complex. (Ex : Peroxotungstate, peroxomolybdates, ZSM-supported metal ions etc.)
+One example with ammonium polyoxometalate (i.e., ammonium phosphomolybdate) is shown below :
+
+Benefit of H₂O₂: Hydrogen peroxide (H₂O₂) is considered a green, environmentally benign oxidizing agent primarily because its only byproduct is water. Unlike traditional chemical oxidants, it leaves zero toxic residues or harmful pollutants in the environment.
+
+Use of ammonium chlorochromate as oxidizing agent instead of H₂O₂ showed better result under shorter reaction time.
+
+Q. Provide two arguments in favour of the statement- "Oxidation of cyclohexanol/cyclohexanone to adipic acid by concentrated nitric acid is not considered a green synthesis".
+Suggest a suitable green alternative route to the above transformation.
+
+A: 1. Generation of Nitrous Oxide (N₂O): The reaction produces nitrous oxide, a potent greenhouse gas that contributes significantly to global warming and ozone depletion. Its release into the atmosphere makes the process environmentally harmful.
+2. Use of Hazardous Chemicals: The process involves concentrated nitric acid, which is highly corrosive, toxic, and dangerous to handle. Therefore the process is less sustainable and not environmentally friendly.
+
+================================================================================
+PAGE 26
+================================================================================
+Simmons–Smith reaction :
+The Simmons–Smith reaction is a organic reaction that converts an alkene into a cyclopropane using a zinc carbenoid intermediate, usually generated from CH₂I₂ and Zn–Cu couple.
+General reaction :
+R–CH=CH–R  CH₂I₂  R–CH–CH–R  (cyclopropane
+Alkene  Zn/Cu  derivative)
+CH₂I₂ ..  Zn/Cu  I–CH₂–ZnI
+CH₂I₂
+Zn/Cu  CH₂I₂
+→  + ZnI₂
+Green procedure: Ultrasound can enhance the Simmons-Smith reaction by activating Zn and improving reaction rates. Simmons-Smith reactions are often unpredictable; sometimes having long induction periods followed by violent exotherms. By green approach, Zn was sonochemically activated to react with CH₂I₂ to form the carbenoid intermediate which reacts with alkene to give cyclopropane derivative.
+H₃C(H₂C)₇  (CH₂)₇CO₂CH₃  Zn.  (CH₂)₇CO₂CH₃
++ CH₂I₂  H₃C(H₂C)₇
+Ultrasound: 91 % yield, no exotherm, no iodine
+No Ultrasound: 51 % yield, unpredictable exotherm, iodine
+Feature  Conventional Simmons-Smith  Green procedure
+Metal activation  Requires a specialized Zinc-Copper alloy  Employs plain metallic Zinc activated
+Zn(Cu).  mechanically by sound waves.
+Reaction control  Highly exothermic, dangerous, and  Non-exothermic, easy to control with no free
+produces side- products like free iodine.  iodine generated.
+Reaction time  Long (several hours of refluxing).  Short
+Product yield  Moderate (~51%)  High to Excellent (~91%).
+Green benefits of ultrasound: i) Accelerates the reaction rate.
+ii) Reduces reaction time.
+iii) Improves product yield and minimizes by-product formation and waste
+generation.
+Aldol Condensation
+A) Using aqueous media : The first green reaction of cross Aldol condensation between silyl enol ethers and aldehydes was reported in water without using acid catalyst. Being a weak Lewis acid, the reactions took long time for completion and the yields are low.
+
+================================================================================
+PAGE 27
+================================================================================
+The addition of a stronger Lewis acid such as lanthanide trifiate significantly improved the rate and yield (77 – 98 %) of the reactions. Metal triflate might soluble the substrate probably through coordination.
+
+The aldol type reaction between a silyl enol ether and an aldehyde in water at room temperature using various lanthanide triflates is called Mukaiyama aldol reaction.
+
+B) Using solid phase :
+
+The Aldol condensation is carried out by mixing freshly ground mixture of the lithium enolate of methyl-3,3-dimethyl butanoate with powdered aromatic aldehyde in vacuum for 3 days at room temperature. It produces 70% yield with stereoselective mixture syn : anti = 8 : 92 of the products.
+
+Lithium enolate of methyl
+3,3-dimethyl butanoate
+
+R = 2-OCH₂C₆H₄-, 4-Cl-C₆H₄-
+4-NO₂C₆H₄-, 3-NO₂C₆H₄-, 2-NO₂C₆H₄-
+4-NO₂-2-thienyl
+
+In the absence of any solvent, some aldol condensation proceeds more efficiently. In this method, appropriate aldehyde and ketone and NaOH is grounded in a pestle and mortar at room temperature for 5 min. The product obtained is the corresponding chalcone.
+
+Conventional versus Green Aldol reaction :
+
+In the conventional Aldol reaction, aldehydes or ketones are reacted in the presence of strong bases such as NaOH, KOH, or LDA. The reaction is often carried out in organic solvents and may require heating. These conditions can generate unwanted by-products, consume more energy, and produce chemical waste, making the process less environmentally friendly.
+
+On the other hand, in the green Aldol reaction, environmentally benign catalysts such as proline, enzymes, or recyclable solid catalysts are used. The reaction is often performed in water, ionic liquids, or under solvent-free conditions. It proceeds under milder conditions, reduces waste generation, saves energy, and avoids the use of hazardous solvents, making it a more sustainable and eco-friendly process.
+
+================================================================================
+PAGE 28
+================================================================================
+Friedel-Crafts Reaction : (Green approach)  
+Alkylation of phenol: The reaction of phenol with tert-butanol in water at 250 – 300 °C to produce 2-tert.butyl phenol and 4-tert.butylphenol via tertiary carbocation in a completely reversible pathway. The reaction is pseudo first order in phenol as large excess of tertiary butanol is present.  
+
+The reaction of p-cresol with tert-butanol occurs in NCW. [Near critical water (NCW) is defined as water that is heated to a temperature range of 200–300 °C where its properties have begun to differ significantly from those of ambient water. NCW is also called as ‘high-temperature water’ or ‘near subcritical water’].  
+
+Acylation of phenol:  
+Brown et al. observed that phenol and resorcinol could be successfully acetylated using acetic acid in NCW and in neat acetic acid in the temperature range of 250–300 °C without adding catalyst. Like alkylation, the acetylations of phenol and resorcinol are also reversible at high temperatures in the presence of water. Thus, the yield of Friedel-crafts acylation is relatively less.  
+
+Conventional versus Green Friedel–Crafts reaction :  
+In the conventional Friedel–Crafts alkylation or acylation reaction, Lewis acids such as AlCl₃ or FeCl₃ are used as catalysts. These catalysts are often required in stoichiometric amounts and are not easily recyclable. The reaction is usually carried out in volatile organic solvents and generates large amounts of acidic waste, leading to environmental concerns and difficult product purification.  
+
+On the other hand, in the green Friedel–Crafts reaction, recyclable solid acid catalysts, zeolites, ionic liquids, or heterogeneous catalysts are used instead of conventional Lewis acids. The reaction can often be performed under solvent-free conditions or in environmentally benign solvents. This reduces hazardous waste, simplifies catalyst recovery, improves atom economy, and makes the process more environmentally friendly and sustainable.
+
+================================================================================
+PAGE 29
+================================================================================
+Q. Given below two methods of preparation of ethyl benzene. Indicate the greener method citing three reasons.  
+CH₃CH₂Cl  
+Anhy.AlCl₃  
+H₂C=CH₂  
+ZSM-5 Catalyst  
+Solvent-Free Condition  
+The second method (benzene + ethene using ZSM-5 catalyst under solvent-free conditions) is the greener method.  
+Main three reasons are —  
+1. Uses a recyclable catalyst: Zeolite (ZSM-5) is a solid acid catalyst that is non-corrosive and can be recovered and reused. In contrast, anhydrous AlCl₃ is consumed during the reaction and is not easily recyclable.  
+2. Solvent-free process: The second method is carried out without any solvent, reducing solvent waste and environmental pollution.  
+3. Less hazardous waste generation: The first method produces acidic waste due to AlCl₃ and chloride-containing by-products. The second method avoids corrosive Lewis acids and generates much less waste.  
+4. Cleaner and Safer Reaction Conditions: Second method occurs under milder and safer conditions, with less hazardous chemicals involved. Ethyl chloride is toxic and volatile, and AlCl₃, is hazardous, making first method less sustainable and more dangerous.  
+Therefore, the benzene + ethene / ZSM-5 catalyst under solvent-free conditions is the greener method because it uses a recyclable catalyst, avoids solvents, and minimizes hazardous waste generation.  
+Michael reaction : (Green approach)  
+A) Using aqueous phase:  
+In 1970, the first successful Michael reaction between 2-Methylcyclopentane-1,3-dione and methyl vinyl ketone in aqueous medium without the use of a basic catalyst (pH > 7) was reported. The adduct further cyclises to give a 5-6 membered fused ring system.  
+H₂O  
+pH > 7  
+Michael reaction of 2-methylcyclohexane-1,3-dione with vinylketone give optically pure Wieland-Miescher ketone.  
+Hydroquinone H₂O  
+70–80°C , 4 hrs,  
+~100 %.  
+D(+)-Proline  
+DMSO  
+6 days,  
+82%.  
+(Wieland  
+Miescher  
+ketone)  
+The Michael addition of 2-methylcyclopentane-1,3-dione and acrolein in water furnishes an adduct and the rate can be enhanced by the addition of ytterbium triflate [Yb(OTf)₃] or scandium triflate [Sc(OTf)₃].
+
+================================================================================
+PAGE 30
+================================================================================
+Without using organic solvent, nitroalkanes can be condensed with different electrophilic alkenes in NaOH (0.025–0.1 M), affording Michael adducts with moderate to good yields provided a catalytic amount of Cetyltrimethyl ammonium chloride (CTACl) is employed.  
+
+EWG: CO₂Me, CN, SO₂Ph 50–90% yield  
+
+B) Using solid phase : Chalcone forms Michael adduct with 2-phenylcyclohexanone in presence of PTC leading to high distereoselectivity of product.  
+
+2-Phenyl cyclohexanone Chalcone 99% ee  
+
+Conventional versus Green Michael addition reaction :  
+
+In the conventional Michael addition reaction, an active methylene compound adds to an α,β-unsaturated carbonyl compound in the presence of strong bases such as NaOH, KOH, or alkoxides. The reaction is usually carried out in organic solvents like benzene, toluene, THF, or DMF and often requires heating. Although the reaction generally gives good yields, it involves the use of toxic solvents and generates chemical waste, making the process less environmentally friendly.  
+
+On the other hand, in the green Michael addition, environmentally benign catalysts such as proline, enzymes, or recyclable solid catalysts are used. The reaction is often performed in water or under solvent-free conditions. It proceeds under milder conditions, produces less waste, reduces energy consumption, and simplifies product isolation, making the process more sustainable and environment friendly.  
+
+Knoevenagel reaction : (Green approach)  
+
+A) Using aqueous media  
+
+In water, the Knoevenagel reaction is carried out between aldehydes and acetonitrile. Employing heterogeneous aqueous alkaline medium, various substituted salicylaldehyde react with malononitrile at room temperature to yield α-hydroxybenzylidene malononitriles, which are converted directly to 3-cyanocoumarins by acidification on heating.
+
+================================================================================
+PAGE 31
+================================================================================
+R = H, OH, OMe
+The reaction of benzaldehyde with acetonitrile does not occur in water only but requires the presence of catalytic amount of phase transfer catalyst (PTC) such as CTAC (Cetyl trimethyl ammonium chloride) to give high yields of the corresponding aryl cinnamonitriles.
+ArCH₂CN + PhCHO  CTACl; NaOH  Ph
+RT, 0.5-9 hr
+H
+Ar
+Ar = Ph, p-NO₂C₆H₄, PhSO₂
+85-90%
+B) Using ionic liquid: 1-Hexyl-3-methylimidazolium hexafluoro-phosphate [6-mim] PF₆ has been employed in Knoevenagel reaction to give good yield under green reaction conditions.
+PhCHO + CH₂(CN)₂  HO
+NH₂ (0.2 eq)
+[6-mim]PF₆, RT
+H
+CN
+Ph
+CN
+Conventional versus Green Knoevenagel condensation :
+In the conventional Knoevenagel condensation, an aldehyde or ketone reacts with an active methylene compound in the presence of organic bases such as piperidine or pyridine, usually in organic solvents like ethanol, benzene, or toluene. The reaction may require prolonged heating and generates solvent waste. The use of volatile organic solvent and toxic amine catalysts makes the process less environmentally friendly and increases disposal problems.
+CH₃CHO + CH₂(COOH)₂  CH₃CH-C(COOH)₂
+Acetaldehyde
+Malonic acid
+base
+↓ -CO₂
+CH₃CH-CHCOOH
+Crotonic acid
+C₆H₅CHO + CH₂(COOC₂H₅)₂  C₆H₅CH-C (COOC₂H₅)₂
+Pyridine
+benzene
+1) hydrolysis
+C₆H₅CH-C(COOH)₂  C₆H₅CH-CHCOOH
+2) H₂O⁺
+Δ
+-CO₂
+Cinnamic acid
+On the other hand, in the green Knoevenagel condensation, the reaction is performed using environmentally benign catalysts such as amino acids or recyclable heterogeneous catalysts. It is often carried out in water, ionic liquids, under solvent-free conditions, or with the aid of microwave or ultrasound irradiation. These modifications reduce waste, save energy, and avoid hazardous solvents.
+Cannizaro Reaction : Conventional method
+The aldehydes having no α-hydrogen atom (e.g., HCHO, PhCHO, Me₃CCHO etc.) when heated with strong bases (usually 50% aqueous sodium or potassium hydroxide solution), undergo a self-oxidation-reduction reaction in which one molecule of the aldehyde oxidized to sodium salt of carboxylic acid and another molecule gets reduced to the corresponding alcohol, This reaction is known as the Cannizzaro reaction. The reaction generally requires a large amount of strong base and generates considerable alkaline waste.
+2 -C-H  Conc.
+-C=O
++ -CH₂OH
+OH⁻
+O
+O
+(Aldehyde with no Acid salt Alcohol
+α-H atom)
+
+================================================================================
+PAGE 32
+================================================================================
+Green approach: The Cannizarro reaction under heterogenous conditions catalysed by barium hydroxide is considerably accelerated by sonication. The yields are 100% after 10 min, whereas no reaction is observed during this period without the use of ultrasound.
+
+C₆H₅CHO  Ba(OH)₂, EtOH  C₆H₅CH₂OH + C₆H₅COOH
+                         10 min
+
+i.e., In green method, the reaction is carried out often using microwave irradiation, ultrasound, or recyclable solid-base catalysts instead of large quantities of aqueous alkali. These methods reduce reaction time, energy consumption, and waste generation while improving efficiency.
+
+Benzoin Condensation
+
+Conventional method: In Benzoin Condensation, two molecules of benzaldehyde undergo self-condensation to give α-hydroxyketone in presence of cyanide as catalyst.
+
+benzaldehyde  benzoin
+
+Here, cyanide salts and HCN produced are hazardous and toxic.
+
+Green approach: Breslow in 1958 reported a safer alternative route by using a biocatalyst vitamin B₁ thiamine hydrochloride.
+
+2 Benzaldehyde  Thiamine hydrochloride  Benzoin
+                         NaOH ,  EtOH
+
+Or,
+2  NaOH, pH=8  OH
+     Thiamine
+     EtOH/H₂O
+     65°C 1h
+
+Later, Breslow found that the benzoin condensation in aqueous media using inorganic salts (e.g., LiCl) is about 200 times faster than in ethanol (without any salt).
+
+The structure of the thiamine molecule, in its hydrochloride salt form, is the following. Under alkaline conditions, thiamine can be deprotonated by removing the hydrogen between the sulfur and nitrogen atoms of the thiazole ring. This leads to the formation of a carbene-like structure according to the reaction.
+
+The overall reaction mechanism can be represented as follows:
+
+================================================================================
+PAGE 33
+================================================================================
+Advantages to use the biocatalyst (thiamine hydrochloride) :
+i) Biocatalyst is non-hazardous and biodegradable
+ii) Reaction takes place in mild reaction condition
+iii) Products with high grade purity will be produced compared to the conventional chemo-catalyst.
+
+Dieckmann condensation
+Conventional method: The Dieckmann condensation is the intramolecular Claisen condensation of a diester in the presence of a strong base such as sodium ethoxide (NaOEt) in ethanol. The reaction is usually carried out under reflux condition and produces a cyclic β-keto ester. After the reaction, acid work-up is required to obtain the final product. The use of strong bases, organic solvents, and heating makes the process less environmentally friendly.
+
+EtO⁻
+EtO   O   OEt   →   O   O   OEt   +   EtOH
+     HCl               OEt
+1,7-diester          6-membered
+                     cyclic β-keto ester
+
+EtO⁻
+EtO   O   OEt   →   O   O   OEt   +   EtOH
+     HCl               OEt
+1,6-diester          5-membered
+                     cyclic β-keto ester
+
+Green approach: Horta (2011) reported the synthesis ethyl 2-oxocyclopentane carboxylate through Dieckmann condensation. The self condensation of diethyl adipate using tertiary butoxide as a base catalyst under microwave heating (150 °C, 20 min) generated the 2-oxocyclopentane carboxylate (~90%).
+
+MW 150 °C,
+20 min
+(CH₂)₄   CO₂C₂H₅   →   O   O   OC₂H₅
+      t-BuOK
+CO₂C₂H₅
+Diethyl adipate      Ethyl 2-oxocyclopentane
+                     -1-carboxylate
+
+Microwave assisted reactions:
+Hofmann elimination reaction:
+Conventional method: In the conventional Hofmann elimination, an amine is first converted into a quaternary ammonium salt by reaction with excess methyl iodide (CH₃I). The quaternary ammonium iodide is then treated with moist silver oxide to form the corresponding hydroxide, which on heating undergoes β-elimination to give the least substituted alkene (Hofmann product). This method uses expensive silver oxide, requires a high temperature and yields are generally poor and therefore generates considerable waste.
+
+Green approach: The reaction is performed using microwave irradiation, solvent-free conditions, or recyclable solid-base catalysts. Microwave-assisted Hofmann elimination is particularly attractive because it provides rapid heating and improved efficiency. Such reactions can readily be accomplished in water-chloroform mixture with better efficiency.
+
+O
+   NEt₃⁺I⁻
+O       →   O
+   water/CHCl₃   +   Et₃N
+   MW/1 min
+OEt                 OEt
+
+================================================================================
+PAGE 34
+================================================================================
+Diels-Alder reaction:
+
+In organic synthesis Diels-Alder reactions are important single-step, ring-forming cyclo-addition reactions. In the conventional Diels-Alder reaction, a diene reacts with a dienophile in the presence of organic solvents such as benzene, toluene, or xylene, often under reflux conditions. The reaction may require prolonged heating and sometimes Lewis acid catalysts to achieve satisfactory yields. The use of volatile organic solvents and high energy consumption makes the process less environmentally friendly.
+
+Green approach: In the green Diels-Alder reaction, the reaction is carried out in water, or using ionic liquids as green solvents. Microwave or ultrasound irradiation may also be employed to accelerate the reaction. Water often enhances the reaction rate through the hydrophobic effect, leading to higher yields and selectivity. These methods reduce solvent waste, energy consumption, and environmental impact.
+
+Ex: The Diels-Alder reaction of vinylboronates can be easily performed using microwave irradiation giving excellent yields of the cycloadducts. Pinacol vinylboronate was the reagent of choice due to its stability towards hydrolysis, operational simplicity and yields of Diels-Alder products. To the best of our knowledge, this is the first example of microwave-assisted Diels- Alder reaction of boron-substituted dienophiles. Subsequent in oxidation of the cyclo-adducts with alkaline hydrogen peroxide afforded the alcohols efficiently.
+
+pinacol vinylboronate
+
+The reaction involves 1,4-addition of an alkene (maleic anhydride) to a conjugated diene (anthracene) to form a adduct of a six membered ring. Under usual conditions, the reaction requires a reflux period of 90 min. however, under microwave conditions, diglyme [bis(2-methoxyethyl) ether] is used as a solvent and 80% yield of the adduct is obtained in 90 seconds.
+
+Anthracene
+Maleic
+anhydride
+Adduct
+80%
+
+A) Using aqueous media : A typical example is the Diels-Alder reaction between cyclopentadiene and butenone. It has been found that this reaction occurs 700 times faster in water compared to the isooctane.
+
+Solvent
+Relative rate
+Isooctane
+1
+MeOH
+12.7
+H₂O
+740
+
+B) Using ionic liquid: Sc(OTf)₃ catalysed Diels-Alder reaction in ionic liquid.
+
+================================================================================
+PAGE 35
+================================================================================
+(BU Questions)
+
+1. Provide two arguments in favour of the statement- "Oxidation of cyclohexanol/ cyclohexanone to adipic acid by concentrated nitric acid is not considered a green synthesis".
+Suggest a suitable green alternative route to the above transformation.
+
+2. Write down the green synthesis of adipic acid starting from cyclohexene as the starting precursor.
+
+3. Two methods of synthesis of ethyl benzene are depicted below:
+  
+Processs : 1  
+Processs : 2
+
+Which process according to you is greener than the other? Mention at least three ways in support of your choice.
+
+4. Describe the green synthesis of  
+i) Adipic acid from cyclohexene  
+ii) Benzoic acid from toluene
+
+5. Given below two methods of preparation of ethyl benzene. Indicate the greener method citing three reasons.
+
+  
+6. How can benzoin condensation be carried out without the use of cyanides?
+(Hint: Using thiamine hydrochloride as a catalyst instead of cyanides, benzoin condensation can be carried out.)
+
+7. Suggest an environmentally safer alternative reagent to bromine.
+
+8. Bromination of acetanilide using bromate-bromide mixture in acetic acid is a green process. Discuss.
+Bromination of acetanilide:
+
+  
+5 KBr + KBrO₃ + 6 CH₃COOH = 3 Br₂ + 3 H₂O + 6 KOCOCH₃
+
+  
+HBr + KOCOCH₃ ⟶ KBr + CH₃CO₂H
+
+Why Green?
+
+(a) Relatively safer chemical (KBrO₃ and KBr) is used instead of corrosive reagent bromine.
+(b) Reaction is carried out in eco-friendly solvent water.
+(c) By-product is KOAc along with water.
