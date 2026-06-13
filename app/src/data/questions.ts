@@ -107,6 +107,7 @@ As we move from bulk chemicals (e.g., ammonia, sulfuric acid) to fine chemicals 
 - Pharmaceuticals: 25 to >100 (due to extensive synthetic steps and purification)
 
 (Source: PDF Page 5)`,
+    images: [{ page: 5, caption: 'E-factor and Atom Economy comparison' }],
   },
   {
     id: 3,
@@ -133,6 +134,7 @@ Green chemistry focuses on four key areas that ensure sustainability:
 By following these ideas, green chemistry helps industries make useful products while keeping the planet safe for future generations.
 
 (Source: PDF Page 1)`,
+    images: [{ page: 1, caption: 'Green Chemistry as sustainable chemistry' }],
   },
   {
     id: 4,
@@ -157,6 +159,7 @@ More specifically:
 - Green chemistry reduces pollution at its source by minimizing or eliminating the hazards of chemicals, feedstocks, reagents, solvents and products.
 
 (Source: PDF Page 1)`,
+    images: [{ page: 1, caption: 'Working definition of Green Chemistry' }],
   },
   {
     id: 5,
@@ -267,6 +270,10 @@ Other important principles include:
 - Inherently safer chemistry (Principle 12)
 
 (Source: PDF Pages 1-3)`,
+    images: [
+      { page: 1, caption: 'Principles of Green Chemistry - Part 1' },
+      { page: 2, caption: 'Principles of Green Chemistry - Part 2' },
+    ],
   },
   {
     id: 8,
@@ -298,6 +305,7 @@ A non-biodegradable polymer is a plastic or synthetic material that cannot be br
 Example: Polyethylene (plastic bags, bottles) - it does not degrade naturally and accumulates in landfills and oceans. In contrast, biodegradable polymers like Polylactic acid (PLA) break down into harmless CO2 and water.
 
 (Source: PDF Pages 2, 9, 32)`,
+    images: [{ page: 9, caption: 'VOC, Toxic chemicals and Bio-catalysis examples' }],
   },
 
   // ==================== SECTION 2: ATOM ECONOMY ====================
@@ -336,6 +344,10 @@ Mass of desired product (A) = 87
 This means only 65.4% of the atoms from the reactants end up in the desired amide product. The rest (34.6%) goes into the ethanol by-product.
 
 (Source: PDF Pages 5-7 - method demonstrated)`,
+    images: [
+      { page: 5, caption: 'Ester aminolysis atom economy calculation' },
+      { page: 6, caption: 'Atom economy calculation continued' },
+    ],
   },
   {
     id: 10,
@@ -476,6 +488,10 @@ Check: 137 + 138 = 275 (matches)
 Thus, in substitution reactions, atom economy is generally lower compared to addition or rearrangement reactions.
 
 (Source: PDF Pages 5-6)`,
+    images: [
+      { page: 5, caption: '1-Bromobutane synthesis - Substitution reaction' },
+      { page: 6, caption: 'Atom economy calculation for substitution' },
+    ],
   },
   {
     id: 13,
@@ -770,6 +786,7 @@ When a PEG molecule is tethered to silica gel, it can act as a solvent for vario
 - Environmentally friendly alternative to traditional solvent extraction methods
 
 (Source: PDF Page 22)`,
+    images: [{ page: 22, caption: 'Immobilized solvents - Concept and applications' }],
   },
   {
     id: 18,
@@ -816,6 +833,10 @@ Advantages over VOCs:
 8. **PEG (Polyethylene glycol)** - non-toxic, biodegradable
 
 (Source: PDF Pages 9-22)`,
+    images: [
+      { page: 9, caption: 'Alternative solvents to VOCs - Supercritical fluids' },
+      { page: 15, caption: 'Ionic liquids as green solvents' },
+    ],
   },
   {
     id: 19,
@@ -918,6 +939,7 @@ Ionic liquids are called **"designer solvents"** because their physical and chem
 This ability to "design" the solvent for a specific task, like a tailor making a custom suit, is why ionic liquids are called "designer solvents."
 
 (Source: PDF Page 16)`,
+    images: [{ page: 16, caption: 'Ionic liquids as designer solvents' }],
   },
   {
     id: 21,
@@ -947,6 +969,7 @@ This ability to "design" the solvent for a specific task, like a tailor making a
 These advantages make scCO2 one of the most promising green solvents for both industrial extraction and chemical synthesis.
 
 (Source: PDF Pages 10-11)`,
+    images: [{ page: 10, caption: 'Supercritical CO2 advantages in synthesis' }],
   },
   {
     id: 22,
@@ -1034,6 +1057,7 @@ Water has one of the highest specific heat capacities of any liquid (4.18 J/g de
 These characteristics, combined with water being non-toxic, non-flammable, cheap, and readily available, make it one of the most environmentally benign and economically viable solvents for chemical reactions.
 
 (Source: PDF Pages 14-15)`,
+    images: [{ page: 14, caption: 'Water as a benign solvent - Characteristics' }],
   },
   {
     id: 24,
@@ -1063,6 +1087,7 @@ All glassware used in the preparation must be completely dry because:
 These two factors are essential because ionic liquids are hygroscopic (they absorb moisture from the air), and water contamination can significantly alter their properties such as viscosity, conductivity, and catalytic activity.
 
 (Source: PDF Page 17)`,
+    images: [{ page: 17, caption: 'Ionic liquid synthesis - Important factors' }],
   },
   {
     id: 25,
@@ -1151,6 +1176,7 @@ At very high temperatures (near 375 degC):
 These changes clearly demonstrate that at high temperature, water loses its "water-like" properties and acquires "organic solvent-like" properties, enabling organic reactions to be carried out in water without the need for toxic organic solvents.
 
 (Source: PDF Pages 14-15)`,
+    images: [{ page: 14, caption: 'Water at high temperature behavior' }],
   },
   {
     id: 27,
@@ -1287,6 +1313,7 @@ SDS micelles inhibit the reaction because:
 | **Triton X-100** | Non-ionic | Moderate enhancement | Provides hydrophobic concentration without electrostatic effects |
 
 (Source: PDF Pages 12-15, 30)`,
+    images: [{ page: 13, caption: 'Aqueous micellar medium - Rate enhancement' }],
   },
 
   // ==================== SECTION 4: GREEN SYNTHESIS ====================
@@ -1347,6 +1374,10 @@ R-CH2-OH --(Solid oxidant, no solvent)--> R-CHO
 7. Environmentally friendly - no VOC emissions
 
 (Source: PDF Pages 21-22)`,
+    images: [
+      { page: 21, caption: 'Solvent-free green synthesis methods' },
+      { page: 22, caption: 'Solvent-free synthesis examples' },
+    ],
   },
   {
     id: 31,
@@ -1503,6 +1534,7 @@ Microwave heating occurs through the interaction of microwave radiation (frequen
 **Summary:** Only polar molecules with a permanent dipole moment can absorb microwave radiation. The more polar the molecule, the more strongly it interacts with the oscillating electric field, and the more microwave energy it absorbs. This is why water heats very quickly in a microwave while oil does not.
 
 (Source: PDF Page 34)`,
+    images: [{ page: 34, caption: 'Microwave absorption and molecular polarity' }],
   },
   {
     id: 34,
@@ -1551,6 +1583,7 @@ Under microwave irradiation, the internal temperature of a solvent can indeed ex
 The ability to achieve temperatures above the normal boiling point means reactions can be completed in minutes instead of hours. This is one of the key advantages of microwave-assisted organic synthesis (MAOS).
 
 (Source: PDF Page 34)`,
+    images: [{ page: 34, caption: 'Microwave superheating of solvents' }],
   },
   {
     id: 35,
@@ -1610,6 +1643,10 @@ Sonoluminescence is the emission of **light** (luminescence) from imploding cavi
 - It demonstrates that ultrasound energy is converted into both thermal and electromagnetic radiation through cavitation
 
 (Source: PDF Pages 26-27)`,
+    images: [
+      { page: 26, caption: 'Sonication of benzyl bromide substrate' },
+      { page: 27, caption: 'Sonoluminescence and cavitation effects' },
+    ],
   },
   {
     id: 36,
@@ -1704,6 +1741,7 @@ Cyclohexene + H2O2 --(HCO2H, OH-)--> Adipic acid + H2O
 | Energy efficiency | Lower | Higher |
 
 (Source: PDF Pages 33-34)`,
+    images: [{ page: 33, caption: 'Conventional vs Microwave heating comparison' }],
   },
   {
     id: 38,
@@ -1786,6 +1824,7 @@ The green synthesis uses cyclohexene + H2O2/formic acid -> adipic acid, which:
 - Is safer and more environmentally friendly
 
 (Source: PDF Page 26)`,
+    images: [{ page: 26, caption: 'Green oxidation to adipic acid arguments' }],
   },
   {
     id: 40,
@@ -1823,6 +1862,7 @@ The green synthesis uses cyclohexene + H2O2/formic acid -> adipic acid, which:
 - Safety: No open flames or hot oil baths needed
 
 (Source: PDF Pages 33-34)`,
+    images: [{ page: 33, caption: 'Microwave vs resistive heating advantages' }],
   },
   {
     id: 41,
@@ -1921,6 +1961,7 @@ In transesterification, the triglycerides in vegetable oil or animal fat react w
 - Requires engine modifications for B100 use in older vehicles
 
 (Source: PDF Pages 9, 10; Research supplemented)`,
+    images: [{ page: 2, caption: 'Bio-diesel production and properties' }],
   },
   {
     id: 43,
@@ -2031,6 +2072,7 @@ Lactic acid is polymerized by condensation, removing water under reduced pressur
 *This question describes synthesis starting from corn. Search in Google: **"PLA polylactic acid synthesis from corn reaction scheme diagram"***
 
 (Source: PDF Pages 32, 33; Research supplemented)`,
+    images: [{ page: 2, caption: 'Polylactic acid (PLA) applications and synthesis' }],
   },
   {
     id: 45,
@@ -2083,6 +2125,7 @@ This clearly establishes that catalytic reagents are superior to stoichiometric 
 *Search in Google for comparison diagrams: **"bio-catalysis vs photo-catalysis diagram"** and **"catalytic vs stoichiometric reagents comparison"***
 
 (Source: PDF Pages 2, 3, 4, 5, 32)`,
+    images: [{ page: 2, caption: 'Bio-catalysis vs Photo-catalysis comparison' }],
   },
   {
     id: 46,
@@ -2209,6 +2252,7 @@ Biofuels are considered **renewable energy sources** because the biomass feedsto
 Biofuels are **carbon-neutral** (or nearly so) — the CO2 released when biofuels are burned was recently absorbed from the atmosphere by the plants during photosynthesis, creating a closed carbon cycle. In contrast, burning fossil fuels releases CO2 that was sequestered underground for millions of years, adding net new CO2 to the atmosphere and contributing to climate change and global warming. This makes biofuels a significantly more environmentally sustainable energy option.
 
 (Source: PDF Pages 9, 10; Research supplemented)`,
+    images: [{ page: 2, caption: 'Biofuels definition and advantages' }],
   },
   {
     id: 49,
@@ -2344,5 +2388,6 @@ Instead of using liquid bromine directly, a **bromine surrogate** can be generat
 This system can be used for bromination of aromatic compounds, where bromine generated in situ reacts with the substrate without the hazards of handling liquid bromine directly.
 
 (Source: PDF Page 35)`,
-  },
+      images: [{ page: 35, caption: 'Alternative reagents to liquid bromine (Br2)' }],
+},
 ];

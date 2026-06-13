@@ -33,7 +33,7 @@ jobs:
         working-directory: app
 
       - name: Build
-        run: npm run build
+        run: npm run build -- --base /greenchemistry/
         working-directory: app
 
       - name: Setup Pages

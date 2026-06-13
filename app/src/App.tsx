@@ -29,6 +29,12 @@ import {
 } from 'lucide-react';
 import './App.css';
 
+// Helper to get correct image path for both dev and GitHub Pages
+const basePath = import.meta.env.BASE_URL;
+function pdfPageUrl(page: number): string {
+  return `${basePath}pdf_pages/page_${String(page).padStart(2, '0')}.png`;
+}
+
 function StarRating({ rating }: { rating: number }) {
   return (
     <div className="flex items-center gap-0.5" title={`Importance: ${rating}/5 stars`}>
@@ -101,7 +107,7 @@ function ImageModal({
         </div>
         <div className="p-4">
           <img
-            src={`/pdf_pages/page_${String(page).padStart(2, '0')}.png`}
+            src={pdfPageUrl(page)}
             alt={caption}
             className="w-full rounded-lg border border-gray-200"
             loading="lazy"
@@ -210,38 +216,64 @@ function QuestionCard({
           <div className="border-t border-indigo-100">
             {/* Images if available */}
             {hasImages && (
-              <div className="p-4 sm:px-6 border-b border-gray-100 bg-gray-50/50">
-                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+              <div className="p-4 sm:px-6 border-b border-gray-100 bg-gradient-to-r from-indigo-50/50 to-purple-50/50">
+                <h4 className="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-3 flex items-center gap-1.5">
                   <Image className="w-3.5 h-3.5" />
-                  Reference Images
+                  PDF Reference Images
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {question.images?.map((img, idx) => (
                     <button
                       key={idx}
                       onClick={() => setShowImage(img)}
-                      className="group/img relative bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-indigo-300 hover:shadow-md transition-all text-left"
+                      className="group/img relative bg-white rounded-xl border border-indigo-100 overflow-hidden hover:border-indigo-400 hover:shadow-lg hover:shadow-indigo-100 transition-all text-left"
                     >
-                      <img
-                        src={`/pdf_pages/page_${String(img.page).padStart(2, '0')}.png`}
-                        alt={img.caption}
-                        className="w-full h-40 object-top object-cover group-hover/img:opacity-90 transition-opacity"
-                        loading="lazy"
-                      />
+                      <div className="relative">
+                        <img
+                          src={pdfPageUrl(img.page)}
+                          alt={img.caption}
+                          className="w-full h-44 object-top object-cover group-hover/img:opacity-90 transition-opacity"
+                          loading="lazy"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2">
+                          <span className="text-[11px] text-white font-semibold bg-indigo-600/80 px-2 py-0.5 rounded-full">
+                            Page {img.page}
+                          </span>
+                        </div>
+                        <div className="absolute top-2 right-2 bg-black/50 rounded-full p-1.5 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                          <ExternalLink className="w-3.5 h-3.5 text-white" />
+                        </div>
+                      </div>
                       <div className="p-2.5">
                         <p className="text-xs font-medium text-gray-700 line-clamp-2">
                           {img.caption}
                         </p>
-                        <p className="text-[11px] text-indigo-500 mt-1 font-medium">
-                          Page {img.page}
-                        </p>
-                      </div>
-                      <div className="absolute top-2 right-2 bg-black/50 rounded-full p-1 opacity-0 group-hover/img:opacity-100 transition-opacity">
-                        <ExternalLink className="w-3 h-3 text-white" />
                       </div>
                     </button>
                   ))}
                 </div>
+                <p className="text-[11px] text-indigo-400 mt-2 italic text-center">Click on an image to view full-size PDF page</p>
+              </div>
+            )}
+
+            {/* Google Search prompt for questions without images */}
+            {!hasImages && question.pdfPages.length === 0 && (
+              <div className="p-4 sm:px-6 border-b border-gray-100 bg-amber-50/50">
+                <a
+                  href={`https://www.google.com/search?q=${encodeURIComponent(question.question)}&tbm=isch`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-3 rounded-xl border border-amber-200 bg-white hover:bg-amber-50 hover:border-amber-300 hover:shadow-md transition-all group/google"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0 group-hover/google:bg-amber-200 transition-colors">
+                    <Image className="w-5 h-5 text-amber-600" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-amber-800">Search for diagrams & images on Google</p>
+                    <p className="text-xs text-amber-600 mt-0.5">This topic needs visual references — click to search Google Images</p>
+                  </div>
+                  <ExternalLink className="w-4 h-4 text-amber-400 group-hover/google:text-amber-600 transition-colors flex-shrink-0" />
+                </a>
               </div>
             )}
 
