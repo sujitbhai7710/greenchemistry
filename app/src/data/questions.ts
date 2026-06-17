@@ -50,7 +50,7 @@ export const allQuestions: Question[] = [
     marks: '5 Marks',
     year: '2020',
     status: 'well_answered',
-    pdfPages: [1, 2, 3],
+    pdfPages: [1, 2],
     importance: 5,
     answer: `Two important principles of Green Chemistry are:
 
@@ -68,7 +68,7 @@ Example: The Diels-Alder reaction has 100% atom economy because all atoms from t
 
 Other principles include: Design less hazardous chemical synthesis, Design safer chemicals, Use safer solvents, Design for energy efficiency, Use renewable feedstocks, Reduce derivatization, Use catalytic reagents, Design degradable products, Real-time analysis, and Inherently safer chemistry.
 
-(Source: PDF Pages 1-3)`,
+(Source: PDF Pages 1-2)`,
     images: [{ page: 1, caption: 'Green Chemistry definition and principles overview' }],
   },
   {
@@ -169,7 +169,7 @@ More specifically:
     marks: '5 Marks',
     year: '2022',
     status: 'well_answered',
-    pdfPages: [1, 2, 3],
+    pdfPages: [1, 2],
     importance: 5,
     answer: `**Principle 1: Prevention of Waste (Prevent waste)**
 Plan to minimize waste at every step. It suggests prevention of waste instead of its remediation. It means preventing the formation of waste rather than treating or cleaning up waste material after it is formed. Waste prevention is necessary because:
@@ -193,7 +193,7 @@ ArCO2H + R2NH --(Boric acid catalyst, Toluene)--> ArCONR2
 
 This avoids the use of toxic PCl5/SOCl2 and produces less hazardous waste.
 
-(Source: PDF Pages 1-3)`,
+(Source: PDF Pages 1-2)`,
     images: [{ page: 2, caption: 'Classical vs Greener amidation process' }],
   },
   {
@@ -203,7 +203,7 @@ This avoids the use of toxic PCl5/SOCl2 and produces less hazardous waste.
     marks: '3 Marks',
     year: '2023',
     status: 'well_answered',
-    pdfPages: [1, 3],
+    pdfPages: [3],
     importance: 3,
     answer: `**Waste Management Hierarchy Pyramid:**
 
@@ -283,7 +283,7 @@ Other important principles include:
     marks: '3 Marks',
     year: '2025',
     status: 'well_answered',
-    pdfPages: [9],
+    pdfPages: [2, 3, 10, 33],
     importance: 3,
     answer: `**I. VOC (Volatile Organic Compounds)**
 VOCs are organic chemicals that have a high vapor pressure at ordinary room temperature. They easily evaporate into the air and can cause air pollution, health problems, and contribute to smog formation. Many common organic solvents like benzene, toluene, xylene, and chloroform are VOCs.
@@ -305,8 +305,8 @@ A non-biodegradable polymer is a plastic or synthetic material that cannot be br
 
 Example: Polyethylene (plastic bags, bottles) - it does not degrade naturally and accumulates in landfills and oceans. In contrast, biodegradable polymers like Polylactic acid (PLA) break down into harmless CO2 and water.
 
-(Source: PDF Pages 2, 9, 32)`,
-    images: [{ page: 9, caption: 'VOC, Toxic chemicals and Bio-catalysis examples' }],
+(Source: PDF Pages 2, 3, 10, 33)`,
+    images: [{ page: 10, caption: 'VOC definition and green solvents' }],
   },
 
   // ==================== SECTION 2: ATOM ECONOMY ====================
@@ -317,7 +317,7 @@ Example: Polyethylene (plastic bags, bottles) - it does not degrade naturally an
     marks: '5 Marks',
     year: '2020',
     status: 'well_answered',
-    pdfPages: [5, 6, 7],
+    pdfPages: [4, 5, 6],
     importance: 4,
     answer: `**Given Reaction:** MeCH2COOEt + MeNH2 -> A + B
 
@@ -344,7 +344,7 @@ Mass of desired product (A) = 87
 
 This means only 65.4% of the atoms from the reactants end up in the desired amide product. The rest (34.6%) goes into the ethanol by-product.
 
-(Source: PDF Pages 5-7 - method demonstrated)`,
+(Source: PDF Pages 4-6 - method demonstrated)`,
     images: [
       { page: 5, caption: 'Ester aminolysis atom economy calculation' },
       { page: 6, caption: 'Atom economy calculation continued' },
@@ -648,7 +648,7 @@ This clearly establishes that "catalytic reagents are superior to stoichiometric
     marks: '5 Marks',
     year: '2025',
     status: 'well_answered',
-    pdfPages: [9, 10],
+    pdfPages: [5, 9],
     importance: 5,
     answer: `**Synthesis of Butyl Acetate:**
 
@@ -710,7 +710,7 @@ Total mass of non-benign reactants = 37 + 60 = 97 g
 
 The high atom economy (86.6%) indicates this is a green reaction in terms of atom utilization. However, the practical E-factor of 1.43 suggests room for improvement in actual yield. The catalytic H2SO4 is recoverable, making this process relatively green.
 
-(Source: PDF Pages 9-10)`,
+(Source: PDF Pages 5, 9)`,
     images: [{ page: 9, caption: 'Butyl acetate synthesis data table' }],
   },
 
@@ -722,7 +722,7 @@ The high atom economy (86.6%) indicates this is a green reaction in terms of ato
     marks: '5 Marks',
     year: '2020',
     status: 'well_answered',
-    pdfPages: [15, 16, 17],
+    pdfPages: [16, 17],
     importance: 5,
     answer: `**Three Types of Ionic Liquids:**
 
@@ -766,7 +766,7 @@ Allyl alcohol + CH2I2 -> Cyclopropanation product
 - Product yields in [BMIM][PF6] are much higher than in DCM
 - Ionic liquid and zinc complex can be recovered and recycled
 
-(Source: PDF Pages 15-17)`,
+(Source: PDF Pages 16-17)`,
     images: [
       { page: 16, caption: 'Types of ionic liquids and their properties' },
       { page: 17, caption: 'Ionic liquid synthesis and Simmons-Smith reaction' },
@@ -812,7 +812,7 @@ When a PEG molecule is tethered to silica gel, it can act as a solvent for vario
     marks: '5 Marks',
     year: '2021',
     status: 'well_answered',
-    pdfPages: [9, 10, 11, 12, 13, 15, 16, 21, 22],
+    pdfPages: [10, 11, 12, 13, 16, 18, 19, 20, 21],
     importance: 4,
     answer: `**Two Alternatives to VOCs and Their Advantages:**
 
@@ -849,10 +849,10 @@ Advantages over VOCs:
 7. **Supercritical CO2** - non-toxic, non-flammable, recyclable
 8. **PEG (Polyethylene glycol)** - non-toxic, biodegradable
 
-(Source: PDF Pages 9-22)`,
+(Source: PDF Pages 10-21)`,
     images: [
-      { page: 9, caption: 'Alternative solvents to VOCs - Supercritical fluids' },
-      { page: 15, caption: 'Ionic liquids as green solvents' },
+      { page: 10, caption: 'Alternative solvents to VOCs - Supercritical fluids' },
+      { page: 16, caption: 'Ionic liquids as green solvents' },
     ],
   },
   {
@@ -913,7 +913,7 @@ Reasons for choosing CO2:
 
 5. **Safety concerns**: Although non-flammable, high-pressure CO2 systems require careful handling to prevent rapid depressurization accidents.
 
-(Source: PDF Pages 10-11)`,
+(Source: PDF Pages 10-12)`,
     images: [{ page: 11, caption: 'Table of critical temperatures and pressures of various fluids' }],
   },
   {
@@ -966,7 +966,7 @@ This ability to "design" the solvent for a specific task, like a tailor making a
     year: '2022, 2023',
     repeated: '2 Times',
     status: 'well_answered',
-    pdfPages: [10, 11],
+    pdfPages: [10, 11, 12],
     importance: 4,
     answer: `**Two Advantages of Using scCO2:**
 
@@ -985,7 +985,7 @@ This ability to "design" the solvent for a specific task, like a tailor making a
 
 These advantages make scCO2 one of the most promising green solvents for both industrial extraction and chemical synthesis.
 
-(Source: PDF Pages 10-11)`,
+(Source: PDF Pages 10-12)`,
     images: [{ page: 10, caption: 'Supercritical CO2 advantages in synthesis' }],
   },
   {
@@ -1054,7 +1054,7 @@ This is why many organic reactions that traditionally use organic solvents can b
     marks: '2 Marks',
     year: '2023',
     status: 'well_answered',
-    pdfPages: [14, 15],
+    pdfPages: [13, 15],
     importance: 3,
     answer: `**Two Characteristics that make Water a Benign Solvent:**
 
@@ -1075,7 +1075,7 @@ Water has one of the highest specific heat capacities of any liquid (4.18 J/g de
 
 These characteristics, combined with water being non-toxic, non-flammable, cheap, and readily available, make it one of the most environmentally benign and economically viable solvents for chemical reactions.
 
-(Source: PDF Pages 14-15)`,
+(Source: PDF Pages 13, 15)`,
     images: [{ page: 14, caption: 'Water as a benign solvent - Characteristics' }],
   },
   {
@@ -1159,7 +1159,7 @@ N-methylimidazole + CH3(CH2)3Br -> [BMIM][Br] --(HPF6)--> [BMIM][PF6]
     marks: '3 Marks',
     year: '2024',
     status: 'well_answered',
-    pdfPages: [14, 15],
+    pdfPages: [13, 15],
     importance: 4,
     answer: `**"At high temperature, water becomes more like an organic solvent." - YES, I AGREE.**
 
@@ -1194,7 +1194,7 @@ At very high temperatures (near 375 degC):
 
 These changes clearly demonstrate that at high temperature, water loses its "water-like" properties and acquires "organic solvent-like" properties, enabling organic reactions to be carried out in water without the need for toxic organic solvents.
 
-(Source: PDF Pages 14-15)`,
+(Source: PDF Pages 13, 15)`,
     images: [{ page: 14, caption: 'Water at high temperature behavior' }],
   },
   {
@@ -1405,7 +1405,7 @@ R-CH2-OH --(Solid oxidant, no solvent)--> R-CHO
     marks: '5 Marks',
     year: '2020',
     status: 'well_answered',
-    pdfPages: [25, 26, 35],
+    pdfPages: [25],
     importance: 4,
     answer: `**(i) Green Synthesis of Adipic Acid from Cyclohexene:**
 
@@ -1459,7 +1459,7 @@ Toluene (Ph-CH3) --(Cobalt catalyst, O2, acetic acid)--> Benzoic acid (Ph-CO2H)
 - High atom economy
 - Industrially viable process (Amoco process)
 
-(Source: PDF Pages 25-26, 35)`,
+(Source: PDF Page 25)`,
     images: [{ page: 25, caption: 'Green synthesis of adipic acid from cyclohexene' }],
   },
   {
@@ -1679,7 +1679,7 @@ Sonoluminescence is the emission of **light** (luminescence) from imploding cavi
     year: '2022, 2023',
     repeated: '2 Times',
     status: 'well_answered',
-    pdfPages: [25, 26],
+    pdfPages: [25],
     importance: 5,
     answer: `**Green Synthesis of Adipic Acid from Cyclohexene:**
 
@@ -1723,7 +1723,7 @@ Cyclohexene + H2O2 --(Na2WO4, PTC, solvent-free)--> Adipic acid + H2O
 | Steps | 1-pot | Multiple |
 | Environmental impact | Low | High |
 
-(Source: PDF Pages 25-26)`,
+(Source: PDF Page 25)`,
     images: [{ page: 25, caption: 'Green synthesis of adipic acid' }],
   },
   {
@@ -1809,7 +1809,7 @@ Microwave radiation causes polar molecules to rotate and oscillate (dielectric h
     marks: '3 Marks',
     year: '2023',
     status: 'well_answered',
-    pdfPages: [26],
+    pdfPages: [25],
     importance: 5,
     answer: `**Why Nitric Acid Oxidation to Adipic Acid is NOT Green:**
 
@@ -2037,7 +2037,7 @@ Rightfit pigments are a family of **synthetic organic azo pigments** developed b
     marks: '5 Marks',
     year: '2020',
     status: 'well_answered',
-    pdfPages: [2],
+    pdfPages: [2, 3],
     importance: 4,
     answer: `**Applications of Polylactic Acid (PLA):**
 
@@ -2091,8 +2091,8 @@ Lactic acid is polymerized by condensation, removing water under reduced pressur
 ---
 *This question describes synthesis starting from corn. Search in Google: **"PLA polylactic acid synthesis from corn reaction scheme diagram"***
 
-(Source: PDF Pages 32, 33; Research supplemented)`,
-    images: [{ page: 2, caption: 'Polylactic acid (PLA) applications and synthesis' }],
+(Source: PDF Pages 2, 3, 32, 33; Research supplemented)`,
+    images: [{ page: 3, caption: 'Polylactic acid (PLA) - biodegradable polymers' }],
   },
   {
     id: 45,
@@ -2101,7 +2101,7 @@ Lactic acid is polymerized by condensation, removing water under reduced pressur
     marks: '5 Marks',
     year: '2020',
     status: 'well_answered',
-    pdfPages: [2],
+    pdfPages: [2, 33],
     importance: 4,
     answer: `**(i) Differences between Bio-catalysis and Photo-catalysis:**
 
@@ -2144,7 +2144,7 @@ This clearly establishes that catalytic reagents are superior to stoichiometric 
 ---
 *Search in Google for comparison diagrams: **"bio-catalysis vs photo-catalysis diagram"** and **"catalytic vs stoichiometric reagents comparison"***
 
-(Source: PDF Pages 2, 3, 4, 5, 32)`,
+(Source: PDF Pages 2, 3, 4, 5, 33)`,
     images: [{ page: 2, caption: 'Bio-catalysis vs Photo-catalysis comparison' }],
   },
   {
@@ -2254,7 +2254,7 @@ This is a classic example of Green Chemistry Principle 9: using a catalytic, non
     marks: '2 Marks',
     year: '2022',
     status: 'well_answered',
-    pdfPages: [2],
+    pdfPages: [2, 9],
     importance: 3,
     answer: `**Biofuel**
 
@@ -2271,7 +2271,7 @@ Biofuels are considered **renewable energy sources** because the biomass feedsto
 
 Biofuels are **carbon-neutral** (or nearly so) — the CO2 released when biofuels are burned was recently absorbed from the atmosphere by the plants during photosynthesis, creating a closed carbon cycle. In contrast, burning fossil fuels releases CO2 that was sequestered underground for millions of years, adding net new CO2 to the atmosphere and contributing to climate change and global warming. This makes biofuels a significantly more environmentally sustainable energy option.
 
-(Source: PDF Pages 9, 10; Research supplemented)`,
+(Source: PDF Pages 2, 9; Research supplemented)`,
     images: [{ page: 2, caption: 'Biofuels definition and advantages' }],
   },
   {
@@ -2282,7 +2282,7 @@ Biofuels are **carbon-neutral** (or nearly so) — the CO2 released when biofuel
     year: '2022, 2025',
     repeated: '2 Times',
     status: 'well_answered',
-    pdfPages: [2],
+    pdfPages: [2, 3],
     importance: 4,
     answer: `**Synthesis of PLA (Polylactic Acid):**
 
@@ -2333,8 +2333,8 @@ Corn (Renewable Feedstock)
 ---
 *This question asks for a flow chart diagram. Search in Google: **"PLA polylactic acid synthesis flow chart from corn"***
 
-(Source: PDF Pages 32, 33; Research supplemented)`,
-    images: [{ page: 32, caption: 'PLA synthesis and benzoin condensation' }],
+(Source: PDF Pages 2, 3, 32, 33; Research supplemented)`,
+    images: [{ page: 3, caption: 'PLA synthesis and biodegradable polymers' }],
   },
   {
     id: 50,
