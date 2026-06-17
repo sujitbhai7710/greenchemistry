@@ -101,8 +101,9 @@ As we move from bulk chemicals (e.g., ammonia, sulfuric acid) to fine chemicals 
 - Fine chemical synthesis involves extensive use of organic solvents, catalysts, and reagents that generate significant waste
 - Bulk chemical production typically operates in aqueous or gas-phase systems with higher atom economy
 
-**Typical E-Factor Ranges:**
-- Bulk chemicals: <1 (near-zero waste)
+**Typical E-Factor Ranges (Sheldon, 1992):**
+- Oil refining: <0.1 (near-zero waste)
+- Bulk chemicals: 1-5 (e.g., ammonia, sulfuric acid)
 - Fine chemicals: 5-50
 - Pharmaceuticals: 25 to >100 (due to extensive synthetic steps and purification)
 
@@ -435,7 +436,7 @@ Propylene glycol (CH3CHOHCH2OH, C3H8O2):
 
 **Comparison with Green Route:**
 The green approach uses: HOCH2CHOHCH2OH + H2 --(CuCrO4 catalyst, 200 degC, 200 psi)--> CH3CHOHCH2OH
-% AE = (76 / 94) x 100 = **80.8%**
+% AE = (76 / 94) x 100 = **80.9%**
 
 The green route has DOUBLE the atom economy (80.8% vs 40.2%)!
 
@@ -571,19 +572,19 @@ Waste = H2O = 18
     answer: `**Synthesis of Acetophenone - Two Methods:**
 
 **METHOD 1: Stoichiometric Oxidation (using CrO3)**
-3 Ph-CHOH-Me + 2 CrO3 + H2SO4 -> 3 Ph-CO-Me + Cr2(SO4)3 + 6 H2O
+3 Ph-CHOH-Me + 2 CrO3 + 3 H2SO4 -> 3 Ph-CO-Me + Cr2(SO4)3 + 6 H2O
 
 Molecular weights:
 - 1-phenylethanol (C8H10O): (8x12) + 10 + 16 = 96 + 10 + 16 = **122**
 - CrO3: 52 + (3x16) = 52 + 48 = **100** (for 2 CrO3: 200)
-- H2SO4: 2 + 32 + 64 = **98**
+- H2SO4: 2 + 32 + 64 = **98** (for 3 H2SO4: 294)
 
-Total reactants (for 3 moles of alcohol) = (3 x 122) + 200 + 98 = 366 + 200 + 98 = **664**
+Total reactants (for 3 moles of alcohol) = (3 x 122) + 200 + 294 = 366 + 200 + 294 = **860**
 
 Desired product - Acetophenone (C8H8O): (8x12) + 8 + 16 = 96 + 8 + 16 = **120**
 For 3 moles = 3 x 120 = **360**
 
-**Atom Economy (Method 1) = (360 / 664) x 100 = 54.2%**
+**Atom Economy (Method 1) = (360 / 860) x 100 = 41.9%**
 
 Waste products: Cr2(SO4)3 + 6H2O = 392 + 108 = 500
 **E-Factor (Method 1) = 500 / 360 = 1.39**
@@ -611,7 +612,7 @@ Waste = H2O = **18**
 
 | Parameter | Method 1 (CrO3) | Method 2 (O2, Catalytic) |
 |-----------|-----------------|--------------------------|
-| Atom Economy | 54.2% | 87.0% |
+| Atom Economy | 41.9% | 87.0% |
 | E-Factor | 1.39 | 0.15 |
 | Toxic reagents | CrO3 (toxic, carcinogenic) | O2 (non-toxic) |
 | By-products | Cr2(SO4)3 (hazardous) | H2O only |
@@ -619,7 +620,7 @@ Waste = H2O = **18**
 
 **Which process is greener?**
 **Method 2 (Catalytic oxidation) should be adopted** as the green method because:
-1. It has much higher atom economy (87% vs 54%)
+1. It has much higher atom economy (87% vs 42%)
 2. Much lower E-factor (0.15 vs 1.39)
 3. Uses non-toxic O2 instead of toxic, carcinogenic CrO3
 4. Produces only water as waste instead of hazardous chromium sulfate
@@ -669,13 +670,20 @@ AE = (Molecular weight of product / Sum of molecular weights of reactants) x 100
 
 **Step 3: Calculate E-Factor**
 
+Theoretical (stoichiometric) calculation:
+Mass of waste = Total reactant mass (stoichiometric) - Product mass = 134 - 116 = 18 g (just H2O)
+Theoretical E-Factor = 18 / 116 = **0.155**
+
+Practical calculation (using given experimental data):
 Total mass of reactants = 37 + 60 = 97 g (H2SO4 is catalytic, not counted)
 Mass of product = 40 g
 Mass of waste = Total reactants - Product = 97 - 40 = 57 g
 
-E-Factor = Mass of waste / Mass of desired product
+Practical E-Factor = Mass of waste / Mass of desired product
 = 57 / 40
 = **1.43**
+
+Note: The practical E-Factor (1.43) is much higher than the theoretical one (0.155) because the actual yield is not 100% — only 40 g of product was obtained from 97 g of reactants instead of the theoretical maximum.
 
 **Step 4: Calculate EMY (Effective Mass Yield)**
 
@@ -688,7 +696,8 @@ Total mass of non-benign reactants = 37 + 60 = 97 g
 
 **Summary:**
 - **Atom Economy = 86.6%** (theoretical maximum - very good)
-- **E-Factor = 1.43** (moderate - could be improved with better yield)
+- **Theoretical E-Factor = 0.155** (based on stoichiometry)
+- **Practical E-Factor = 1.43** (based on actual yield - room for improvement)
 - **EMY = 41.2%** (actual efficiency considering yield)
 
 The high atom economy (86.6%) indicates this is a green reaction in terms of atom utilization. However, the practical E-factor of 1.43 suggests room for improvement in actual yield. The catalytic H2SO4 is recoverable, making this process relatively green.
@@ -713,17 +722,17 @@ The high atom economy (86.6%) indicates this is a green reaction in terms of ato
 These are the most common type, consisting of a bulky organic cation and an inorganic anion. They have very low vapor pressure, are non-flammable, and remain liquid over a wide temperature range.
 
 Example: [BMIM][PF6] (1-butyl-3-methylimidazolium hexafluorophosphate)
-- Viscosity: 450 cP
+- Viscosity: ~312 cP (at 25 degC)
 - Density: 1.37 g/cm3
 - Solubility: Soluble in acetone, acetonitrile, methylene chloride, and alkyl acetates; insoluble in water, alcohols, ethers, and alkanes
 
 **2. Acidic Ionic Liquids:**
 These contain acidic groups and can act as both solvent and catalyst. They are particularly useful for reactions requiring acidic conditions.
 
-Example: [BMIM][Cl]/AlCl3 system
+Example: [EMIM][Cl]/AlCl3 system (1-ethyl-3-methylimidazolium chloride/aluminum chloride)
 - This acts as both solvent and catalyst
 - Can be used for Diels-Alder reactions
-- Modified Diels-Alder reaction of cyclopentadiene with methyl acrylate in [BMIM][Cl]/AlCl3 ionic liquid gives 97.2% endo product
+- Modified Diels-Alder reaction of cyclopentadiene with methyl acrylate in [EMIM][Cl]/AlCl3 ionic liquid gives significantly higher endo selectivity (~85%) compared to conventional solvents
 
 **3. Basic Ionic Liquids:**
 These contain basic groups and can act as both solvent and base catalyst. They are useful for reactions requiring basic conditions without adding separate base.
@@ -736,10 +745,10 @@ Example: [BMIM][OH] - basic ionic liquid used for base-catalyzed reactions
 
 **Example 1: Diels-Alder Reaction**
 Cyclopentadiene + Methyl acrylate -> Adduct
-- Solvent: [BMIM][Cl]/AlCl3
-- Product ratio: 97.2% endo : 2.8% exo (compared to 82:18 in conventional solvents)
+- Solvent: [EMIM][Cl]/AlCl3 (acidic ionic liquid)
+- Significantly higher endo selectivity (~85%) compared to conventional solvents (~82:18)
 - The ionic liquid can be recovered and reused multiple times
-- Higher selectivity compared to conventional solvents
+- Higher selectivity and rate compared to conventional solvents
 
 **Example 2: Simmons-Smith Reaction (Cyclopropanation)**
 Allyl alcohol + CH2I2 -> Cyclopropanation product
@@ -851,7 +860,7 @@ Advantages over VOCs:
 
 A supercritical fluid exists above its critical temperature (Tcrit) and critical pressure (Pcrit). For CO2, the critical point is easily accessible:
 - **Tcrit of CO2 = 31.1 degC** (near room temperature!)
-- **Pcrit of CO2 = 72.8 bar** (moderately high pressure)
+- **Pcrit of CO2 = 73.8 bar** (moderately high pressure)
 
 Reasons for choosing CO2:
 
@@ -875,18 +884,18 @@ Reasons for choosing CO2:
 | Fluid | Tcrit (degC) | Pcrit (bar) |
 |-------|------------|-------------|
 | Methane | -82.6 | 45.9 |
-| Ethane | 32.2 | 48.2 |
+| Ethane | 32.2 | 48.7 |
 | Ethene | 9.3 | 50.3 |
 | Water | 374.2 | 220.5 |
 | Ammonia | 132.5 | 112.5 |
-| Propane | 96.7 | 41.9 |
+| Propane | 96.7 | 42.5 |
 | Fluoroform | 25.9 | 48.2 |
 
 ---
 
 **Drawbacks of using scCO2:**
 
-1. **High pressure requirement**: The critical pressure of 72.8 bar requires specialized high-pressure equipment, which is expensive.
+1. **High pressure requirement**: The critical pressure of 73.8 bar requires specialized high-pressure equipment, which is expensive.
 
 2. **Expensive equipment**: High-pressure vessels, pumps, and safety systems are costly to install and maintain.
 
