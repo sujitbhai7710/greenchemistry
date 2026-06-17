@@ -16,6 +16,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Global text selection - ensure everything is selectable on mobile */
+body,
+div,
+p,
+span,
+h1, h2, h3, h4, h5, h6,
+li, td, th,
+main, section, article {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
 /* Line clamp utility */
 .line-clamp-2 {
   display: -webkit-box;
@@ -36,9 +48,24 @@ aside::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
-/* Prevent text selection on buttons */
-button {
+/* Prevent text selection only on icon/action buttons, not content areas */
+button:not(.select-text *) {
   user-select: none;
+}
+
+/* Ensure all text content is selectable */
+.select-text,
+.select-text * {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+/* Ensure chemistry text and answers are always selectable */
+.chemistry-text,
+.chemistry-text *,
+.question-title-serif {
+  user-select: text !important;
+  -webkit-user-select: text !important;
 }
 
 /* Mobile tap highlight */

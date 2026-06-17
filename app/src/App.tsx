@@ -26,6 +26,8 @@ import {
   ArrowUp,
   Leaf,
   Image,
+  Copy,
+  Check,
 } from 'lucide-react';
 import './App.css';
 
@@ -121,6 +123,51 @@ function ImageModal({
   );
 }
 
+function CopyButton({ text, label }: { text: string; label?: string }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback for older browsers
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.left = '-9999px';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand('copy');
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      } catch {
+        // silently fail
+      }
+      document.body.removeChild(textarea);
+    }
+  };
+
+  return (
+    <button
+      onClick={handleCopy}
+      className={`flex-shrink-0 p-1.5 rounded-lg transition-all duration-200 ${
+        copied
+          ? 'bg-emerald-100 text-emerald-600'
+          : 'bg-gray-100 text-gray-400 hover:bg-indigo-100 hover:text-indigo-600 active:bg-indigo-200'
+      }`}
+      title={copied ? 'Copied!' : `Copy ${label || 'text'}`}
+      aria-label={copied ? 'Copied!' : `Copy ${label || 'text'}`}
+    >
+      {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+    </button>
+  );
+}
+
 function QuestionCard({
   question,
   isExpanded,
@@ -147,6 +194,9 @@ function QuestionCard({
 
   const hasImages = question.images && question.images.length > 0;
 
+  // Strip HTML tags for plain text copy
+  const plainText = question.question.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+
   return (
     <>
       <div
@@ -158,10 +208,18 @@ function QuestionCard({
             : 'border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 bg-white'
         }`}
       >
-        {/* Card Header */}
-        <button
+        {/* Card Header - use div instead of button to allow text selection */}
+        <div
+          className="w-full text-left p-4 sm:p-5 flex items-start gap-3 cursor-pointer hover:bg-gray-50/50 transition-colors"
           onClick={onToggle}
-          className="w-full text-left p-4 sm:p-5 flex items-start gap-3 hover:bg-gray-50/50 transition-colors"
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              onToggle();
+            }
+          }}
         >
           <div className="flex-shrink-0 mt-1">
             <div className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold transition-colors ${
@@ -172,7 +230,7 @@ function QuestionCard({
               {question.id}
             </div>
           </div>
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 select-text">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <StatusBadge status={question.status} />
               <StarRating rating={question.importance} />
@@ -182,9 +240,12 @@ function QuestionCard({
                 </span>
               )}
             </div>
-            <h3 className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed question-title-serif">
-              <ChemistryText text={question.question} />
-            </h3>
+            <div className="flex items-start gap-2">
+              <h3 className="flex-1 text-sm sm:text-base font-medium text-gray-800 leading-relaxed question-title-serif select-text">
+                <ChemistryText text={question.question} />
+              </h3>
+              <CopyButton text={plainText} label="question" />
+            </div>
             <div className="flex flex-wrap items-center gap-3 mt-2.5 text-xs text-gray-500">
               <span className="flex items-center gap-1 bg-gray-100 px-2 py-0.5 rounded-md">
                 <Award className="w-3 h-3" />
@@ -209,7 +270,7 @@ function QuestionCard({
               <ChevronDown className="w-5 h-5 text-gray-300 group-hover:text-gray-500" />
             )}
           </div>
-        </button>
+        </div>
 
         {/* Expanded Answer */}
         {isExpanded && (
@@ -278,7 +339,7 @@ function QuestionCard({
             )}
 
             {/* Answer */}
-            <div className="p-4 sm:p-6 bg-white">
+            <div className="p-4 sm:p-6 bg-white select-text">
               <div className="flex items-center gap-2 mb-4 pb-2 border-b border-indigo-100">
                 <BookOpen className="w-4 h-4 text-indigo-600" />
                 <h4 className="text-sm font-bold text-indigo-700 tracking-wide question-title-serif">
@@ -296,6 +357,10 @@ function QuestionCard({
                     Research
                   </span>
                 )}
+                <CopyButton
+                  text={question.answer.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim()}
+                  label="answer"
+                />
               </div>
               <ChemistryText text={question.answer} />
             </div>
