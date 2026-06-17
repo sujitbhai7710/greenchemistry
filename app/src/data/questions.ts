@@ -188,7 +188,7 @@ This means:
 - Design reaction pathways that avoid generating toxic intermediates
 - The final product should also be non-toxic or minimally toxic
 
-Example: In the amidation process, the classical procedure uses stoichiometric amounts of toxic chemicals like PCl5 or SOCl2. But in the green modification, only a catalytic amount of boric acid (a benign reagent) is used. The greener approach is:
+Example: In the amidation process, the classical procedure uses stoichiometric amounts of toxic chemicals like PCl5 or SOCl2 to convert carboxylic acids to acid chlorides (which then react with amines). But in the green modification, only a catalytic amount of boric acid (a benign reagent) is used. The greener approach is:
 ArCO2H + R2NH --(Boric acid catalyst, Toluene)--> ArCONR2
 
 This avoids the use of toxic PCl5/SOCl2 and produces less hazardous waste.
@@ -430,15 +430,23 @@ Propylene glycol (CH3CHOHCH2OH, C3H8O2):
 
 **Step 3: Calculate % Atom Economy**
 
-% AE = (76 / 189) x 100 = **40.2%**
+The overall balanced equation for the old route (canceling intermediates):
+C3H6 + Cl2 + H2O + NaOH -> C3H8O2 + NaCl + HCl
 
-**Conclusion:** The old route for propylene glycol synthesis has a poor atom economy of only 40.2%, meaning nearly 60% of the atoms from reactants become waste (including NaCl, NaOH by-products).
+Note: One H2O cancels from both sides (step 2 produces H2O, step 3 consumes H2O), so only ONE H2O appears as a net reactant.
+
+Total mass of reactants = 42 + 71 + 18 + 40 = **171** (not 189 — the second H2O cancels)
+
+% AE = (76 / 171) x 100 = **44.4%**
+
+**Conclusion:** The old route for propylene glycol synthesis has a poor atom economy of only 44.4%, meaning over 55% of the atoms from reactants become waste (NaCl, HCl by-products).
 
 **Comparison with Green Route:**
-The green approach uses: HOCH2CHOHCH2OH + H2 --(CuCrO4 catalyst, 200 degC, 200 psi)--> CH3CHOHCH2OH
+The green approach uses: HOCH2CHOHCH2OH + H2 --(CuCr2O4 catalyst, 200 degC, 200 psi)--> CH3CHOHCH2OH
+(CuCr2O4 = copper chromite, NOT copper chromate CuCrO4)
 % AE = (76 / 94) x 100 = **80.9%**
 
-The green route has DOUBLE the atom economy (80.8% vs 40.2%)!
+The green route has nearly DOUBLE the atom economy (80.9% vs 44.4%)!
 
 (Source: PDF Page 7)`,
     images: [{ page: 7, caption: 'Propylene glycol old route vs green route atom economy' }],
@@ -1009,9 +1017,9 @@ These advantages make scCO2 one of the most promising green solvents for both in
 
 3. **Renewable**: Water is a naturally renewable resource.
 
-4. **Hydrophobic effect**: In water, non-polar molecules are pushed together, which can accelerate certain reactions like the Diels-Alder reaction by up to 700 times.
+4. **Hydrophobic effect**: In water, non-polar molecules are pushed together, which can accelerate certain reactions like the Diels-Alder reaction by up to 740 times.
 
-5. **Enhanced solubility of gases**: Oxygen and hydrogen are more soluble in water at elevated temperatures, which is useful for oxidation/hydrogenation reactions.
+5. **Enhanced solubility of gases in near-critical water**: Oxygen and hydrogen become more soluble in water at very high temperatures (above ~94°C for O₂, above ~74°C for N₂), which is useful for oxidation/hydrogenation reactions in near-critical water (200-300°C). Note: At normal temperatures (0-90°C), gas solubility in water actually DECREASES with increasing temperature (Henry's law).
 
 ---
 
@@ -1057,11 +1065,13 @@ Water has one of the highest specific heat capacities of any liquid (4.18 J/g de
 - This makes water ideal for exothermic reactions where heat management is critical
 - Energy costs are reduced because less external heating/cooling is needed
 
-**2. Enhanced Solubility of Gases at Elevated Temperatures:**
-- At elevated temperatures, the solubility of gases like O2 and H2 in water increases significantly
-- This is very useful for oxidation and hydrogenation reactions where these gases are reactants
-- Higher gas solubility means faster reaction rates and better yields
-- Reactions can be carried out without the need for pressurized gas systems or special equipment
+**2. High Heat of Vaporization / Hydrophobic Effect:**
+- Water has a very high heat of vaporization (2260 kJ/kg), making it an excellent heat sink for exothermic reactions
+- The hydrophobic effect in water forces non-polar reactants together, accelerating reactions like the Diels-Alder reaction by up to 740 times
+- This effect arises because water's hydrogen-bonded network excludes non-polar molecules, increasing their effective local concentration
+- Combined with hydrogen bonding to polar transition states, this makes water a uniquely powerful medium for many organic reactions
+
+⚠️ **Correction note**: Earlier versions incorrectly stated that gas solubility (O₂, H₂) in water increases at elevated temperatures. This is WRONG for normal temperatures — gas solubility in water DECREASES with increasing temperature (Henry's law). Only in near-critical water (above ~94°C for O₂) does gas solubility begin to increase again.
 
 These characteristics, combined with water being non-toxic, non-flammable, cheap, and readily available, make it one of the most environmentally benign and economically viable solvents for chemical reactions.
 
@@ -1112,7 +1122,7 @@ These two factors are essential because ionic liquids are hygroscopic (they abso
 The step-by-step synthesis with all structures:
 
 **Step 1:** N-methylimidazole + Bromobutane -> [BMIM][Br]
-- 1,3-dimethylimidazole reacts with 1-bromobutane
+- N-methylimidazole (1-methylimidazole) reacts with 1-bromobutane
 - This is an alkylation reaction at the imidazole nitrogen
 - Forms 1-butyl-3-methylimidazolium bromide ([BMIM][Br])
 
@@ -1133,7 +1143,7 @@ N-methylimidazole + CH3(CH2)3Br -> [BMIM][Br] --(HPF6)--> [BMIM][PF6]
 - Anion: PF6- (octahedral hexafluorophosphate)
 
 **Key properties of [BMIM][PF6]:**
-- Viscosity: 450 cP (centipoise) - it is viscous
+- Viscosity: ~312 cP (at 25 degC) - it is viscous
 - Density: 1.37 g/cm3
 - It is a hydrophobic ionic liquid (insoluble in water)
 - Soluble in acetone, acetonitrile, methylene chloride, and alkyl acetates
@@ -1231,7 +1241,7 @@ The term **"copolymerization"** is used because:
   {
     id: 28,
     section: 'Green Solvents',
-    question: 'The rate of a specific organic reaction is enhanced by almost 700 times when carried out in water as the reaction medium. Identify the reaction and explain the two driving forces responsible for such an enhancement.',
+    question: 'The rate of a specific organic reaction is enhanced by almost 740 times when carried out in water as the reaction medium. Identify the reaction and explain the two driving forces responsible for such an enhancement.',
     marks: '4 Marks',
     year: '2025',
     status: 'well_answered',
@@ -1239,7 +1249,7 @@ The term **"copolymerization"** is used because:
     importance: 5,
     answer: `**The Reaction: Diels-Alder Reaction**
 
-The specific organic reaction that shows approximately **700-fold rate enhancement** in water is the **Diels-Alder reaction** between cyclopentadiene and methyl vinyl ketone (or similar diene-dienophile pairs).
+The specific organic reaction that shows approximately **740-fold rate enhancement** in water is the **Diels-Alder reaction** between cyclopentadiene and methyl vinyl ketone (or similar diene-dienophile pairs).
 
 **The Reaction:**
 Cyclopentadiene + Methyl vinyl ketone -> Bicyclic adduct (Diels-Alder product)
@@ -1401,19 +1411,23 @@ R-CH2-OH --(Solid oxidant, no solvent)--> R-CHO
 
 Adipic acid is an important industrial chemical used in the production of nylon-6,6. The green synthesis avoids toxic nitric acid.
 
-**Reaction Sequence:**
-Cyclohexene --(1. HCO2H, H2O2; 2. OH-)--> Adipic acid
+**Reaction Sequence (Noyori method, Science 1998):**
+Cyclohexene + H2O2 --(Na2WO4 catalyst, [(n-C4H9)4N]HSO4 PTC, solvent-free)--> Adipic acid + H2O
 
 **Step-by-Step:**
-Step 1: Cyclohexene reacts with formic acid (HCO2H) and hydrogen peroxide (H2O2)
-Step 2: This forms a diol intermediate (cyclohexane-1,2-diol)
-Step 3: Oxidative cleavage with hydroxide (OH-) gives adipic acid
+Step 1: Cyclohexene is oxidized by H2O2 in the presence of sodium tungstate (Na2WO4) catalyst and a phase-transfer catalyst (PTC) such as tetrabutylammonium hydrogensulfate
+Step 2: The tungstate catalyst activates H2O2, which oxidizes the double bond first to an epoxide
+Step 3: Further oxidation opens the ring and cleaves it to form adipic acid
 
 **Green Features:**
 - Uses H2O2 (clean oxidant - produces only water as by-product)
-- Uses formic acid (relatively benign compared to nitric acid)
-- Avoids concentrated HNO3 which produces toxic NOx gases
-- One-pot synthesis (all steps in same vessel)
+- Uses Na2WO4 catalyst (tungsten is relatively low toxicity, recyclable)
+- Phase-transfer catalyst enables the reaction in a solvent-free system
+- Avoids concentrated HNO3 which produces toxic NOx and N2O greenhouse gas
+- No organic solvent needed (solvent-free conditions)
+- The catalyst system can be recycled
+
+Note: An alternative route using HCO2H/H2O2 (performic acid in situ) also exists, but the Noyori Na2WO4/PTC method is the landmark green synthesis recognized in the Green Chemistry literature.
 
 **Comparison with Non-Green Method:**
 The conventional industrial process uses benzene -> cyclohexane -> cyclohexanone/cyclohexanol (KA oil) -> adipic acid using concentrated HNO3. This produces large amounts of nitrous oxide (N2O), a potent greenhouse gas.
@@ -1671,36 +1685,33 @@ Sonoluminescence is the emission of **light** (luminescence) from imploding cavi
 
 Adipic acid (HOOC-(CH2)4-COOH) is a dicarboxylic acid used to make nylon-6,6. The green synthesis avoids the environmentally harmful nitric acid oxidation.
 
-**Reaction:**
-Cyclohexene --(HCO2H, H2O2, then OH-)--> Adipic acid
+**Reaction (Noyori method, Science 1998):**
+Cyclohexene + H2O2 --(Na2WO4 catalyst, [(n-C4H9)4N]HSO4 PTC)--> Adipic acid + H2O
 
 **Step-by-Step Process:**
 
-**Step 1: Epoxidation**
-Cyclohexene + H2O2 --(Formic acid)--> Cyclohexene oxide + H2O
-- Hydrogen peroxide (H2O2) in formic acid (HCO2H) converts the double bond to an epoxide
+**Step 1: Catalytic Epoxidation**
+Cyclohexene + H2O2 --(Na2WO4, PTC)--> Cyclohexene oxide + H2O
+- Sodium tungstate (Na2WO4) activates H2O2 for epoxidation
+- The phase-transfer catalyst (PTC) transports the tungstate-peroxo species into the organic phase
 - H2O2 is a green oxidant - its only by-product is water
 
-**Step 2: Hydrolysis**
-Cyclohexene oxide + H2O -> trans-1,2-cyclohexanediol
-- The epoxide is opened by water to form the diol
-
-**Step 3: Oxidative Cleavage**
-trans-1,2-cyclohexanediol --(OH- oxidation)--> HOOC-(CH2)4-COOH (Adipic acid)
-- The diol undergoes oxidative cleavage to give adipic acid
+**Step 2: Hydrolysis and Oxidative Cleavage**
+Cyclohexene oxide + H2O --(further oxidation)--> Adipic acid
+- The epoxide is opened and further oxidized to give adipic acid
 
 **Overall:**
-Cyclohexene + H2O2 --(HCO2H, OH-)--> Adipic acid + H2O
+Cyclohexene + H2O2 --(Na2WO4, PTC, solvent-free)--> Adipic acid + H2O
 
 **Why this is Green:**
 
 1. **Uses H2O2 as oxidant**: H2O2 is environmentally friendly - it decomposes to water and oxygen only
-2. **Avoids concentrated HNO3**: The conventional process uses nitric acid, which produces:
+2. **Solvent-free conditions**: The PTC system eliminates the need for organic solvents
+3. **Avoids concentrated HNO3**: The conventional process uses nitric acid, which produces:
    - Toxic NOx gases (nitrogen oxides)
    - Large amounts of N2O (nitrous oxide, a potent greenhouse gas)
    - Acidic waste water
-3. **One-pot synthesis**: All steps can be carried out in the same reaction vessel
-4. **High atom economy**: Most atoms end up in the product
+4. **Catalyst is recyclable**: Na2WO4 and PTC can be recovered and reused
 5. **Safer conditions**: No corrosive nitric acid needed
 
 **Comparison with Non-Green Route:**
